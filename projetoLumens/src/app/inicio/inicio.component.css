@@ -1,0 +1,9 @@
+img {
+    width: 300px !important;
+    align-items: flex-start;
+    justify-items: left;
+}
+
+.fundo {
+    background-color: #5b7553;
+}
