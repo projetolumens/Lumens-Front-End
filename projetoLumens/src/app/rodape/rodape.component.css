@@ -13,25 +13,24 @@ ul.social-network li{
     margin: 0;
     padding: 5px;
 }
-
-.bi {
-    font-size: 30pt;
-    color: white;
+.fa-brands{
+    font-size: 35pt;
+    color: aliceblue;
     padding: 10px;
 }
-
-.bi-github:hover {
-    color: black;
-}
-
-.bi-instagram:hover {
+.fa-instagram:hover{
     color: #C13584;
 }
-
-.bi-discord:hover {
-    color: #7289d9;
+.fa-github:hover{
+    color: black;
+}
+.fa-linkedin:hover{
+    color:#0a66c2;
+}
+.bg-footer{
+    background-color: #523d83 ;
 }
 
-.footer-copyright {
+.bg-copyright {
     background-color: #5B7553!important;
 }
