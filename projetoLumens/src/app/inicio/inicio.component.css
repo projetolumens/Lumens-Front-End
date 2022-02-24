@@ -1,0 +1,45 @@
+
+
+.lumensCabecalho{
+   width: 150px;
+    display: inline-block;
+}
+
+.ods7{   
+    height: 470px;
+    display: flex;
+    align-items: center;  
+}
+
+.fundo{
+    background-color: #5b7553;
+}
+
+.card-title{
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-img-top{
+    width: 150px !important;
+}
+.card{
+    
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin: 25px 0px;
+
+}
+.card-text{
+    text-align: center;  
+}
+
+.text-config{
+    color: black;
+    font-weight: bold;
+}
+.fundo2{
+    background-color: #8eb897;
+}
