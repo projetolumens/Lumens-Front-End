@@ -1,18 +1,36 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { UsuarioLogin } from '../model/UsuarioLogin';
+import { Observable } from 'rxjs';
+import { Usuario } from '../model/Usuario';
+import { environment } from 'src/environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  constructor() { }
+  constructor(
+    private http: HttpClient
+  ) { }
 
-  entrar(){
-
+  entrar(UsuarioLogin: UsuarioLogin): Observable<UsuarioLogin>{
+    return this.http.post<UsuarioLogin>('http://localhost:8080/usuarios/logar', UsuarioLogin)
   }
 
-  cadastrar(){
-    
+  cadastrar(Usuario:Usuario): Observable<Usuario>{
+    return this.http.post<Usuario>('http://localhost:8080/usuarios/cadastrar', Usuario)
   }
+
+  logado(){
+    let ok: boolean = false;
+
+    if(environment.token != ''){
+      ok = true;
+    }
+
+    return ok
+  }
+
 
 }
