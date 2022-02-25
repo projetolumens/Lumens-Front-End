@@ -1,30 +1,34 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment.prod';
+import { Usuario } from './model/Usuario';
+import { UsuarioLogin } from './model/UsuarioLogin';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-
-import { CadastrarComponent } from './cadastrar/cadastrar.component';
-import { EntrarComponent } from './entrar/entrar.component';
-import { MenuComponent } from './menu/menu.component';
-import { RodapeComponent } from './rodape/rodape.component';
-import { InicioComponent } from './inicio/inicio.component';
-
-
-@NgModule({
-  declarations: [
-    AppComponent,
-    MenuComponent,
-    RodapeComponent,
-    CadastrarComponent,
-    EntrarComponent,
-    InicioComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+@Injectable({
+  providedIn: 'root'
 })
-export class AppModule { }
+export class AuthService {
+
+  constructor(private http: HttpClient) {   }
+
+  entrar(usuarioLogin: UsuarioLogin): Observable<UsuarioLogin> {
+    return this.http.post<UsuarioLogin>('https://localhost:8080/entrar', usuarioLogin)
+
+  }
+
+  cadastrar(usuario: Usuario): Observable<Usuario> {
+    return this.http.post<Usuario>('https://localhost:8080/cadastrar', usuario)
+
+  }
+
+ logado() {
+    let ok: boolean = false
+
+   if (environment.token != ''){
+      ok = true
+    }
+
+    return ok
+  }
+}
