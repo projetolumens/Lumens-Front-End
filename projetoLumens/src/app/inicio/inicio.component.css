@@ -1,0 +1,200 @@
+
+
+.lumensCabecalho{
+   width: 150px;
+    display: inline-block;
+}
+
+.ods7{   
+    height: 470px;
+    display: flex;
+    align-items: center;  
+}
+
+.fundo{
+    background-color: #5b7553;
+}
+
+.card-title{
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-img-top{
+    width: 150px !important;
+}
+.card{
+    
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin: 25px 0px;
+
+}
+.card-text{
+    text-align: center;  
+}
+
+.text-config{
+    color: black;
+    font-weight: bold;
+}
+.fundo2{
+    background-color: #8eb897;
+}
+
+
+
+/* NOSSO TIME */
+
+/* responsividade */
+.wrap{
+    flex-wrap: wrap;
+  }
+  
+  .Membro1 {
+    position: relative;
+    width: 250px;
+    height: 270px;
+    background: url("https://i.imgur.com/KDRBJFh.jpeg");
+    background-size: cover;
+    cursor: pointer;
+    border: 12px;
+    border-radius: 13px;
+    margin-top: 25px;
+  }
+  
+  .Membro2 {
+    position: relative;
+    width: 250px;
+    height: 270px;
+    background: url("https://i.imgur.com/SAXAhpA.png");
+    background-size: cover;
+    cursor: pointer;
+    border: 12px;
+    border-radius: 13px;
+    margin-top: 25px;
+  }
+  
+  .Membro3 {
+    position: relative;
+    width: 250px;
+    height: 270px;
+    background: url("https://i.imgur.com/ihE0FHt.png");
+    background-size: cover;
+    cursor: pointer;
+    border: 12px;
+    border-radius: 13px;
+    margin-top: 25px;
+  }
+  
+  .Membro4 {
+    position: relative;
+    width: 250px;
+    height: 270px;
+    background: url("https://i.imgur.com/wk1QM5a.jpeg");
+    background-size: cover;
+    cursor: pointer;
+    border: 12px;
+    border-radius: 13px;
+    margin-top: 25px;
+  }
+  
+  .Membro5 {
+    position: relative;
+    width: 250px;
+    height: 270px;
+    background: url("https://i.imgur.com/5vIK4Ot.jpeg");
+    background-size: cover;
+    cursor: pointer;
+    border: 12px;
+    border-radius: 13px;
+    margin-top: 25px;
+  }
+
+  /* escurece o card  */
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 1s;
+    border-radius: 6px;
+  }
+    /* opacidade do escurecer de cada card */
+  .Membro1:hover .overlay {
+    opacity: 1;
+  }
+  
+  .Membro2:hover .overlay {
+    opacity: 1;
+  }
+  
+  .Membro3:hover .overlay {
+    opacity: 1;
+  }
+  
+  .Membro4:hover .overlay {
+    opacity: 1;
+  }
+  
+  .Membro5:hover .overlay {
+    opacity: 1;
+  }
+  
+  
+
+  /* icones dentro do card */
+  .tm-social li a {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ffffffcb;
+    padding: 20px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 1s;
+  }
+  /* icones posição dentro do card */
+  .tm-social {
+    display: flex;
+    list-style: none;
+    bottom: 10px;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    left: 44px;
+  }
+  
+  /* titulo nome do card */
+  .overlay .about {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 40%;
+    color: #ffffffcb;
+    flex: column;
+  }
+
+/* titulo equipe */
+  .text-equipe{
+    color: #ffd900c0;
+    font-weight: bold;
+  }
+
+  /* bg da equipe */
+  .name-equipe {
+    background-color: #000000dc;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 8rem;
+  }
+  

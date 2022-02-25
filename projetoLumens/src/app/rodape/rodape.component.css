@@ -1,0 +1,36 @@
+footer {
+    background-color: #8Eb897!important;
+}
+
+
+ul.social-network {
+    list-style: none;
+    padding: 0;
+}
+
+ul.social-network li{
+    display: inline;
+    margin: 0;
+    padding: 5px;
+}
+.fa-brands{
+    font-size: 35pt;
+    color: aliceblue;
+    padding: 10px;
+}
+.fa-instagram:hover{
+    color: #C13584;
+}
+.fa-github:hover{
+    color: black;
+}
+.fa-linkedin:hover{
+    color:#0a66c2;
+}
+.bg-footer{
+    background-color: #523d83 ;
+}
+
+.bg-copyright {
+    background-color: #5B7553!important;
+}
