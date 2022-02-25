@@ -15,11 +15,11 @@ export class AuthService {
   ) { }
 
   entrar(UsuarioLogin: UsuarioLogin): Observable<UsuarioLogin>{
-    return this.http.post<UsuarioLogin>('http://localhost:8080/usuarios/logar', UsuarioLogin)
+    return this.http.post<UsuarioLogin>('https://projetolumens.herokuapp.com/usuarios/logar', UsuarioLogin)
   }
 
   cadastrar(Usuario:Usuario): Observable<Usuario>{
-    return this.http.post<Usuario>('http://localhost:8080/usuarios/cadastrar', Usuario)
+    return this.http.post<Usuario>('https://projetolumens.herokuapp.com/usuarios/cadastrar', Usuario)
   }
 
   logado(){

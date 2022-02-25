@@ -19,14 +19,14 @@
                     <div class="form-group font">
 
                         <label for="usuario">Usuário</label>
-                        <input [(ngModel)]='usuarioLogin' class="form-control" type="text" name="usuario" id="usuario" placeholder="Seu usuario">
+                        <input [(ngModel)]='usuarioLogin.usuario' class="form-control" type="text" name="usuario" id="usuario" placeholder="Seu usuario" >
 
                     </div>
                     <br>
                     <div class="form-group font">
 
                         <label for="usuario">Senha</label>
-                        <input [(ngModel)]='usuarioLogin.senha' class="form-control" type="password" name="senha" id="senha" placeholder="Sua senha">
+                        <input  class="form-control" type="password" name="senha" id="senha" placeholder="Sua senha" [(ngModel)]='usuarioLogin.senha'>
 
                     </div>
 
@@ -65,3 +65,4 @@
 <!--DIV CONTAINER-->
 </div>
 <!--DIV CONTAINER-->
+</div>
