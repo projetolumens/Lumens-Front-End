@@ -1,5 +1,9 @@
 
-
+.cabecalho{
+  width: 1000px;
+  height: auto;
+  align-items: center;
+}
 
 
 .ods7{   
@@ -41,7 +45,9 @@
     background-color: #8eb897;
 }
 
-
+.bg-config{
+  background-color: rgb(180, 165, 165);
+}
 
 /* NOSSO TIME */
 
@@ -73,7 +79,7 @@
     position: relative;
     width: 250px;
     height: 270px;
-    background: url("https://i.imgur.com/SAXAhpA.png");
+    background: url("https://i.imgur.com/3Ui8aNv.png");
     background-size: cover;
     cursor: pointer;
     border: 12px;
@@ -260,19 +266,13 @@
 
 /* titulo equipe */
   .text-equipe{
-    color: #ffd900c0;
+    color: #000000c0;
     font-weight: bold;
   }
 
   /* bg da equipe */
   .name-equipe {
+  background-image: url(../../assets/img/linha-horizontal.png);
   
-    height: auto;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    margin-bottom: 8rem;
   }
   
-  .container-equipe {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3) ;
-  }
