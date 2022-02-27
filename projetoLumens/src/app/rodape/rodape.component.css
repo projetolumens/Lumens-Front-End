@@ -24,9 +24,11 @@ ul.social-network li{
 .fa-github:hover{
     color: black;
 }
-.fa-linkedin:hover{
-    color:#0a66c2;
+
+.fa-discord:hover{
+    color:#6e82d1;
 }
+
 .bg-footer{
     background-color: #523d83 ;
 }
