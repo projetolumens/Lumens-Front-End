@@ -5,6 +5,57 @@
   align-items: center;
 }
 
+/* botao? */
+.SaibaMais{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #ffd800;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #ffd800;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 100;
+  font-weight: bold;
+}
+/* botao? */
+
 
 .ods7{   
     height: 470px;
@@ -14,6 +65,15 @@
 
 .fundo{
     background-color: #5b7553;
+}
+.fundo2{
+  background-color: #8eb897;
+}
+.fundo3{
+  background-color: rgba(255, 217, 0, 0.685);
+  background-position: center;    
+  background-size: cover;
+  background-repeat: no-repeat;    
 }
 
 .card-title{
@@ -25,29 +85,34 @@
     width: 150px !important;
 }
 .card{
-    
+    margin-right: 5px;
     box-sizing: border-box;
     border-radius: 10px;
     display: flex;
     align-items: center;
     margin: 25px 0px;
-
+    flex-wrap: wrap;
+    margin-right: 5px;
+    background-color: rgba(253, 253, 253, 0.644);
+    box-shadow: 15px 15px 48px #070707bb;
+    border-radius: 10px;
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+  
 }
 .card-text{
-    text-align: center;  
+    text-align: center;
 }
 
 .text-config{
-    color: black;
+    color: rgb(0, 0, 0);
     font-weight: bold;
 }
-.fundo2{
-    background-color: #8eb897;
+
+.card-group{
+  margin-bottom: 42px;
 }
 
-.bg-config{
-  background-color: rgb(180, 165, 165);
-}
 
 /* NOSSO TIME */
 
@@ -56,11 +121,9 @@
     flex-wrap: wrap;
     width: 90%;
 	justify-content: space-around;
- 
   }
 
 
-  
   .Membro1 {
     position: relative;
     width: 250px;
@@ -273,6 +336,7 @@
   /* bg da equipe */
   .name-equipe {
   background-image: url(../../assets/img/linha-horizontal.png);
-  
+  background-repeat: repeat-y;    
+margin-bottom: 15px;
   }
   
