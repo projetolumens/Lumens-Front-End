@@ -5,22 +5,20 @@
   align-items: center;
 }
 
-/* botao? */
+/* botao */
 .SaibaMais{
   text-decoration: none;
-  color: black;
-  font-weight: bold;
 }
 
 .center {
   width: 180px;
-  height: 60px;
+  height: 40px;
   position: absolute;
 }
 
 .btn {
   width: 180px;
-  height: 60px;
+  height: 40px;
   cursor: pointer;
   background: transparent;
   border: 1px solid #ffd800;
@@ -33,7 +31,7 @@ svg {
   left: 0;
   top: 0;
   fill: none;
-  stroke: #fff;
+  stroke: rgb(0, 0, 0);
   stroke-dasharray: 150 480;
   stroke-dashoffset: 150;
   transition: 1s ease-in-out;
@@ -41,7 +39,8 @@ svg {
 
 .btn:hover {
   transition: 1s ease-in-out;
-  background: #ffd800;
+  background: #ffd900c5;
+ 
 }
 
 .btn:hover svg {
@@ -49,25 +48,33 @@ svg {
 }
 
 .btn span {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 18px;
   font-weight: 100;
   font-weight: bold;
+
 }
-/* botao? */
+/* botao */
 
 
 .ods7{   
-    height: 470px;
+    height: 220px;
     display: flex;
     align-items: center;  
 }
 
+
+.title{
+  font-size: 25pt;
+  font-weight: bold;
+  color: rgb(255, 255, 255)!important;
+}
+
 .fundo{
-    background-color: #5b7553;
+    background-color: #5b7553f3;
 }
 .fundo2{
-  background-color: #8eb897;
+  background-color: #7e7e7e21;
 }
 .fundo3{
   background-color: rgba(255, 217, 0, 0.685);
@@ -94,7 +101,7 @@ svg {
     flex-wrap: wrap;
     margin-right: 5px;
     background-color: rgba(253, 253, 253, 0.644);
-    box-shadow: 15px 15px 48px #070707bb;
+    box-shadow: 5px 5px 18px #ffffffbb;
     border-radius: 10px;
     backdrop-filter: blur(32px);
     -webkit-backdrop-filter: blur(32px);
@@ -119,9 +126,8 @@ svg {
 /* responsividade */
 .wrap{
     flex-wrap: wrap;
-    width: 90%;
-	justify-content: space-around;
-  }
+   
+}
 
 
   .Membro1 {
