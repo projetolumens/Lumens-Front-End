@@ -31,7 +31,7 @@ svg {
   left: 0;
   top: 0;
   fill: none;
-  stroke: rgb(0, 0, 0);
+  stroke: #ffd800;
   stroke-dasharray: 150 480;
   stroke-dashoffset: 150;
   transition: 1s ease-in-out;
@@ -39,7 +39,8 @@ svg {
 
 .btn:hover {
   transition: 1s ease-in-out;
-  background: #ffd900c5;
+  background-color: #000000b9;
+  
  
 }
 
@@ -57,6 +58,8 @@ svg {
 /* botao */
 
 
+
+
 .ods7{   
     height: 220px;
     display: flex;
@@ -71,7 +74,7 @@ svg {
 }
 
 .fundo{
-    background-color: #5b7553f3;
+    background-color: #809779f3;
 }
 .fundo2{
   background-color: #7e7e7e21;
@@ -83,6 +86,8 @@ svg {
   background-repeat: no-repeat;    
 }
 
+
+/* ferramentas usadas*/
 .card-title{
     font-weight: bold;
     text-align: center;
@@ -100,11 +105,11 @@ svg {
     margin: 25px 0px;
     flex-wrap: wrap;
     margin-right: 5px;
-    background-color: rgba(253, 253, 253, 0.644);
-    box-shadow: 5px 5px 18px #ffffffbb;
-    border-radius: 10px;
-    backdrop-filter: blur(32px);
-    -webkit-backdrop-filter: blur(32px);
+    background-color: rgba(255, 255, 255, 0.301);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 5px 5px 18px #ffffffcc;
+    
   
 }
 .card-text{
@@ -121,15 +126,17 @@ svg {
 }
 
 
+
+
+
+
+
 /* NOSSO TIME */
 
 /* responsividade */
 .wrap{
     flex-wrap: wrap;
-   
 }
-
-
   .Membro1 {
     position: relative;
     width: 250px;
@@ -340,9 +347,9 @@ svg {
   }
 
   /* bg da equipe */
-  .name-equipe {
-  background-image: url(../../assets/img/linha-horizontal.png);
-  background-repeat: repeat-y;    
+  #name-equipe {
+  background-image: url(../../assets/img/linha-horizontal1.png);
+    
 margin-bottom: 15px;
   }
   
