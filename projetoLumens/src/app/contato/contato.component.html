@@ -1,0 +1,33 @@
+<div class="bg-contact3">
+    <div class="container-contact3">
+        <div class="wrap-contact3">
+            <form [formGroup]="formContato" class="contact3-form validate-form"> 
+                <span class="contact3-form-title font-weight-bold">
+                    Entre em contato:
+                </span>
+                <div class="wrap-input3 form-group font" data-validate="Name is required">
+                    <input class="form-control input3" type="text" formControlName="name" placeholder="Seu nome">
+                    <span class="focus-input3"></span>
+                    <small *ngIf="name!.invalid && name!.touched" class="text-danger">O nome é obrigatório</small> 
+                </div>
+                <div class="wrap-input3 form-group" data-validate="Valid email is required: ex@abc.xyz">
+                    <input class="form-control input3" type="text" formControlName="email" placeholder="Seu email">
+                    <span class="focus-input3"></span>
+                    <small *ngIf="email!.invalid && email!.touched" class="text-danger">Email inválido</small>
+                </div>
+
+                <div class="wrap-input3 form-group" data-validate="Message is required">
+                    <textarea class="form-control input3" formControlName="message" placeholder="Mensagem"></textarea>
+                    <span class="focus-input3"></span>
+                    <small *ngIf="message!.invalid && message!.touched" class="text-danger"> A mensagem é obrigatória (mínimo de 10 caracteres)</small>
+                </div>
+                <div class="form-group">
+                    <button (click)="clicksub()" [disabled]="formContato.invalid" type="button" class="contact3-form-btn">
+                        Enviar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
