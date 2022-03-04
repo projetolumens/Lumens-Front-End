@@ -24,6 +24,9 @@ body {
   margin: 0;
   
 }
+
+
+
 .menu-bar li {
   list-style: none;
   color: black;
@@ -56,12 +59,22 @@ body {
  
 
 a{
-    color: rgba(240, 248, 255, 0.809)!important;
+    color: rgba(240, 248, 255, 0.925)!important;
     font-size: 12pt;
     text-decoration: none;
     font-weight: bold;
 }
 
 a:hover{
-    color: black;
+    color: black!important;
+}
+
+.bg-drop{
+  background-color: #e8eb27cb;
+  margin-left: 230px;
+  border-radius: 25px;
+}
+
+.txt-drop:hover{
+  color: black!important;
 }
