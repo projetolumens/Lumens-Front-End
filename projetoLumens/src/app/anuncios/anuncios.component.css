@@ -1,3 +1,8 @@
+.bg-lumens{
+  background-color: rgba(0, 0, 0, 0.452);
+}
+
+
 /*cards dicas PRONTO*/
 
 .card-title{
@@ -34,3 +39,232 @@
   margin-bottom: 42px;
 }
 /*cards dicas PRONTO*/
+
+
+
+
+
+
+
+/* NOSSO TIME */
+
+/* responsividade */
+.wrap{
+    flex-wrap: wrap;
+}
+  .Membro1 {
+    position: relative;
+    width: 250px;
+    height: 270px;
+    background: url("https://i.imgur.com/KDRBJFh.jpeg");
+    background-size: cover;
+    cursor: pointer;
+    border: 12px;
+    border-radius: 10px;
+    margin-top: 25px;
+    position: relative;
+   
+  }
+  
+  .Membro2 {
+    position: relative;
+    width: 250px;
+    height: 270px;
+    background: url("https://i.imgur.com/3Ui8aNv.png");
+    background-size: cover;
+    cursor: pointer;
+    border: 12px;
+    border-radius: 10px;
+    margin-top: 25px;
+  }
+  
+  .Membro3 {
+    position: relative;
+    width: 250px;
+    height: 270px;
+    background: url("https://i.imgur.com/ihE0FHt.png");
+    background-size: cover;
+    cursor: pointer;
+    border: 12px;
+    border-radius: 10px;
+    margin-top: 25px;
+  }
+  
+  .Membro4 {
+    position: relative;
+    width: 250px;
+    height: 270px;
+    background: url("https://i.imgur.com/wk1QM5a.jpeg");
+    background-size: cover;
+    cursor: pointer;
+    border: 12px;
+    border-radius: 10px;
+    margin-top: 25px;
+  }
+  
+  .Membro5 {
+    position: relative;
+    width: 250px;
+    height: 270px;
+    background: url("https://i.imgur.com/5vIK4Ot.jpeg");
+    background-size: cover;
+    cursor: pointer;
+    border: 12px;
+    border-radius: 10px;
+    margin-top: 25px;
+    
+  }
+
+  /* escurece o card  */
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 1s;
+    border-radius: 10px;
+  
+  }
+
+  .Membro1:hover {
+    opacity: 1;
+   transform: translateY(12px);
+    transition: 0.5s;
+  }
+  
+  .Membro2:hover {
+    opacity: 1;
+   transform: translateY(12px);
+    transition: 0.5s;
+  }
+  .Membro3:hover {
+    opacity: 1;
+   transform: translateY(12px);
+    transition: 0.5s;
+  }
+  .Membro4:hover {
+    opacity: 1;
+   transform: translateY(12px);
+    transition: 0.5s;
+  }
+  .Membro5:hover {
+    opacity: 1;
+   transform: translateY(12px);
+    transition: 0.5s;
+  }
+
+    /* opacidade do escurecer de cada card */
+  .Membro1:hover .overlay {
+    opacity: 1;
+     transition: 0.5s;
+     background-image: url(../../assets/img/11.png);
+     position: center;
+     width: 250px;
+     height: 270px;
+     background-size: cover;
+     border: 12px;
+  }
+  
+  .Membro2:hover .overlay {
+    opacity: 1;
+    transition: 0.5s;
+    background-image: url(../../assets/img/11.png);
+    position: center;
+    width: 250px;
+    height: 270px;
+    background-size: cover;
+    border: 12px;
+  }
+  
+  .Membro3:hover .overlay {
+    opacity: 1;            
+    transition: 0.5s;
+    background-image: url(../../assets/img/11.png);
+    position: center;
+    width: 250px;
+    height: 270px;
+    background-size: cover;
+    border: 12px;
+  }
+  
+  .Membro4:hover .overlay {
+    opacity: 1;
+    transition: 0.5s;
+    background-image: url(../../assets/img/11.png);
+    position: center;
+    width: 250px;
+    height: 270px;
+    background-size: cover;
+    border: 12px;
+  }
+  
+  .Membro5:hover .overlay {
+    opacity: 1;
+     transition: 0.5s;
+     background-image: url(../../assets/img/11.png);
+     position: center;
+     width: 250px;
+     height: 270px;
+     background-size: cover;
+     border: 12px;
+  }
+  
+
+  /* icones dentro do card */
+  .tm-social li a {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #fffffffa;
+    padding: 20px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 1s;
+  }
+
+
+
+
+  /* icones posição dentro do card */
+  .tm-social {
+    display: flex;
+    list-style: none;
+    bottom: 10px;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    left: 44px;
+    
+  }
+  
+  /* titulo nome do card */
+  .overlay .about {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 40%;
+    color: #ffffff;
+    flex: column;
+    font-weight: bold;
+    text-shadow: 3px 3px rgb(0, 0, 0);
+  }
+
+/* titulo equipe */
+  .text-equipe{
+    color: #000000c0;
+    font-weight: bold;
+  }
+
+  /* bg da equipe */
+  #name-equipe {
+  background-image: url(../../assets/img/linha-horizontal1.png);
+    
+margin-bottom: 15px;
+  }
+  
