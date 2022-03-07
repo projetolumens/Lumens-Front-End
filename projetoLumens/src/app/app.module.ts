@@ -15,6 +15,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { ContatoComponent } from './contato/contato.component';
 import { AnunciosComponent } from './anuncios/anuncios.component';
 import { CategoriasCarouselComponent } from './categorias-carousel/categorias-carousel.component';
+import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
 
 
 
@@ -30,7 +31,8 @@ import { CategoriasCarouselComponent } from './categorias-carousel/categorias-ca
     ContatoComponent,
     AnunciosComponent,
     CategoriasCarouselComponent,
-    CategoriasCarouselComponent
+    CategoriasCarouselComponent,
+    MenuLogadoComponent
     
   ],
   imports: [
