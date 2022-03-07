@@ -14,10 +14,8 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { ContatoComponent } from './contato/contato.component';
 import { AnunciosComponent } from './anuncios/anuncios.component';
-import { CategoriaComponent } from './todasCategorias/TodasCategoria.component';
-import { PostagemComponent } from './service/postagem/postagem.component';
 import { CategoriasCarouselComponent } from './categorias-carousel/categorias-carousel.component';
-import { TodasCategoriasComponent } from './todas-categorias/todas-categorias.component';
+
 
 
 
@@ -31,10 +29,8 @@ import { TodasCategoriasComponent } from './todas-categorias/todas-categorias.co
     InicioComponent,
     ContatoComponent,
     AnunciosComponent,
-    CategoriaComponent,
-    PostagemComponent,
     CategoriasCarouselComponent,
-    TodasCategoriasComponent,
+    CategoriasCarouselComponent
     
   ],
   imports: [

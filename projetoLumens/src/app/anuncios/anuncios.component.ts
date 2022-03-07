@@ -2,10 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 import { Categoria } from '../model/Categoria';
+import { Postagem } from '../model/Postagem';
 import { Produto } from '../model/Produto';
 import { Usuario } from '../model/Usuario';
 import { AuthService } from '../service/auth.service';
 import { CategoriaService } from '../service/categoria.service';
+import { PostagemService } from '../service/postagem.service';
 import { ProdutoService } from '../service/produto.service';
 
 @Component({
@@ -17,6 +19,8 @@ export class AnunciosComponent implements OnInit {
 
   produto: Produto = new Produto()
   postagem: Postagem = new Postagem()
+  categoria: Categoria = new Categoria()
+
 
   idCategoria: number
   listaPostagens: Postagem[]
@@ -57,7 +61,7 @@ export class AnunciosComponent implements OnInit {
     })
   }
   findByIdUsuario() {
-    this.authService.getByIdUsuario(this.idUsuario).subscribe((resp: Usuario) => {
+    this.authService.getByIdUser(this.idUser).subscribe((resp: Usuario) => {
       this.usuario = resp
     })
   }
@@ -91,7 +95,7 @@ export class AnunciosComponent implements OnInit {
     this.categoria.id = this.idCategoria
     this.postagem.categoria = this.categoria
 
-    this.usuario.id = this.idUsuario
+    this.usuario.id = this.idUser
     this.postagem.usuario = this.usuario
 
     this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem) => {
@@ -102,3 +106,4 @@ export class AnunciosComponent implements OnInit {
     })
 
   }
+}
