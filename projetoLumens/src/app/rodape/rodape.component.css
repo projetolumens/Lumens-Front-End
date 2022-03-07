@@ -1,7 +1,23 @@
 footer {
-    background-color: #8Eb897!important;
+    background-color: #00000093!important;
+    color: white;
 }
 
+.logo {
+    max-width: 50px;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffd900c5;
+}
 
 ul.social-network {
     list-style: none;
@@ -14,7 +30,7 @@ ul.social-network li{
     padding: 5px;
 }
 .fa-brands{
-    font-size: 35pt;
+    font-size: 20pt;
     color: aliceblue;
     padding: 10px;
 }
@@ -24,13 +40,15 @@ ul.social-network li{
 .fa-github:hover{
     color: black;
 }
-.fa-linkedin:hover{
-    color:#0a66c2;
+
+.fa-discord:hover{
+    color:#6e82d1;
 }
+
 .bg-footer{
     background-color: #523d83 ;
 }
 
 .bg-copyright {
-    background-color: #5B7553!important;
+    background-color: #0000009f!important;
 }

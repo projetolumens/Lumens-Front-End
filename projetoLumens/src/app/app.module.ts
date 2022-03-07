@@ -1,7 +1,7 @@
 import { HttpClientModule } from '@angular/common/http'; 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
@@ -12,6 +12,12 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { ContatoComponent } from './contato/contato.component';
+import { AnunciosComponent } from './anuncios/anuncios.component';
+import { CategoriaComponent } from './todasCategorias/TodasCategoria.component';
+import { PostagemComponent } from './service/postagem/postagem.component';
+import { CategoriasCarouselComponent } from './categorias-carousel/categorias-carousel.component';
+import { TodasCategoriasComponent } from './todas-categorias/todas-categorias.component';
 
 
 
@@ -23,13 +29,20 @@ import { InicioComponent } from './inicio/inicio.component';
     EntrarComponent,
     CadastrarComponent,
     InicioComponent,
+    ContatoComponent,
+    AnunciosComponent,
+    CategoriaComponent,
+    PostagemComponent,
+    CategoriasCarouselComponent,
+    TodasCategoriasComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [{
     provide: LocationStrategy,
