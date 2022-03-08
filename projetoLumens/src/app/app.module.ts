@@ -19,10 +19,6 @@ import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.compon
 import { AnunciosComponent } from './anuncios/anuncios.component';
 
 
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,

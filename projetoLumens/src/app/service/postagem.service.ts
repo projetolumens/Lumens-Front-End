@@ -19,23 +19,23 @@ export class PostagemService {
   } /* httpheaders : Para inserir o token no Authorization e no Header da minha requisição.*/
 
   getAllPostagens(): Observable<Postagem[]> {
-    return this.http.get<Postagem[]>('http://projetolumens.herokuapp.com/postagens', this.token)
+    return this.http.get<Postagem[]>('https://projetolumens.herokuapp.com/postagens', this.token)
   }
   /*Observable nos metódos que irão chamar os end-points Para garantir que o tipo da variável será passado corretamente.*/
 
   getByIdPostagem(id: number): Observable<Postagem> {
-    return this.http.get<Postagem>(`http://projetolumens.herokuapp.com/postagens/${id}`, this.token)
+    return this.http.get<Postagem>(`https://projetolumens.herokuapp.com/postagens/${id}`, this.token)
   }
 
   postPostagem(postagem: Postagem): Observable<Postagem> {
-    return this.http.post<Postagem>('http://projetolumens.herokuapp.com/postagens', postagem, this.token)
+    return this.http.post<Postagem>('https://projetolumens.herokuapp.com/postagens', postagem, this.token)
   }
 
   putPostagem(postagem: Postagem): Observable<Postagem> {
-    return this.http.put<Postagem>('http://projetolumens.herokuapp.com/postagens', postagem, this.token)
+    return this.http.put<Postagem>('https://projetolumens.herokuapp.com/postagens', postagem, this.token)
   }
 
   deletePostagem(id: number) {
-    return this.http.delete(`http://projetolumens.herokuapp.com/postagens/${id}`, this.token)
+    return this.http.delete(`https://projetolumens.herokuapp.com/postagens/${id}`, this.token)
   }
 }
