@@ -25,6 +25,12 @@ export class InicioComponent implements OnInit {
 
   }
 
+<<<<<<< HEAD
+=======
+  anuncios(){
+    this.router.navigate(['/anuncios'])
+  }
+>>>>>>> ff389466cb1f78a6e4b285eb7ecfcbcfcd0646e0
   
 
 }

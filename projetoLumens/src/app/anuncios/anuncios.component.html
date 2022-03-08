@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="pr-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/menu-logado.css">
+  </head>
+  <body>
+
+
+<nav class="navbar navbar-expand navbar-dark menu-bar d-flex ">
+    <div class="container">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mx-auto">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text" href="#">Entenda o Programa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text" href="#">Descartar</a>
+          </li>    
+          <li class="nav-item">
+            <a class="nav-link text" href="#">Comprar</a>
+          </li> 
+          <li><a href="nav-link"> <i class="fa-solid fa-cart-shopping"></i></a></li>             
+          <li class="nav-item">
+            <a class="nav-link text" href="#">Pesquisar</a>
+          </li>
+        
+          <div>
+            <li class="nav-item"><a class="nav-link text-uppercase font-weight-bold" (click)='sair()'>Sair <i class="fa-solid fa-right-from-bracket ml-2"></i></a></li>
+            
+          </div>
+          
+        </ul>
+      </div>
+    </div>
+</div>
+  </nav>
+</body>
+</html>
+
+
+<div class="bg">
+
+<div class="container-fluid  ">
+
+
+  <div class="row d-flex justify-content-center bg-title">
+    <div class="col-md-5">
+      <div class="row d-flex justify-content-center">
+        <h1 class="fs-50">Olá, nós somos Lumens!</h1>
+        <h2 class="fs-24">o e-commerce que visa o desenvolvimento sustentável</h2>
+      </div>
+    </div>
+    <div class="col-md-5 ">
+      <img width="350px" src="../../assets/img/b1.png" alt="">
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+<!-- carousel-->
+<div class="my-5 text-center container">
+  <div class="row d-flex align-items-center">
+     <div class="col-1 d-flex align-items-center justify-content-center">
+        <a href="#carouselExampleIndicators" role="button" data-slide="prev">
+           <div class="carousel-nav-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
+                 <path d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z"/>
+              </svg>
+           </div>
+        </a>
+     </div>
+     <div class="col-10">
+      <!--Start carousel-->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <div class="row">
+                  <div class="col-12 col-md d-flex align-items-center justify-content-center">
+                      <img src="https://cdn.discordapp.com/attachments/945323144703512608/950444459663978506/azul.jpg" alt="">
+                  </div>
+                  <div class="col-12 col-md d-flex align-items-center justify-content-center">
+                    <img src="https://cdn.discordapp.com/attachments/945323144703512608/950444459047403570/tipos_lixo.jpg" alt="">
+                  </div>
+                  <div class="col-12 col-md d-flex align-items-center justify-content-center">
+                    <img src="https://cdn.discordapp.com/attachments/945323144703512608/950444460234379274/verde.jpg" alt="">
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="row">
+                  <div class="col-12 col-md d-flex align-items-center justify-content-center">
+                    <img src="https://cdn.discordapp.com/attachments/945323144703512608/950444459387150336/branca.jpg" alt="">
+                  </div>
+                  <div class="col-12 col-md d-flex align-items-center justify-content-center">
+                    <img src="https://cdn.discordapp.com/attachments/945323144703512608/950444459047403570/tipos_lixo.jpg" alt="" >
+                  </div>
+                  <div class="col-12 col-md d-flex align-items-center justify-content-center">
+                    <img src="https://cdn.discordapp.com/attachments/945323144703512608/950444459911430154/marrom.jpg" alt="" >
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+<!--End carousel-->
+</div>
+
+
+<div class="col-1 d-flex align-items-center justify-content-center"><a  href="#carouselExampleIndicators" data-slide="next">
+   <div class="carousel-nav-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
+         <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
+      </svg>
+   </div>
+   </a>
+</div>
+</div>
+</div>
+<!-- carousel-->
+
+
+
+
+
+
+
+
+
+
+<!-- postagem de descarte-->
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title text-dark">DESCARTE AQUI SEU LIXO ELETRÔNICO</h5>
+    <p class="card-text">fazemos a coleta do seu lixo eletrônico de forma segura, prática, sem quantidade
+      mínima e totalmente gratuita.</p>
+      <div class="row">
+
+        <h5 *ngIf="logado()" class="text-center">
+          Qual produto você quer
+          <button type="button" class="btn btn-warning" data-toggle='modal' data-target='#novaPostagem'>Descartar</button>
+          ?
+        </h5>
+        <h4></h4>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  
+  <!-- Modal -->
+  
+  <div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="TituloModalCentralizado">Nova Postagem</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="form-group">
+            <label for="titulo">Data para coleta</label>
+            <input type="date" class="form-control" id="data">
+          </div>
+
+
+        
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text btn-info" for="inputGroupSelect01">Região:</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option value="0"></option>
+              <option value="1">Acre </option>
+              <option value="2"> Alagoas </option>
+              <option value="3"> Amapá</option>
+              <option value="4"> Amazonas </option>
+              <option value="5"> Bahia </option>
+              <option value="6"> Ceará</option>
+              <option value="7"> Distrito Federal </option>
+              <option value="8"> Espírito Santo </option>
+              <option value="9"> Goiás </option>
+              <option value="10"> Maranhão </option>
+              <option value="11"> Mato Grosso </option>
+              <option value="12"> Mato Grosso do Sul </option>
+              <option value="13"> Minas Gerais </option>
+              <option value="14"> Paraná </option>
+              <option value="15"> Paraíba </option>
+              <option value="16"> Pará </option>
+              <option value="17"> Pernambuco</option>
+              <option value="18"> Piauí </option>
+              <option value="19"> Rio Grande do Norte </option>
+              <option value="20"> Rio Grande do Sul </option>
+              <option value="21"> Rio de Janeiro</option>
+              <option value="22"> Rondônia </option>
+              <option value="23"> Roraima </option>
+              <option value="24"> Santa Catarina </option>
+              <option value="25"> Sergipe </option>
+              <option value="26"> São Paulo </option>
+              <option value="27"> Tocantins </option>
+            </select>
+          </div>
+        
+
+          <div class="form-group">
+            <label for="endereco">Itens para serem retirados</label>
+            <input type="text-area" class="form-control" id="descricao">
+            <label for="texto">Escolha uma categoria<a class="cadastro-categoria" data-dismiss="modal"></a>:</label>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option value="0"></option>
+              <option value="1">Linha Verde</option>
+              <option value="2">Linha Marrom</option>
+              <option value="3">Linha Azul</option>
+              <option value="3">Linha Branca</option>
+            </select>
+          </div>
+
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-success" (click)='publicar()' data-dismiss="modal">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- postagem de descarte-->
+
+
+  <!--Todos os anúncios dos usuários-->
+  
+ <div class="container md-5 mt-2" id="postagens">
+  <nav>
+      <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active text-secondary font-weight-bold" id="nav-todasPostagens-tab" data-toggle="tab" href="#todasPostagens" role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Todas as Postagens</a>
+
+        <a (click)='findByIdUsuario()'  class="nav-item nav-link text-secondary font-weight-bold" id="nav-minhasPostagens-tab" data-toggle="tab" href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Minhas Postagens</a>
+
+
+        <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-postagemCategoria-tab" data-toggle="tab" href="#postagemCategoria" role="tab" aria-controls="nav-postagemCategoria" aria-selected="false">Postagens por Categoria</a>
+      </div>
+  </nav>
+ 
+  <div class="tab-content mt-5" id="nav-tabContent">
+
+
+    <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="nav-todasPostagens-tab">
+
+        <div class="card-columns">
+           
+            <div class="card text-center" *ngFor=' let item of listaPostagens' >
+                <div class="card-body">
+                  <small class="text-muted ">Região: {{item.regiao}}</small>
+                  <small class="text-muted ">Categoria: {{item.categoria.descricao}}</small>
+                  <p class="card-text mt-3">{{item.retirada}}</p>
+                  <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}} </small></p>
+
+                  <p class="card-text"><small class="text-muted">by: {{item.usuario.nomeCompleto}}</small></p>
+                </div>
+              </div>
+        </div>
+    </div>
+
+
+    <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
+
+        <div class="card-columns">
+           
+            <div class="card text-center" *ngFor='let item of usuario.postagem'>
+                <div class="card-body">
+                  <small class="text-muted ">Região: {{item.regiao}}</small>
+                  <small class="text-muted ">Categoria: {{item.categoria.descricao}}</small>
+                  <p class="card-text mt-3">{{item.retirada}}</p>
+                  <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}} </small></p>
+
+                    <a [routerLink]="['/postagem-edit', item.id]" class="text-info mr-3" href="">Editar</a>
+                    <a [routerLink]="['/postagem-delete', item.id]" class="text-danger" href="">Apagar</a>
+                </div>
+              </div>
+        </div>
+    </div>
+
+
+    <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
+
+        <div class="card-columns" *ngFor='let categoria of listaCategorias' >
+           
+            <div class="card text-center" *ngFor=' let item of categoria.postagem' >
+                <div class="card-body">
+                  <small class="text-muted ">Região: {{item.regiao}}</small>
+                  <small class="text-muted ">Categoria: {{postagem.categoria.descricao}}</small>
+                  <p class="card-text mt-3">{{item.retirada}}</p>
+                  <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}} </small></p>
+                  <p class="card-text"><small class="text-muted">by: {{item.usuario.nomeCompleto}}</small></p>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+  <!--produtos do usuario / descarte-->
+
+
+
+    <!--cards de todos os produtos/anuncios NOVOS DAS EMPRESAS-->
+    <h1 class="text-center mb-5">Produtos sustentáveis de lojas parceiras:</h1>
+    <h4>Ganhe desconto aplicando cashback do seu descarte com os ecopontos parceiros</h4>
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top"
+          src="../../assets/img/ArquivoExibir (3).jpg"
+          alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title">Microondas</h5>
+          <p class="card-text descricao" style=" text-align: justify">Microondas LG Solo 30 Litros Prata MS3095</p>
+
+          <h5 *ngIf="logado()" class="text-center">
+            <button type="button" class="btn btn-info" data-toggle='modal' data-target='#comprar'>Comprar</button>
+          </h5>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Atualizados 3 minutos atrás</small>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top"
+          src="../../assets/img/Lavadora_LAC12_Perspectiva_Frente.jpg"
+          alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title">Lavadora</h5>
+          <p class="card-text descricao" style=" text-align: justify">Lavadora de Roupas Electrolux Automática LAC13
+            13Kg - Branca</p>
+
+          <h5 *ngIf="logado()" class="text-center">
+            <button type="button" class="btn btn-info" data-toggle='modal' data-target='#comprar'>Comprar</button>
+          </h5>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Atualizados 3 minutos atrás</small>
+        </div>
+      </div>
+
+
+
+      <div class="card">
+        <img class="card-img-top"
+          src="../../assets/img/ArquivoExibir (2).jpg"
+          alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title mt-3">Microondas</h5>
+          <p class="card-text descricao" style=" text-align: justify">Forno de Micro-ondas Electrolux MEF41 Meus
+            Favoritos - 31L</p>
+
+          <h5 *ngIf="logado()" class="text-center">
+            <button type="button" class="btn btn-info" data-toggle='modal' data-target='#comprar'>Comprar</button>
+          </h5>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Atualizados 3 minutos atrás</small>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top"
+          src="../../assets/img/Lavadora-Brastemp-BWK12AB-Frontal-1_0.jpg"
+          alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title mt-3">Lavadora</h5>
+          <p class="card-text descricao" style=" text-align: justify">Lavadora Brastemp BWK12AB Branca - 12Kg</p>
+
+          <h5 *ngIf="logado()" class="text-center">
+            <button type="button" class="btn btn-info" data-toggle='modal' data-target='#comprar'>Comprar</button>
+          </h5>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Atualizados 3 minutos atrás</small>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <img class="card-img-top"
+          src="../../assets/img/fogao-agata-esmaltec.jpg"
+          alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title mt-3">Fogão</h5>
+          <p class="card-text descricao" style=" text-align: justify">Fogão Esmaltec 4 Bocas Ágata 4062 - Branco</p>
+
+          <h5 *ngIf="logado()" class="text-center">
+            <button type="button" class="btn btn-info" data-toggle='modal' data-target='#comprar'>Comprar</button>
+          </h5>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Atualizados 3 minutos atrás</small>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <img class="card-img-top"
+          src="../../assets/img/ArquivoExibir (1).jpg"
+          alt="Imagem de capa do card">
+        <div class="card-body">
+
+          <h5 class="card-title mt-3">Geladeira</h5>
+          <p class="card-text descricao" style=" text-align: justify">Geladeira Brastemp BRM44HK Frost Free Duplex
+            Inox - 375L</p>
+
+
+          <h5 *ngIf="logado()" class="text-center">
+            <button type="button" class="btn btn-info" data-toggle='modal' data-target='#comprar'>Comprar</button>
+          </h5>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Atualizados 3 minutos atrás</small>
+        </div>
+      </div>
+    </div>
+    <!--cards de todos os produtos/anuncios NOVOS DAS EMPRESAS-->
+  </div>
+
+
+
+
+  <!-- cards dicas PRONTO-->
+  <div class="col-md-12 ">
+    <h3 class="display-5 mt-5  text-config text-black card-title">Dicas para diminuir seu consumo de energia:</h3>
+    <div class="container-fluid ">
+      <div class="card-group box">
+        <div class="card ">
+          <img class="card-img-top" src="https://cdn-icons-png.flaticon.com/512/780/780551.png"
+            alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title mt-3 text-black txt-dica">Nunca deixe os aparelhos elétricos sem uso plugados na tomada
+            </h5>
+            <p class="card-text text-black txt-dica" style=" text-align: justify">Pode não parecer, mas o modo stand by
+              é um vilão que passa despercebido quando o assunto é gasto de energia.</p>
+
+          </div>
+        </div>
+        <div class="card ">
+          <img class="card-img-top" src="../../assets/img/solar.png" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title mt-3 text-black txt-dica">Aproveite a luz do sol e a ventilação natural</h5>
+            <p class="card-text text-black txt-dica" style=" text-align: justify">Segundo pesquisas casas com boa entrada
+              natural
+              de sol e ventilação demandam menos consumo da energia elétrica</p>
+
+
+          </div>
+        </div>
+        <div class="card ">
+          <img class="card-img-top" src="../../assets/img/home.png" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title mt-3 text-black txt-dica">Prefira eletrodomésticos de baixo consumo de energia elétrica
+            </h5>
+            <p class="card-text text-black txt-dica">Ao comprar um eletrodoméstico prefira os da classe energética A ++ ou A +++,
+              que consomem até 70% menos energia em comparação com os de classe A. </p>
+
+
+          </div>
+        </div>
+        <div class="card ">
+          <img class="card-img-top" src="../../assets/img/lamp.png" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title mt-3 text-black txt-dica">Substitua as lâmpadas convencionais pelas de baixo consumo de
+              energia </h5>
+            <p class="card-text text-black txt-dica" style=" text-align: justify">Se na sua casa as lâmpadas ainda são
+              incandescentes está na hora de trocá-las.
+              Prefira as incandescente ou de LED. Pois, podem gerar uma economia de mais de 30% no consumo de
+              energia, além de possuírem maior durabilidade.
+
+            </p>
+
+
+          </div>
+        </div>
+        <div class="card ">
+          <img class="card-img-top" src="../../assets/img/banho.png" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title mt-3 text-black txt-dica">Evite os banhos demorados</h5>
+            <p class="card-text text-black txt-dica" style=" text-align:justify">Apesar de batida, esta é uma dica muito
+              importante,
+              uma vez que os chuveiros consomem boa parte da energia elétrica da casa.</p>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- cards dicas-->
+
+
+  <!--CARDS EQUIPE-->
+  <div id="name-equipe" class="row card-group align-items-center justify-content-center mb-0">
+    <div class="col-md-12 mb-3">
+      <div class="row" id="card">
+        <h3 class="text-center mb-4 mt-3 text-equipe">
+          <a name="name-equipe"></a>Nossa Equipe:
+        </h3>
+      </div>
+      <div class="col-md-12 d-flex justify-content-center wrap">
+
+        <div class="Membro3 mx-3">
+          <div class="overlay">
+            <div class="about d-flex flex-column">
+              <h4>Jessica Sousa</h4>
+              <h6>Scrum Master</h6>
+
+
+            </div>
+            <ul class="tm-social">
+              <li>
+                <a href="" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="" target="_blank">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="Membro4 mx-3">
+          <div class="overlay">
+            <div class="about d-flex flex-column">
+              <h4>Yago Coelho</h4>
+              <h6>Product Owner</h6>
+            </div>
+            <ul class="tm-social">
+              <li>
+                <a href="https://github.com/Yagocoelho" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/yagoscoelho/" target="_blank">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="Membro2 mx-3">
+          <div class="overlay">
+            <div class="about d-flex flex-column">
+              <h4>Giuliana Tamie</h4>
+              <h6>Dev Team</h6>
+            </div>
+            <ul class="tm-social">
+              <li>
+                <a href="https://github.com/gtamie" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/giuliana-tamie-sumida-50bb11215/" target="_blank">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="Membro1 mx-3">
+          <div class="overlay ">
+            <div class="about d-flex flex-column">
+              <h4>Erika Yamamoto</h4>
+              <h6>Dev Team</h6>
+
+            </div>
+            <ul class="tm-social">
+              <li>
+                <a href="https://github.com/esyamamoto" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/erikasyamamoto/" target="_blank">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+
+
+        <div class="Membro5 mx-3">
+          <div class="overlay">
+            <div class="about d-flex flex-column">
+              <h4>João <br> Lucas</h4>
+              <h6>Dev Team</h6>
+            </div>
+            <ul class="tm-social">
+              <li>
+                <a href="https://github.com/LuukasOo" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/joãolucass/" target="_blank">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--CARDS EQUIPE-->
+
+
+
+  </div>
+</div>
