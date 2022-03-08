@@ -7,7 +7,6 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { Observable } from 'rxjs';
 import { AppComponent } from './app.component';
-import { MenuComponent } from './menu/menu.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
@@ -15,7 +14,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { ContatoComponent } from './contato/contato.component';
 import { AnunciosComponent } from './anuncios/anuncios.component';
 import { CategoriasCarouselComponent } from './categorias-carousel/categorias-carousel.component';
-import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
+
 
 
 
@@ -23,7 +22,6 @@ import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,
     RodapeComponent,
     EntrarComponent,
     CadastrarComponent,
@@ -32,7 +30,7 @@ import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
     AnunciosComponent,
     CategoriasCarouselComponent,
     CategoriasCarouselComponent,
-    MenuLogadoComponent
+
     
   ],
   imports: [

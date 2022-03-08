@@ -16,6 +16,9 @@ import { ProdutoService } from '../service/produto.service';
   styleUrls: ['./anuncios.component.css']
 })
 export class AnunciosComponent implements OnInit {
+  nome = environment.nomeCompleto
+  foto = environment.foto
+  id = environment.id
 
   produto: Produto = new Produto()
   postagem: Postagem = new Postagem()
@@ -106,4 +109,16 @@ export class AnunciosComponent implements OnInit {
     })
 
   }
+  sair(){
+
+    this.router.navigate(['/entrar'])
+    environment.token = ''
+    environment.nomeCompleto = ''
+    environment.foto = ''
+    environment.tipo = ''
+    environment.id = 0
+    
+    
+    }
+    
 }
