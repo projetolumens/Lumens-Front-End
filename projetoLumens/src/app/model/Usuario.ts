@@ -1,4 +1,3 @@
-import { Produto } from "./Produto"
 import { Postagem } from "./Postagem"
 
 export class Usuario{
@@ -8,6 +7,5 @@ export class Usuario{
     public senha: string
     public foto: string
     public tipo: string
-    public produto: Produto[]
     public postagem: Postagem[]
 }

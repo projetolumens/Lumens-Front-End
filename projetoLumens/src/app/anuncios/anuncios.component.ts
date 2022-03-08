@@ -3,12 +3,11 @@ import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 import { Categoria } from '../model/Categoria';
 import { Postagem } from '../model/Postagem';
-import { Produto } from '../model/Produto';
 import { Usuario } from '../model/Usuario';
 import { AuthService } from '../service/auth.service';
 import { CategoriaService } from '../service/categoria.service';
 import { PostagemService } from '../service/postagem.service';
-import { ProdutoService } from '../service/produto.service';
+
 
 @Component({
   selector: 'app-anuncios',
@@ -20,7 +19,7 @@ export class AnunciosComponent implements OnInit {
   foto = environment.foto
   id = environment.id
 
-  produto: Produto = new Produto()
+ 
   postagem: Postagem = new Postagem()
   categoria: Categoria = new Categoria()
 
@@ -28,7 +27,7 @@ export class AnunciosComponent implements OnInit {
   idCategoria: number
   listaPostagens: Postagem[]
   listaCategorias: Categoria[]
-  listaProdutos: Produto[]
+  
 
   usuario: Usuario = new Usuario()
   idUser = environment.id
@@ -36,7 +35,6 @@ export class AnunciosComponent implements OnInit {
   constructor(
     private router: Router,
     private postagemService: PostagemService,
-    private produtoService: ProdutoService,
     private categoriaService: CategoriaService,
     public authService: AuthService
 
@@ -46,7 +44,7 @@ export class AnunciosComponent implements OnInit {
     window.scroll(0,0) /* */
 
     this.getAllCategorias()
-    this.getAllProdutos()
+    this.getAllPostagens()
   
   }
 
@@ -72,19 +70,6 @@ export class AnunciosComponent implements OnInit {
   getAllCategorias(){
     this.categoriaService.getAllCategoria().subscribe((resp: Categoria[]) => {
       this.listaCategorias = resp
-    })
-  }
-
-  getAllProdutos(){
-    this.produtoService.getAllProdutos().subscribe((resp: Produto[]) => {
-      this.listaProdutos = resp
-    })
-  }
-
-  findByTituloProduto(titulo: string){
-    this.produtoService.getByTituloProduto(titulo).subscribe((resp: Produto[]) => {
-      this.listaProdutos = resp
-      console.log(this.listaProdutos)
     })
   }
 

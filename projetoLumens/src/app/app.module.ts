@@ -12,10 +12,11 @@ import { EntrarComponent } from './entrar/entrar.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { ContatoComponent } from './contato/contato.component';
-import { AnunciosComponent } from './anuncios/anuncios.component';
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
 import { EditComponent } from './edit/edit.component';
 import { CategoriaComponent } from './categoria/categoria/categoria.component';
+import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
+import { AnunciosComponent } from './anuncios/anuncios.component';
 
 
 
@@ -30,8 +31,8 @@ import { CategoriaComponent } from './categoria/categoria/categoria.component';
     CadastrarComponent,
     InicioComponent,
     ContatoComponent,
-    AnunciosComponent,
     CategoriaComponent,
+    AnunciosComponent, 
     PostagemDeleteComponent, 
     PostagemEditComponent
 

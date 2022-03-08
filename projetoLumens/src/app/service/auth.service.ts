@@ -21,18 +21,18 @@ export class AuthService {
   }
 
   entrar(UsuarioLogin: UsuarioLogin): Observable<UsuarioLogin>{
-    return this.http.post<UsuarioLogin>('http://localhost:8080/usuarios/logar', UsuarioLogin)
+    return this.http.post<UsuarioLogin>('http://projetolumens.herokuapp.com/usuarios/logar', UsuarioLogin)
   }
 
   cadastrar(usuario:Usuario): Observable<Usuario>{
-    return this.http.post<Usuario>('http://localhost:8080/usuarios/cadastrar', usuario)
+    return this.http.post<Usuario>('http://projetolumens.herokuapp.com/usuarios/cadastrar', usuario)
   }
   atualizar(usuario: Usuario): Observable<Usuario> {
-    return this.http.put<Usuario>('http://localhost:8080/usuarios/atualizar',usuario);
+    return this.http.put<Usuario>('http://projetolumens.herokuapp.com/atualizar',usuario);
   }
 
   getByIdUser(id: number): Observable<Usuario>{
-    return this.http.get<Usuario>(`http://localhost:8080/usuarios${id}`)
+    return this.http.get<Usuario>(`http://projetolumens.herokuapp.com/usuarios${id}`)
   }
 
   logado(){

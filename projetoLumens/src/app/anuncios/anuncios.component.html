@@ -280,9 +280,9 @@
             <div class="card text-center" *ngFor=' let item of listaPostagens' >
                 <div class="card-body">
                   <small class="text-muted ">Região: {{item.regiao}}</small>
-                  <small class="text-muted ">Categoria: {{item.categoria.produto}}</small>
+                  <small class="text-muted ">Categoria: {{item.categoria.descricao}}</small>
                   <p class="card-text mt-3">{{item.retirada}}</p>
-                  <p class="card-text"><small class="text-muted">{{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date: 'HH:mm'}} </small></p>
+                  <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}} </small></p>
 
                   <p class="card-text"><small class="text-muted">by: {{item.usuario.nomeCompleto}}</small></p>
                 </div>
@@ -298,9 +298,9 @@
             <div class="card text-center" *ngFor='let item of usuario.postagem'>
                 <div class="card-body">
                   <small class="text-muted ">Região: {{item.regiao}}</small>
-                  <small class="text-muted ">Categoria: {{item.categoria.produto}}</small>
+                  <small class="text-muted ">Categoria: {{item.categoria.descricao}}</small>
                   <p class="card-text mt-3">{{item.retirada}}</p>
-                  <p class="card-text"><small class="text-muted">{{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date: 'HH:mm'}} </small></p>
+                  <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}} </small></p>
 
                     <a [routerLink]="['/postagem-edit', item.id]" class="text-info mr-3" href="">Editar</a>
                     <a [routerLink]="['/postagem-delete', item.id]" class="text-danger" href="">Apagar</a>
@@ -317,9 +317,9 @@
             <div class="card text-center" *ngFor=' let item of categoria.postagem' >
                 <div class="card-body">
                   <small class="text-muted ">Região: {{item.regiao}}</small>
-                  <small class="text-muted ">Categoria: {{item.categoria.produto}}</small>
+                  <small class="text-muted ">Categoria: {{postagem.categoria.descricao}}</small>
                   <p class="card-text mt-3">{{item.retirada}}</p>
-                  <p class="card-text"><small class="text-muted">{{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date: 'HH:mm'}} </small></p>
+                  <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}} </small></p>
                   <p class="card-text"><small class="text-muted">by: {{item.usuario.nomeCompleto}}</small></p>
                 </div>
               </div>

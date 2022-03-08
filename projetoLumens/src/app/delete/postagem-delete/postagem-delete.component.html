@@ -14,10 +14,13 @@
    <div class="row d-flex justify-content-center mt-4">
     <div class="col-md-4">
         <div class="card text-center">
-         <small class="text-muted ">Região: {{postagem.regiao}}</small>
-                     <small class="text-muted ">Categoria: {{postagem.categoria.produto}}</small>
-                     <p class="card-text mt-3">{{postagem.retirada}}</p>
-                     <p class="card-text"><small class="text-muted">{{postagem.data | date: 'dd/MM/yyyy'}} às {{postagem.data | date: 'HH:mm'}} </small></p>
+        
+            <small class="text-muted ">Região: {{postagem.regiao}}</small>
+            <small class="text-muted ">Categoria:{{postagem.categoria.descricao}}</small>
+            <p class="card-text mt-3">{{postagem.periodo}}</p>
+            <p class="card-text mt-3">{{postagem.retirada}}</p>
+            <p class="card-text mt-3">{{postagem.foto}}</p>
+            <p class="card-text"><small class="text-muted">{{postagem.data | date: "dd/MM/yyyy"}} às {{postagem.data | date: 'HH:mm'}}</small></p>
        </div>
    </div>
    
