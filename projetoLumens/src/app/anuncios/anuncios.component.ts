@@ -107,7 +107,6 @@ export class AnunciosComponent implements OnInit {
       this.postagem = new Postagem()
       this.getAllPostagens()
     })
-
   }
   sair(){
 

@@ -13,8 +13,6 @@ export class AuthService {
 
   constructor(
     private http: HttpClient,
-    private route: ActivatedRoute,
-    private router: Router
   ) { }
 
 

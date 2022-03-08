@@ -228,19 +228,7 @@
               <option value="27"> Tocantins </option>
             </select>
           </div>
-          
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <label class="input-group-text btn-info" for="inputGroupSelect01">Selecione periodo para
-                coleta</label>
-            </div>
-            <select class="custom-select" id="inputGroupSelect01">
-              <option value="0"></option>
-              <option value="1">Manhã</option>
-              <option value="2">Tarde</option>
-              <option value="3">Horario comercial</option>
-            </select>
-          </div> 
+        
 
           <div class="form-group">
             <label for="endereco">Itens para serem retirados</label>
@@ -253,20 +241,6 @@
               <option value="3">Linha Azul</option>
               <option value="3">Linha Branca</option>
             </select>
-          </div>
-
-
-        
-          <h5>Envie fotos dos itens para retirada</h5>
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-            </div>
-            <div class="custom-file">
-              <input type="file" class="custom-file-input" id="inputGroupFile01"
-                aria-describedby="inputGroupFileAddon01">
-              <label class="custom-file-label" for="inputGroupFile01">Escolher arquivo</label>
-            </div>
           </div>
 
 
@@ -293,153 +267,68 @@
 
 
         <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-postagemCategoria-tab" data-toggle="tab" href="#postagemCategoria" role="tab" aria-controls="nav-postagemCategoria" aria-selected="false">Postagens por Categoria</a>
-
-        
       </div>
   </nav>
-
+ 
   <div class="tab-content mt-5" id="nav-tabContent">
 
 
-      <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="nav-todasPostagens-tab">
+    <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="nav-todasPostagens-tab">
 
-          <div class="card-columns">
-             
-              <div class="card text-center" *ngFor=' let item of listaPostagens' >
-                  <div class="card-body">
-                    <h5 class="card-title m-0">{{item.titulo}}</h5>
-                    <small class="text-muted ">Tema: {{item.categoria.descricao}}</small>
-                    <p class="card-text mt-3">{{item.texto}}</p>
-                 
-                    <p class="card-text"><small class="text-muted">by: {{item.usuario.nomeCompleto}}</small></p>
+        <div class="card-columns">
+           
+            <div class="card text-center" *ngFor=' let item of listaPostagens' >
+                <div class="card-body">
+                  <small class="text-muted ">Região: {{item.regiao}}</small>
+                  <small class="text-muted ">Categoria: {{item.categoria.produto}}</small>
+                  <p class="card-text mt-3">{{item.retirada}}</p>
+                  <p class="card-text"><small class="text-muted">{{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date: 'HH:mm'}} </small></p>
 
-
-                  </div>
+                  <p class="card-text"><small class="text-muted">by: {{item.usuario.nomeCompleto}}</small></p>
                 </div>
-
-          </div>
-
-      </div>
-
-
-      <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
-
-          <div class="card-columns">
-             
-              <div class="card text-center" *ngFor='let item of usuario.postagem'>
-                  <div class="card-body">
-                    <h5 class="card-title m-0">{{item.titulo}}</h5>
-                    <small class="text-muted ">Categoria: {{item.categoria.descricao}}</small>
-                    <p class="card-text mt-3">{{item.texto}}</p>
-                  
-
-                      <a [routerLink]="['/postagem-edit', item.id]" class="text-info mr-3" href="">Editar</a>
-                      <a [routerLink]="['/postagem-delete', item.id]" class="text-danger" href="">Apagar</a>
+              </div>
+        </div>
+    </div>
 
 
+    <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
 
+        <div class="card-columns">
+           
+            <div class="card text-center" *ngFor='let item of usuario.postagem'>
+                <div class="card-body">
+                  <small class="text-muted ">Região: {{item.regiao}}</small>
+                  <small class="text-muted ">Categoria: {{item.categoria.produto}}</small>
+                  <p class="card-text mt-3">{{item.retirada}}</p>
+                  <p class="card-text"><small class="text-muted">{{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date: 'HH:mm'}} </small></p>
 
-                  </div>
+                    <a [routerLink]="['/postagem-edit', item.id]" class="text-info mr-3" href="">Editar</a>
+                    <a [routerLink]="['/postagem-delete', item.id]" class="text-danger" href="">Apagar</a>
                 </div>
-
-          </div>
-
-
-      </div>
+              </div>
+        </div>
+    </div>
 
 
-      <div class="tab-pane fade" id="postagemCategoria" role="tabpanel" aria-labelledby="nav-postagemCategoria-tab">
+    <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
 
-          <div class="card-columns" *ngFor='let tema of listaCategorias' >
-             
-              <div class="card text-center" *ngFor=' let item of categoria.postagem' >
-                  <div class="card-body">
-                    <h5 class="card-title m-0">{{item.titulo}}</h5>
-                    <p class="card-text mt-3">{{item.texto}}</p>
-                    <p class="card-text"><small class="text-muted">{{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date: 'HH:mm'}} </small></p>
-                    <p class="card-text"><small class="text-muted">by: {{item.usuario.nomeCompleto}}</small></p>
-
-
-                  </div>
+        <div class="card-columns" *ngFor='let categoria of listaCategorias' >
+           
+            <div class="card text-center" *ngFor=' let item of categoria.postagem' >
+                <div class="card-body">
+                  <small class="text-muted ">Região: {{item.regiao}}</small>
+                  <small class="text-muted ">Categoria: {{item.categoria.produto}}</small>
+                  <p class="card-text mt-3">{{item.retirada}}</p>
+                  <p class="card-text"><small class="text-muted">{{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date: 'HH:mm'}} </small></p>
+                  <p class="card-text"><small class="text-muted">by: {{item.usuario.nomeCompleto}}</small></p>
                 </div>
-
-          </div>
-
-      </div>
-
-
-  </div>
+              </div>
+        </div>
+    </div>
+</div>
 </div>
 
 
-
-
-<!-- Modal -->
-<div class="modal fade modal-bg" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
-  aria-hidden="true">
-
-  <div class="modal-dialog modal-dialog-centered " role="document">
-
-      <div class="modal-content bg-post">
-
-          <div class="modal-header">
-
-              <h5 class="modal-title txt" id="RegiaoModalCentralizado">Nova Postagem</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                  <span aria-hidden="true">&times;</span>
-              </button>
-          </div>
-
-          <div class="modal-body">
-            <div class="form-group txt">
-              <label for="data">Data</label>
-              <input [(ngModel)]='postagem.date'  type="text" class="form-control" id="data"
-                  placeholder="Escolha a data">
-          </div>
-
-              <div class="form-group txt">
-                  <label for="regiao">Região</label>
-                  <input [(ngModel)]='postagem.regiao'  type="text" class="form-control" id="regiao"
-                      placeholder="Escolha a regiao">
-              </div>
-
-              <div class="form-group txt">
-                  <label for="periodo">Período</label>
-                  <textarea [(ngModel)]='postagem.periodo' name="texto" id="periodo" rows="3"
-                      class="form-control" placeholder="Escolha o período" ></textarea>
-              </div>
-
-              <div class="form-group txt">
-                <label for="retirada">Retirada</label>
-                <textarea [(ngModel)]='postagem.retirada' name="texto" id="retirada" rows="3"
-                    class="form-control" placeholder="Digite os itens a serem retirados" ></textarea>
-            </div>
-
-              <div class="form-group txt">
-                  <label for="texto">Escolha uma categoria <a class="cadastro-postagem" data-dismiss="modal" routerLink="/categoria"></a>:</label>
-                  <select  name="categoria" id="categoria" class="form-control" [(ngModel)]='idCategoria' (change)='findByIdCategoria' >
-                      <option *ngFor='let item of listaCategorias'  value="{{item.id}}">
-                          {{item.descricao}}
-                      </option>
-                  </select>
-              </div>
-              <div class="form-group txt">
-                <label for="fotos">Fotos</label>
-                <textarea [(ngModel)]='postagem.foto' name="texto" id="fotos" rows="3"
-                    class="form-control" placeholder="Adicione fotos dos os itens a serem retirados" ></textarea>
-            </div>
-
-
-
-          </div>
-          <div class="modal-footer txt">
-              <button type="button" class="btn btn-outline-light btn-22 mr-4" data-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-outline-light btn-11"
-                  data-dismiss="modal" (click)='publicar()'>Publicar</button>
-          </div>
-      </div>
-  </div>
-</div>
 
   <!--produtos do usuario / descarte-->
 

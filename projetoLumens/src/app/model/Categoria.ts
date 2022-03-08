@@ -1,4 +1,4 @@
-import { Produto } from "./Produto"
+
 import { Postagem } from "./Postagem"
 
 export class Categoria{
@@ -6,6 +6,5 @@ export class Categoria{
     public nome: string
     public descricao: string
     public setor: string
-    public produto: Produto[]
     public postagem: Postagem[]
 }
