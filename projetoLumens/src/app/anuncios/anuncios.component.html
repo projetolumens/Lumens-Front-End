@@ -74,9 +74,80 @@
   </div>
 
 </div>
-<!-- carousel-->
+
+
+
+
 
 <!-- carousel-->
+<div class="my-5 text-center container">
+  <div class="row d-flex align-items-center">
+     <div class="col-1 d-flex align-items-center justify-content-center">
+        <a href="#carouselExampleIndicators" role="button" data-slide="prev">
+           <div class="carousel-nav-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
+                 <path d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z"/>
+              </svg>
+           </div>
+        </a>
+     </div>
+     <div class="col-10">
+      <!--Start carousel-->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <div class="row">
+                  <div class="col-12 col-md d-flex align-items-center justify-content-center">
+                      <img src="https://cdn.discordapp.com/attachments/945323144703512608/950444459663978506/azul.jpg" alt="">
+                  </div>
+                  <div class="col-12 col-md d-flex align-items-center justify-content-center">
+                    <img src="https://cdn.discordapp.com/attachments/945323144703512608/950444459047403570/tipos_lixo.jpg" alt="">
+                  </div>
+                  <div class="col-12 col-md d-flex align-items-center justify-content-center">
+                    <img src="https://cdn.discordapp.com/attachments/945323144703512608/950444460234379274/verde.jpg" alt="">
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="row">
+                  <div class="col-12 col-md d-flex align-items-center justify-content-center">
+                    <img src="https://cdn.discordapp.com/attachments/945323144703512608/950444459387150336/branca.jpg" alt="">
+                  </div>
+                  <div class="col-12 col-md d-flex align-items-center justify-content-center">
+                    <img src="https://cdn.discordapp.com/attachments/945323144703512608/950444459047403570/tipos_lixo.jpg" alt="" >
+                  </div>
+                  <div class="col-12 col-md d-flex align-items-center justify-content-center">
+                    <img src="https://cdn.discordapp.com/attachments/945323144703512608/950444459911430154/marrom.jpg" alt="" >
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+<!--End carousel-->
+</div>
+
+
+<div class="col-1 d-flex align-items-center justify-content-center"><a  href="#carouselExampleIndicators" data-slide="next">
+   <div class="carousel-nav-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
+         <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
+      </svg>
+   </div>
+   </a>
+</div>
+</div>
+</div>
+<!-- carousel-->
+
+
+
+
+
+
+
+
+
 
 <!-- postagem de descarte-->
 <div class="card" style="width: 18rem;">
@@ -120,6 +191,8 @@
             <input type="date" class="form-control" id="data">
           </div>
 
+
+        
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <label class="input-group-text btn-info" for="inputGroupSelect01">Região:</label>
@@ -153,9 +226,9 @@
               <option value="25"> Sergipe </option>
               <option value="26"> São Paulo </option>
               <option value="27"> Tocantins </option>
-
             </select>
           </div>
+          
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <label class="input-group-text btn-info" for="inputGroupSelect01">Selecione periodo para
@@ -167,10 +240,10 @@
               <option value="2">Tarde</option>
               <option value="3">Horario comercial</option>
             </select>
-          </div>
+          </div> 
 
           <div class="form-group">
-            <label for="endereco">Itens para serem retirado</label>
+            <label for="endereco">Itens para serem retirados</label>
             <input type="text-area" class="form-control" id="descricao">
             <label for="texto">Escolha uma categoria<a class="cadastro-categoria" data-dismiss="modal"></a>:</label>
             <select class="custom-select" id="inputGroupSelect01">
@@ -183,7 +256,7 @@
           </div>
 
 
-
+        
           <h5>Envie fotos dos itens para retirada</h5>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
@@ -311,34 +384,52 @@
 
           <div class="modal-header">
 
-              <h5 class="modal-title txt" id="TituloModalCentralizado">Nova Postagem</h5>
+              <h5 class="modal-title txt" id="RegiaoModalCentralizado">Nova Postagem</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                   <span aria-hidden="true">&times;</span>
               </button>
           </div>
 
           <div class="modal-body">
+            <div class="form-group txt">
+              <label for="data">Data</label>
+              <input [(ngModel)]='postagem.date'  type="text" class="form-control" id="data"
+                  placeholder="Escolha a data">
+          </div>
+
               <div class="form-group txt">
-                  <label for="titulo">Título</label>
-                  <input [(ngModel)]='postagem.titulo'  type="text" class="form-control" id="titulo"
-                      placeholder="Digite o título">
+                  <label for="regiao">Região</label>
+                  <input [(ngModel)]='postagem.regiao'  type="text" class="form-control" id="regiao"
+                      placeholder="Escolha a regiao">
               </div>
 
               <div class="form-group txt">
-                  <label for="texto">Texto</label>
-                  <textarea [(ngModel)]='postagem.texto' name="texto" id="texto" rows="3"
-                      class="form-control" placeholder="Digite o texto" ></textarea>
+                  <label for="periodo">Período</label>
+                  <textarea [(ngModel)]='postagem.periodo' name="texto" id="periodo" rows="3"
+                      class="form-control" placeholder="Escolha o período" ></textarea>
               </div>
+
+              <div class="form-group txt">
+                <label for="retirada">Retirada</label>
+                <textarea [(ngModel)]='postagem.retirada' name="texto" id="retirada" rows="3"
+                    class="form-control" placeholder="Digite os itens a serem retirados" ></textarea>
+            </div>
 
               <div class="form-group txt">
                   <label for="texto">Escolha uma categoria <a class="cadastro-postagem" data-dismiss="modal" routerLink="/categoria"></a>:</label>
-
                   <select  name="categoria" id="categoria" class="form-control" [(ngModel)]='idCategoria' (change)='findByIdCategoria' >
                       <option *ngFor='let item of listaCategorias'  value="{{item.id}}">
                           {{item.descricao}}
                       </option>
                   </select>
               </div>
+              <div class="form-group txt">
+                <label for="fotos">Fotos</label>
+                <textarea [(ngModel)]='postagem.foto' name="texto" id="fotos" rows="3"
+                    class="form-control" placeholder="Adicione fotos dos os itens a serem retirados" ></textarea>
+            </div>
+
+
 
           </div>
           <div class="modal-footer txt">
@@ -350,16 +441,7 @@
   </div>
 </div>
 
-
   <!--produtos do usuario / descarte-->
-
-
-
-
-
-
-
-
 
 
 

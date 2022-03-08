@@ -23,11 +23,11 @@ export class AuthService {
   }
 
   entrar(UsuarioLogin: UsuarioLogin): Observable<UsuarioLogin>{
-    return this.http.post<UsuarioLogin>('https://projetolumens.herokuapp.com/usuarios/logar', UsuarioLogin)
+    return this.http.post<UsuarioLogin>('http://localhost:8080/usuarios/logar', UsuarioLogin)
   }
 
   cadastrar(usuario:Usuario): Observable<Usuario>{
-    return this.http.post<Usuario>('https://projetolumens.herokuapp.com/usuarios/cadastrar', usuario)
+    return this.http.post<Usuario>('http://localhost:8080/usuarios/cadastrar', usuario)
   }
   atualizar(usuario: Usuario): Observable<Usuario> {
     return this.http.put<Usuario>('http://localhost:8080/usuarios/atualizar',usuario);

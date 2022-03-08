@@ -13,7 +13,8 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { ContatoComponent } from './contato/contato.component';
 import { AnunciosComponent } from './anuncios/anuncios.component';
-import { CategoriasCarouselComponent } from './categorias-carousel/categorias-carousel.component';
+import { CategoriaComponent } from './categoria/categoria.component';
+
 
 
 
@@ -28,8 +29,8 @@ import { CategoriasCarouselComponent } from './categorias-carousel/categorias-ca
     InicioComponent,
     ContatoComponent,
     AnunciosComponent,
-    CategoriasCarouselComponent,
-    CategoriasCarouselComponent,
+    CategoriaComponent,
+  
 
     
   ],
