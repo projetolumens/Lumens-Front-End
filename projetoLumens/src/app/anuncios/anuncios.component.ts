@@ -18,12 +18,10 @@ export class AnunciosComponent implements OnInit {
   nome = environment.nomeCompleto
   foto = environment.foto
   id = environment.id
-
- 
+  tituloPost: string
+  nomeCategoria: string
   postagem: Postagem = new Postagem()
   categoria: Categoria = new Categoria()
-
-
   idCategoria: number
   listaPostagens: Postagem[]
   listaCategorias: Categoria[]
@@ -81,6 +79,27 @@ export class AnunciosComponent implements OnInit {
       this.categoria = resp
     })
   }
+  findByTituloPostagem(){
+
+    if(this.tituloPost ==''){
+      this.getAllPostagens()
+
+    } else{
+      this.postagemService.getByTituloPostagem(this.tituloPost).subscribe((resp: Postagem[])=>{
+        this.listaPostagens = resp
+      })
+    }
+  }
+
+  findByNomeCategoria(){
+    if(this.nomeCategoria == ''){
+      this.getAllCategorias()
+    }else{
+      this.categoriaService.getByNomeCategoria(this.nomeCategoria).subscribe((resp: Categoria[]) =>{
+      })
+    }
+  }
+
 
   publicar() {
     this.categoria.id = this.idCategoria
