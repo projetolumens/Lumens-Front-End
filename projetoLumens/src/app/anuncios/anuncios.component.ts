@@ -7,7 +7,7 @@ import { Usuario } from '../model/Usuario';
 import { AuthService } from '../service/auth.service';
 import { CategoriaService } from '../service/categoria.service';
 import { PostagemService } from '../service/postagem.service';
-
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-anuncios',
@@ -110,7 +110,13 @@ export class AnunciosComponent implements OnInit {
 
     this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem) => {
       this.postagem = resp
-      alert('Postagem anunciada com sucesso!')
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Postagem anunciada com sucesso!',
+        showConfirmButton: false,
+        timer: 1500
+      })
       this.postagem = new Postagem()
       this.getAllPostagens()
     })

@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Usuario } from 'src/app/model/Usuario';
 import { AuthService } from 'src/app/service/auth.service';
 import { environment } from 'src/environments/environment.prod';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-user-edit',
@@ -52,7 +53,13 @@ export class UserEditComponent implements OnInit {
       this.authService.atualizar(this.usuario).subscribe((resp: Usuario) => {
         this.usuario = resp
         this.router.navigate(['/anuncios'])
-        alert("Usuário atualizado com sucesso! Faça o login novamente.")
+        Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Usuário atualizado com sucesso! Faça o login novamente.',
+          showConfirmButton: false,
+          timer: 1500
+        })
         environment.token = ''
         environment.nomeCompleto = ''
         environment.foto = ''
