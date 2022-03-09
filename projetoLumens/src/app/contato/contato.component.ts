@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment.prod';
+import { AuthService } from '../service/auth.service';
 
 @Component({
   selector: 'app-contato',
@@ -10,7 +13,10 @@ export class ContatoComponent implements OnInit {
 
   formContato : FormGroup;
 
-  constructor() { }
+  constructor(
+    private router: Router,
+    public authService: AuthService
+  ) { }
 
   ngOnInit() {
     
@@ -34,5 +40,18 @@ export class ContatoComponent implements OnInit {
     get message() {
       return this.formContato.get('message');
     }
-  
+    sair(){
+
+      this.router.navigate(['/entrar'])
+      environment.token = ''
+      environment.nomeCompleto = ''
+      environment.foto = ''
+      environment.tipo = ''
+      environment.id = 0
+      
+      
+      }
+      contato(){
+        this.router.navigate(['/contato'])
+      } 
   }
