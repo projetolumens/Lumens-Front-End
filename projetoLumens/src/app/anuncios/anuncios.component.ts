@@ -46,7 +46,7 @@ export class AnunciosComponent implements OnInit {
 
     this.getAllCategorias()
     this.getAllPostagens()
-  
+    this.findByIdUsuario()
   }
 
   
