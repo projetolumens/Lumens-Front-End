@@ -4,7 +4,7 @@ import { UsuarioLogin } from '../model/UsuarioLogin';
 import { Observable } from 'rxjs';
 import { Usuario } from '../model/Usuario';
 import { environment } from 'src/environments/environment.prod';
-import { ActivatedRoute, Router } from '@angular/router';
+
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +17,7 @@ export class AuthService {
 
 
   token = {
-    headers: new HttpHeaders().set("authorization", environment.token)
+    headers: new HttpHeaders().set("Authorization", environment.token)
   }
 
   entrar(UsuarioLogin: UsuarioLogin): Observable<UsuarioLogin>{
@@ -45,5 +45,14 @@ export class AuthService {
     return ok
   }
 
+  adm(){
+    let ok: boolean = false
+    
+    if (environment.tipo == 'adm'){
+      ok = true
+    }
+    
+    return ok
+  }
 
 }

@@ -52,8 +52,10 @@
     </div>
 </div>
   </nav>
+
 </body>
 </html>
+
 
 
 <div class="bg">
@@ -61,20 +63,28 @@
 <div class="container-fluid  ">
 
 
-  <div class="row d-flex justify-content-center bg-title">
-    <div class="col-md-5">
-      <div class="row d-flex justify-content-center">
-        <h1 class="fs-50">Olá, nós somos Lumens!</h1>
-        <h2 class="fs-24">o e-commerce que visa o desenvolvimento sustentável</h2>
+ 
+
+</div>
+<div class="container-fluid fundo0 d-flex justify-content-center align-items-center ">
+  <div class="row d-flex justify-content-center col-md-10">
+    <div class="row d-flex align-items-center">
+  
+      <div class="col-md-7 mt-3 mb-5  text-white sobreLumens">
+        <h4 class="display-5 mt-3 sobreLumens"> Olá, nós somos Lumens!</h4>
+
+        <p style=" text-align: justify">o e-commerce que visa o desenvolvimento sustentável
+          <br>
+        </p>
+
       </div>
-    </div>
-    <div class="col-md-5 ">
-      <img width="350px" src="../../assets/img/b1.png" alt="">
+      <div class="col-md-4 d-flex justify-content-center ">  <img width="350px" src="../../assets/img/b1.png" alt="">
+      </div>
+
     </div>
   </div>
 
 </div>
-
 
 
 
@@ -99,26 +109,26 @@
             <div class="carousel-item active">
                <div class="row">
                   <div class="col-12 col-md d-flex align-items-center justify-content-center">
-                      <img src="https://cdn.discordapp.com/attachments/945323144703512608/950444459663978506/azul.jpg" alt="">
+                      <img class="linhas-img" src="../../assets/img/azul.png" alt="">
                   </div>
                   <div class="col-12 col-md d-flex align-items-center justify-content-center">
-                    <img src="https://cdn.discordapp.com/attachments/945323144703512608/950444459047403570/tipos_lixo.jpg" alt="">
+                    <img class="linhas-img" src="../../assets/img/tipos_lixo.png" alt="">
                   </div>
                   <div class="col-12 col-md d-flex align-items-center justify-content-center">
-                    <img src="https://cdn.discordapp.com/attachments/945323144703512608/950444460234379274/verde.jpg" alt="">
+                    <img class="linhas-img" src="../../assets/img/verde.png" alt="">
                   </div>
                </div>
             </div>
             <div class="carousel-item">
                <div class="row">
                   <div class="col-12 col-md d-flex align-items-center justify-content-center">
-                    <img src="https://cdn.discordapp.com/attachments/945323144703512608/950444459387150336/branca.jpg" alt="">
+                    <img class="linhas-img" src="../../assets/img/branca.png" alt="">
                   </div>
                   <div class="col-12 col-md d-flex align-items-center justify-content-center">
-                    <img src="https://cdn.discordapp.com/attachments/945323144703512608/950444459047403570/tipos_lixo.jpg" alt="" >
+                    <img class="linhas-img" src="../../assets/img/tipos_lixo.png" alt="" >
                   </div>
                   <div class="col-12 col-md d-flex align-items-center justify-content-center">
-                    <img src="https://cdn.discordapp.com/attachments/945323144703512608/950444459911430154/marrom.jpg" alt="" >
+                    <img class="linhas-img" src="../../assets/img/marrom.png" alt="" >
                   </div>
                </div>
             </div>
@@ -172,7 +182,7 @@
 <div class="container">
   
   <!-- Modal -->
-  
+  <div class="row d-flex justify-content-center ">
   <div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -230,16 +240,14 @@
           </div>
         
 
+    
+
           <div class="form-group">
             <label for="endereco">Itens para serem retirados</label>
-            <input type="text-area" class="form-control" id="descricao">
+            <input [(ngModel)]="postagem.retirada" type="text-area" class="form-control" id="descricao">
             <label for="texto">Escolha uma categoria<a class="cadastro-categoria" data-dismiss="modal"></a>:</label>
-            <select class="custom-select" id="inputGroupSelect01">
-              <option value="0"></option>
-              <option value="1">Linha Verde</option>
-              <option value="2">Linha Marrom</option>
-              <option value="3">Linha Azul</option>
-              <option value="3">Linha Branca</option>
+            <select [(ngModel)]="idCategoria" (change)="findByIdCategoria()" class="custom-select" id="inputGroupSelect01">
+              <option *ngFor="let item of listaCategorias" value="{{item.id}}">{{item.descricao}}</option>
             </select>
           </div>
 
@@ -254,19 +262,19 @@
     </div>
   </div>
   <!-- postagem de descarte-->
-
+</div>
 
   <!--Todos os anúncios dos usuários-->
   
  <div class="container md-5 mt-2" id="postagens">
   <nav>
       <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
-        <a class="nav-item nav-link active text-secondary font-weight-bold" id="nav-todasPostagens-tab" data-toggle="tab" href="#todasPostagens" role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Todas as Postagens</a>
+        <a class="nav-item nav-link active text-dark font-weight-bold" id="nav-todasPostagens-tab" data-toggle="tab" href="#todasPostagens" role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Todas as Postagens</a>
 
-        <a (click)='findByIdUsuario()'  class="nav-item nav-link text-secondary font-weight-bold" id="nav-minhasPostagens-tab" data-toggle="tab" href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Minhas Postagens</a>
+        <a (click)='findByIdUsuario()'  class="nav-item nav-link text-dark font-weight-bold" id="nav-minhasPostagens-tab" data-toggle="tab" href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Minhas Postagens</a>
 
 
-        <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-postagemCategoria-tab" data-toggle="tab" href="#postagemCategoria" role="tab" aria-controls="nav-postagemCategoria" aria-selected="false">Postagens por Categoria</a>
+        <a class="nav-item nav-link text-dark font-weight-bold" id="nav-postagemCategoria-tab" data-toggle="tab" href="#postagemCategoria" role="tab" aria-controls="nav-postagemCategoria" aria-selected="false">Postagens por Categoria</a>
       </div>
   </nav>
  
@@ -275,9 +283,15 @@
 
     <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="nav-todasPostagens-tab">
 
+
+
+
+
+      
         <div class="card-columns">
            
-            <div class="card text-center" *ngFor=' let item of listaPostagens' >
+            <div class="card text-center" 
+            *ngFor=' let item of listaPostagens' >
                 <div class="card-body">
                   <small class="text-muted ">Região: {{item.regiao}}</small>
                   <small class="text-muted ">Categoria: {{item.categoria.descricao}}</small>
@@ -295,7 +309,8 @@
 
         <div class="card-columns">
            
-            <div class="card text-center" *ngFor='let item of usuario.postagem'>
+            <div class="card text-center" 
+            *ngFor='let item of usuario.postagem'>
                 <div class="card-body">
                   <small class="text-muted ">Região: {{item.regiao}}</small>
                   <small class="text-muted ">Categoria: {{item.categoria.descricao}}</small>
@@ -312,7 +327,8 @@
 
     <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
 
-        <div class="card-columns" *ngFor='let categoria of listaCategorias' >
+        <div class="card-columns" 
+        *ngFor='let categoria of listaCategorias' >
            
             <div class="card text-center" *ngFor=' let item of categoria.postagem' >
                 <div class="card-body">
@@ -333,7 +349,7 @@
   <!--produtos do usuario / descarte-->
 
 
-
+<hr>
     <!--cards de todos os produtos/anuncios NOVOS DAS EMPRESAS-->
     <h1 class="text-center mb-5">Produtos sustentáveis de lojas parceiras:</h1>
     <h4>Ganhe desconto aplicando cashback do seu descarte com os ecopontos parceiros</h4>
@@ -343,7 +359,7 @@
           src="../../assets/img/ArquivoExibir (3).jpg"
           alt="Imagem de capa do card">
         <div class="card-body">
-          <h5 class="card-title">Microondas</h5>
+          <h5 class="card-title text-dark">Microondas</h5>
           <p class="card-text descricao" style=" text-align: justify">Microondas LG Solo 30 Litros Prata MS3095</p>
 
           <h5 *ngIf="logado()" class="text-center">
@@ -360,7 +376,7 @@
           src="../../assets/img/Lavadora_LAC12_Perspectiva_Frente.jpg"
           alt="Imagem de capa do card">
         <div class="card-body">
-          <h5 class="card-title">Lavadora</h5>
+          <h5 class="card-title text-dark">Lavadora</h5>
           <p class="card-text descricao" style=" text-align: justify">Lavadora de Roupas Electrolux Automática LAC13
             13Kg - Branca</p>
 
@@ -380,7 +396,7 @@
           src="../../assets/img/ArquivoExibir (2).jpg"
           alt="Imagem de capa do card">
         <div class="card-body">
-          <h5 class="card-title mt-3">Microondas</h5>
+          <h5 class="card-title mt-3 text-dark">Microondas</h5>
           <p class="card-text descricao" style=" text-align: justify">Forno de Micro-ondas Electrolux MEF41 Meus
             Favoritos - 31L</p>
 
@@ -398,7 +414,7 @@
           src="../../assets/img/Lavadora-Brastemp-BWK12AB-Frontal-1_0.jpg"
           alt="Imagem de capa do card">
         <div class="card-body">
-          <h5 class="card-title mt-3">Lavadora</h5>
+          <h5 class="card-title mt-3 text-dark">Lavadora</h5>
           <p class="card-text descricao" style=" text-align: justify">Lavadora Brastemp BWK12AB Branca - 12Kg</p>
 
           <h5 *ngIf="logado()" class="text-center">
@@ -416,7 +432,7 @@
           src="../../assets/img/fogao-agata-esmaltec.jpg"
           alt="Imagem de capa do card">
         <div class="card-body">
-          <h5 class="card-title mt-3">Fogão</h5>
+          <h5 class="card-title mt-3 text-dark">Fogão</h5>
           <p class="card-text descricao" style=" text-align: justify">Fogão Esmaltec 4 Bocas Ágata 4062 - Branco</p>
 
           <h5 *ngIf="logado()" class="text-center">
@@ -435,7 +451,7 @@
           alt="Imagem de capa do card">
         <div class="card-body">
 
-          <h5 class="card-title mt-3">Geladeira</h5>
+          <h5 class="card-title mt-3 text-dark">Geladeira</h5>
           <p class="card-text descricao" style=" text-align: justify">Geladeira Brastemp BRM44HK Frost Free Duplex
             Inox - 375L</p>
 

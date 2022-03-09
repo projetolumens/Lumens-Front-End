@@ -32,6 +32,9 @@ export class AnunciosComponent implements OnInit {
   usuario: Usuario = new Usuario()
   idUser = environment.id
 
+  key = 'data'
+  reverse = true
+
   constructor(
     private router: Router,
     private postagemService: PostagemService,

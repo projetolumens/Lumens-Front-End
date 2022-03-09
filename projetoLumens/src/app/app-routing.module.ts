@@ -12,17 +12,14 @@ import { InicioComponent } from './inicio/inicio.component';
 
 const routes: Routes = [
   {path:'', redirectTo: 'entrar', pathMatch: 'full'},
-
   {path:'entrar', component: EntrarComponent},
   {path:'cadastrar', component: CadastrarComponent},
   {path:'inicio', component:InicioComponent},
   {path:'contato', component: ContatoComponent},
   {path:'anuncios', component:AnunciosComponent},
-  {path:'categoria', component: CategoriaComponent},
-
-  
+  {path:'categoria', component:CategoriaComponent},
   {path:'postagem-delete/:id', component: PostagemDeleteComponent},
-  {path:'postagem-edit/:id', component: PostagemEditComponent}
+  {path:'postagem-edit/:id', component: PostagemEditComponent},
  
 ];
 

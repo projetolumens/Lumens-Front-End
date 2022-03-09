@@ -23,7 +23,7 @@ export class CategoriaService {
   }
 
   getByIdCategoria(id: number): Observable<Categoria>{
-    return this.http.get<Categoria>('https://projetolumens.herokuapp.com/categoria/${id}', this.token)
+    return this.http.get<Categoria>(`https://projetolumens.herokuapp.com/categoria/${id}`, this.token)
   }
 
   getByNomeCategoria(nome: string): Observable<Categoria[]>{
@@ -33,5 +33,13 @@ export class CategoriaService {
   postCategoria(categoria: Categoria): Observable<Categoria>{
     return this.http.post<Categoria>('https://projetolumens.herokuapp.com/categoria', categoria, this.token)
   }
-
-}
+  putCategoria (categoria:Categoria): Observable<Categoria>{
+    return this.http.put<Categoria>('https://projetolumens.herokuapp.com/categoria' ,categoria,  this.token)
+  }
+  
+  deleteCategoria(id: number){
+    return this.http.delete(`https://projetolumens.herokuapp.com/categoria/${id}` , this.token)
+  }
+  
+  }
+  

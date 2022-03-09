@@ -8,7 +8,7 @@
             </a>
 
             <h1 class="fs-54 text-center">Categorias</h1>
-            <h5 class="fs-18 text-center">Veja aqui todas as categorias cadastradas:</h5>
+            <h5 class="fs-18 text-center">Veja aqui todas as categorias cadastradas ou cadastre uma nova:</h5>
             <div class="row d-flex justify-content-center mt-4 mb-5">
                 <div class="col-md-3">
                     <div class="form-group">
@@ -57,6 +57,9 @@
                     <td>{{item.nome}}</td>
                     <td>{{item.descricao}}</td>
                     <td>{{item.setor}}</td>
+                    <td class="d-flex justify-content-end">
+                        <button class="btn btn-edit mr-3" [routerLink]="['/categoria-edit', item.id]">Editar</button>
+                        <button class="btn btn-delete" [routerLink]="['/categoria-delete', item.id]">Apagar</button>
                   </tr>
                 </tbody>
               </table>
