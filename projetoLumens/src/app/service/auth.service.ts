@@ -28,7 +28,7 @@ export class AuthService {
     return this.http.post<Usuario>('https://projetolumens.herokuapp.com/usuarios/cadastrar', usuario)
   }
   atualizar(usuario: Usuario): Observable<Usuario> {
-    return this.http.put<Usuario>('https://projetolumens.herokuapp.com/atualizar',usuario);
+    return this.http.put<Usuario>('https://projetolumens.herokuapp.com/usuarios/atualizar',usuario);
   }
 
   getByIdUser(id: number): Observable<Usuario>{

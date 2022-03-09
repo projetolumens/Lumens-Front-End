@@ -18,6 +18,8 @@ import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.compon
 import { AnunciosComponent } from './anuncios/anuncios.component';
 import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
 import { OrderModule } from 'ngx-order-pipe';
+import { UserEditComponent } from './edit/user-edit/user-edit.component';
+import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
 
 
 
@@ -35,7 +37,9 @@ import { OrderModule } from 'ngx-order-pipe';
     AnunciosComponent, 
     PostagemDeleteComponent, 
     PostagemEditComponent,
-    CategoriaDeleteComponent 
+    CategoriaDeleteComponent,
+    UserEditComponent,
+    MenuLogadoComponent
     
   ],
   imports: [

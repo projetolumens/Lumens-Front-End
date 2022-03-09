@@ -8,6 +8,6 @@
 <app-inicio></app-inicio>
 <app-rodape></app-rodape>
  -->
-
+<app-menu-logado *ngIf='auth.logado()'></app-menu-logado>
  <router-outlet></router-outlet>
  <app-rodape *ngIf='auth.logado()'></app-rodape>
