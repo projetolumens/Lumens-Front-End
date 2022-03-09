@@ -8,7 +8,7 @@ export class Postagem{
     public periodo: string
     public retirada: string
     public foto: string
-    public data: Date
+    public data: string
     public usuario: Usuario
     public categoria: Categoria
 }

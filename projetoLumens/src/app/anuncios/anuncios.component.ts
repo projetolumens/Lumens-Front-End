@@ -126,5 +126,7 @@ export class AnunciosComponent implements OnInit {
     
     
     }
-    
+    contato(){
+      this.router.navigate(['/contato'])
+    } 
 }

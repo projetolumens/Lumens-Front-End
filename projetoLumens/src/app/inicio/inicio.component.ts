@@ -24,10 +24,11 @@ export class InicioComponent implements OnInit {
     }
 
   }
-
   anuncios(){
     this.router.navigate(['/anuncios'])
   }
   
-
+  contato(){
+    this.router.navigate(['/contato'])
+  }
 }

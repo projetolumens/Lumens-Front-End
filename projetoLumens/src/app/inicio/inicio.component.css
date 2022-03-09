@@ -1,26 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 
-* {
-  font-family: 'Quicksand', sans-serif;
+.navbar { background-color: #fede27; }
+.navbar .navbar-nav .nav-link { color: rgb(0, 0, 0)!important; }
+.navbar .navbar-nav .nav-link:hover { color: #afafaf!important; }
+.navbar .navbar-nav .active > .nav-link { color: #000000!important; }
 
+a:link {
+  color: #fede27;
+}
+a {
+  color          : #000000 !important;
+  font-size      : 12pt;
+  text-decoration: none;
+  font-weight    : bold;
 }
 
-.navbar {
-  background-color: #838282;
+a:hover {
+  color: black !important;
 }
 
-.navbar .navbar-nav .nav-link {
-  color: #fff;
+.bg-drop {
+  background-color: #fede27;
+  margin-left     : 230px;
+  border-radius   : 25px;
 }
 
-.navbar .navbar-nav .nav-link:hover {
-  color: #fbc531;
+.txt-drop:hover {
+  color: #fede27 !important;
 }
 
-.navbar .navbar-nav .active>.nav-link {
-  color: #fbc531;
-}
 
 .logolumens {
   width: 175px;

@@ -52,3 +52,58 @@ ul.social-network li{
 .bg-copyright {
     background-color: #0000009f!important;
 }
+
+footer {
+    background-color: #00000093!important;
+    color: white;
+}
+
+.logo {
+    max-width: 50px;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffd900c5;
+}
+
+ul.social-network {
+    list-style: none;
+    padding: 0;
+}
+
+ul.social-network li{
+    display: inline;
+    margin: 0;
+    padding: 5px;
+}
+.fa-brands{
+    font-size: 20pt;
+    color: aliceblue;
+    padding: 10px;
+}
+.fa-instagram:hover{
+    color: #C13584;
+}
+.fa-github:hover{
+    color: black;
+}
+
+.fa-discord:hover{
+    color:#6e82d1;
+}
+
+.bg-footer{
+    background-color: #523d83 ;
+}
+
+.bg-copyright {
+    background-color: #0000009f!important;
+}

@@ -1,20 +1,23 @@
 
 
 
-    <nav class="navbar navbar-expand-lg" id="inicio">
+    <nav class="navbar navbar-expand-lg " id="inicio">
       <div class="container">
-          <a class="navbar-brand text-white" href="#projetoLumens"><i class="fa fa-graduation-cap fa-lg mr-2"></i>PROJETO LUMENS</a>
+          <a class="navbar-brand text-dark" href="#projetoLumens"><i class="fa fa-graduation-cap fa-lg mr-2"></i>PROJETO LUMENS</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
               <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="nvbCollapse">
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item pl-1">
-                      <a class="nav-link" href="#entenda">Entenda o Programa</a>
+                      <a class="nav-link " href="#entenda">Entenda o Programa</a>
                   </li>
                   <li class="nav-item active pl-1">
                       <a class="nav-link" href="#descarte">Descarte</a>
                   </li>
+                  <li class="nav-item pl-1">
+                    <a class="nav-link" (click)='contato()'>Contato</a>
+                </li>
                   <li class="nav-item pl-1">
                       <a class="nav-link" href="#">Pesquisar</a>
                   </li>
@@ -346,8 +349,8 @@
 
 <hr>
     <!--cards de todos os produtos/anuncios NOVOS DAS EMPRESAS-->
-    <h1 class="text-center mb-5">Produtos sustentáveis de lojas parceiras:</h1>
-    <h4>Ganhe desconto aplicando cashback do seu descarte com os ecopontos parceiros</h4>
+    <h1 class="text-center mb-5">Produtos sustentáveis de lojas parceiras</h1>
+    <h4 class="text-center" >Ganhe desconto aplicando cashback do seu descarte com os ecopontos parceiros</h4>
     <div class="card-deck">
       <div class="card">
         <img class="card-img-top"
@@ -358,7 +361,7 @@
           <p class="card-text descricao" style=" text-align: justify">Microondas LG Solo 30 Litros Prata MS3095</p>
 
           <h5 *ngIf="logado()" class="text-center">
-            <button type="button" class="btn btn-info" data-toggle='modal' data-target='#comprar'>Comprar</button>
+            <button type="button" class="btn btn-info  " data-toggle='modal' data-target='#comprar'>Comprar</button>
           </h5>
         </div>
         <div class="card-footer">
@@ -472,7 +475,7 @@
           <p class="card-text descricao" style=" text-align: justify">Forno de Micro-ondas Electrolux MTO30 - 20L - Branco</p>
 
           <h5 *ngIf="logado()" class="text-center">
-            <button type="button" class="btn btn-info" data-toggle='modal' data-target='#comprar'>Comprar</button>
+            <button type="button" class="btn btn-info d-flex flex-column align-items-center" data-toggle='modal' data-target='#comprar'>Comprar</button>
           </h5>
         </div>
         <div class="card-footer">
@@ -646,132 +649,6 @@
   </div>
   <!-- cards dicas-->
 
-
-  <!--CARDS EQUIPE-->
-  <div id="name-equipe" class="row card-group align-items-center justify-content-center mb-0">
-    <div class="col-md-12 mb-3">
-      <div class="row" id="card">
-        <h3 class="text-center mb-4 mt-3 text-equipe">
-          <a name="name-equipe"></a>Nossa Equipe:
-        </h3>
-      </div>
-      <div class="col-md-12 d-flex justify-content-center wrap">
-
-        <div class="Membro3 mx-3">
-          <div class="overlay">
-            <div class="about d-flex flex-column">
-              <h4>Jessica Sousa</h4>
-              <h6>Scrum Master</h6>
-
-
-            </div>
-            <ul class="tm-social">
-              <li>
-                <a href="" target="_blank">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </li>
-              <li>
-                <a href="" target="_blank">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="Membro4 mx-3">
-          <div class="overlay">
-            <div class="about d-flex flex-column">
-              <h4>Yago Coelho</h4>
-              <h6>Product Owner</h6>
-            </div>
-            <ul class="tm-social">
-              <li>
-                <a href="https://github.com/Yagocoelho" target="_blank">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/yagoscoelho/" target="_blank">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="Membro2 mx-3">
-          <div class="overlay">
-            <div class="about d-flex flex-column">
-              <h4>Giuliana Tamie</h4>
-              <h6>Dev Team</h6>
-            </div>
-            <ul class="tm-social">
-              <li>
-                <a href="https://github.com/gtamie" target="_blank">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/giuliana-tamie-sumida-50bb11215/" target="_blank">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="Membro1 mx-3">
-          <div class="overlay ">
-            <div class="about d-flex flex-column">
-              <h4>Erika Yamamoto</h4>
-              <h6>Dev Team</h6>
-
-            </div>
-            <ul class="tm-social">
-              <li>
-                <a href="https://github.com/esyamamoto" target="_blank">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/erikasyamamoto/" target="_blank">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-
-
-
-        <div class="Membro5 mx-3">
-          <div class="overlay">
-            <div class="about d-flex flex-column">
-              <h4>João <br> Lucas</h4>
-              <h6>Dev Team</h6>
-            </div>
-            <ul class="tm-social">
-              <li>
-                <a href="https://github.com/LuukasOo" target="_blank">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/joãolucass/" target="_blank">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--CARDS EQUIPE-->
-
-
-
   </div>
-</div>
+
+

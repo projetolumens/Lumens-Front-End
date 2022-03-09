@@ -30,7 +30,7 @@ export class UserEditComponent implements OnInit {
       this.router.navigate(['/entrar'])
     }
 
-    this.findByIdUsuario = this.route.snapshot.params['id']
+    this.idUser = this.route.snapshot.params['id']
     this.findByIdUsuario(this.idUser)
   }
 
