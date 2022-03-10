@@ -1,8 +1,15 @@
+
+
+.navbar { background-color: #fede27!important; }
+.navbar .navbar-nav .nav-link { color: rgb(0, 0, 0)!important; }
+.navbar .navbar-nav .nav-link:hover { color: #afafaf!important; }
+.navbar .navbar-nav .active > .nav-link { color: #000000!important; }
+
 a:link {
   color: #fede27;
 }
 a {
-  color          : rgba(0, 0, 0, 0.925) !important;
+  color          : #000000 !important;
   font-size      : 12pt;
   text-decoration: none;
   font-weight    : bold;
@@ -11,6 +18,17 @@ a {
 a:hover {
   color: black !important;
 }
+
+.bg-drop {
+  background-color: #fede27;
+  margin-left     : 230px;
+  border-radius   : 25px;
+}
+
+.txt-drop:hover {
+  color: #fede27 !important;
+}
+
 
 .bg-drop {
   background-color: #e8eb2785;

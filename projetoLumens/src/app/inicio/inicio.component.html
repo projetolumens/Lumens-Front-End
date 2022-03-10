@@ -1,6 +1,6 @@
-  <nav class="navbar navbar-expand-lg" id="inicio">
+  <nav class="navbar navbar-expand-lg " id="inicio">
     <div class="container">
-        <a class="navbar-brand text-white" href="#projetoLumens"><i class="fa fa-graduation-cap fa-lg mr-2"></i>PROJETO LUMENS</a>
+        <a class="navbar-brand dd" href="#projetoLumens"><i class="fa fa-graduation-cap fa-lg mr-2 text-dark">PROJETO LUMENS</i></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -70,7 +70,7 @@
 
         <div class="row d-flex align-items-center">
 
-          <div class="col-md-6 mt-3 mb-5 text-dark ">
+          <div class="col-md-6 mt-4 mb-5 text-dark ">
             <h4 class="display-5 mt-2 title text-center"> Como funciona o descarte:</h4>
             <img width="50px"
             src="https://cdn.discordapp.com/attachments/945323144703512608/950470187512111194/3993631.png" alt="">
@@ -149,7 +149,7 @@
 
           <div class="col-md-5 mt-5 mb-5 ">
             <h4>Desigualdade</h4>
-            <p style=" text-align: justify">Apesar de grande parte da população global ter acesso à eletricidade, a
+            <p class="mr-3" style=" text-align: justify">Apesar de grande parte da população global ter acesso à eletricidade, a
               desigualdade ainda é uma grande problema para atingir o Objetivo de Desenvolvimento Sustentável que visa
               garantir energia acessível, confiável, sustentável e moderna para todos (ODS 7) na África Subsaariana por
               exemplo, a quantidade de famílias sem energia elétrica aumentou, pois nessa área praticamente não houve
@@ -196,7 +196,7 @@
       <div class="row d-flex justify-content-center col-md-10">
 
         <div class="row d-flex align-items-center">
-          <div class="col-md-7 d-flex justify-content-center ods7 ">
+          <div class="col-md-7 d-flex justify-content-center ods7 m-0">
 
             <iframe width="450" height="225"
               src="https://www.youtube.com/embed/videoseries?list=PL83dxI5zonT6S42SA1hWv6Px1_I9qLSFc"
@@ -280,28 +280,8 @@
 
     <!-- botao -->
     <div class="fab" ontouchstart="">
-      <button class="main">
+      <button (click)="subir()" class="main">
       </button>
-      <ul>
-        <li>
-          <label for="opcao1"></label>
-          <button routerLink='/cadastrar' id="opcao1">
-            ⎈
-          </button>
-        </li>
-        <li>
-          <label for="opcao2"></label>
-          <button id="opcao2">
-            ⎗
-          </button>
-        </li>
-        <li>
-          <label for="opcao3"></label>
-          <button id="opcao3">
-            ☏
-          </button>
-        </li>
-      </ul>
     </div>
     <!-- botao -->
 

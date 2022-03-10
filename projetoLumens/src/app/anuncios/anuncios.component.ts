@@ -116,16 +116,6 @@ export class AnunciosComponent implements OnInit {
       this.getAllPostagens()
     })
   }
-  sair(){
 
-    this.router.navigate(['/entrar'])
-    environment.token = ''
-    environment.nomeCompleto = ''
-    environment.foto = ''
-    environment.tipo = ''
-    environment.id = 0
-    
-    
-    }
     
 }
