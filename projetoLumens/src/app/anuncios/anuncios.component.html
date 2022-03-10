@@ -455,7 +455,7 @@
           <div class="card text-center" *ngFor=' let item of listaPostagens| orderBy: key : reverse'>
             <div class="card-body">
               <small class="text-muted ">Região: {{item.regiao}}</small>
-              <small class="text-muted ">Categoria: {{item.categoria.nome}}</small>
+              <small class="text-muted ">&emsp;Categoria: {{item.categoria.nome}}</small>
               <p class="card-text mt-3">{{item.retirada}}</p>
               
               <p class="card-text"><small class="text-muted">by: {{item.usuario.nomeCompleto}}</small></p>
@@ -473,7 +473,7 @@
           <div class="card text-center" *ngFor='let item of usuario.postagem | orderBy: key : reverse'>
             <div class="card-body">
               <small class="text-muted ">Região: {{item.regiao}}</small>
-              <small class="text-muted ">Categoria: {{item.categoria.nome}}</small>
+              <small class="text-muted ">&emsp;Categoria: {{item.categoria.nome}}</small>
               <p class="card-text mt-3">{{item.retirada}}</p>
              
 
@@ -501,7 +501,7 @@
           <div class="card text-center" *ngFor=' let item of categoria.postagem'>
             <div class="card-body">
               <small class="text-muted ">Região: {{item.regiao}}</small>
-              <small class="text-muted ">Categoria: {{categoria.nome}}</small>
+              <small class="text-muted ">&emsp;Categoria: {{item.categoria.nome}}</small>
               <p class="card-text mt-3">{{item.retirada}}</p>
               
               <p class="card-text"><small class="text-muted">by: {{item.usuario.nomeCompleto}}</small></p>
