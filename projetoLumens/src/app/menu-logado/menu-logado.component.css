@@ -1,3 +1,21 @@
 .bg-d{
     background-color: black;
 }
+/* change the background color /
+.navbar-custom {
+    background-color: #020202;
+}
+
+/ change the brand and text color /
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: #ffcc00;
+}
+.navbar-light .navbar-toggler {
+
+    background-color: #FEDE27;
+}
+/ change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: #ffbb00;
+}

@@ -57,10 +57,7 @@ export class CadastrarComponent implements OnInit {
           showConfirmButton: false,
           timer: 1500
         })
-    
-        
-
+      })  
     }
-
   }
 }

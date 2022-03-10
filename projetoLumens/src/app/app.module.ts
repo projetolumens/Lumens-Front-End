@@ -22,11 +22,6 @@ import { UserEditComponent } from './edit/user-edit/user-edit.component';
 import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
 
 
-
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +36,7 @@ import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
     PostagemEditComponent,
     CategoriaDeleteComponent,
     UserEditComponent,
-    MenuLogadoComponent,
+    MenuLogadoComponent
    
   
     
