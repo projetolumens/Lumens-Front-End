@@ -5,6 +5,7 @@ import { Postagem } from 'src/app/model/Postagem';
 import { CategoriaService } from 'src/app/service/categoria.service';
 import { PostagemService } from 'src/app/service/postagem.service';
 import { environment } from 'src/environments/environment.prod';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-postagem-edit',
@@ -29,7 +30,13 @@ export class PostagemEditComponent implements OnInit {
     window.scroll(0, 0)
 
     if (environment.token == '') {
-      alert('Faça o login novamente')
+      Swal.fire({
+        position: 'top-end',
+        icon: 'info',
+        title: 'Faça o login novamente',
+        showConfirmButton: false,
+        timer: 1500
+      })
       this.router.navigate(['/entrar'])
     }
 
@@ -60,7 +67,13 @@ export class PostagemEditComponent implements OnInit {
   atualizar(){
     this.postagemService.putPostagem(this.postagem).subscribe((resp: Postagem)=>{
       this.postagem = resp
-      alert('Postagem atualizada com sucesso!')
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Postagem atualizada com sucesso!',
+        showConfirmButton: false,
+        timer: 1500
+      })
       this.router.navigate(['/postagem'])
     })
   

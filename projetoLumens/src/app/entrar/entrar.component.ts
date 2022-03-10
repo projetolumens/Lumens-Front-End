@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 import { UsuarioLogin } from '../model/UsuarioLogin';
 import { AuthService } from '../service/auth.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-entrar',
@@ -36,10 +37,16 @@ export class EntrarComponent implements OnInit {
       console.log(environment.foto)
       console.log(environment.id)
 
-      this.router.navigate(['/inicio'])
+      this.router.navigate(['/anuncios'])
     }, erro => {
-      if (erro.status == 500){
-        alert('Usuário ou senha estão incorretos!')
+      if(erro.status != 200){
+        Swal.fire({
+          position: 'top-end',
+          icon: 'error',
+          title: 'Usuário ou senha estão incorretos!',
+          showConfirmButton: false,
+          timer: 1500
+        })
       }
     })
   }

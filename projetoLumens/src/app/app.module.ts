@@ -26,6 +26,7 @@ import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +42,7 @@ import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
     CategoriaDeleteComponent,
     UserEditComponent,
     MenuLogadoComponent,
+   
   
     
   ],
