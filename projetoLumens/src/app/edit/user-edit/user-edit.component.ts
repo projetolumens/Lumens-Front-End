@@ -61,7 +61,7 @@ export class UserEditComponent implements OnInit {
         this.router.navigate(['/anuncios'])
         Swal.fire({
           position: 'top-end',
-          icon: 'error',
+          icon: 'info',
           title: 'Usuário atualizado com sucesso! Faça o login novamente.',
           showConfirmButton: false,
           timer: 1500

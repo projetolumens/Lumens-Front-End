@@ -74,7 +74,7 @@ export class PostagemEditComponent implements OnInit {
         showConfirmButton: false,
         timer: 1500
       })
-      this.router.navigate(['/postagem'])
+      this.router.navigate(['/anuncios'])
     })
   
   }
