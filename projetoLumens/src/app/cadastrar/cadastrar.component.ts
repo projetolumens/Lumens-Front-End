@@ -40,7 +40,7 @@ export class CadastrarComponent implements OnInit {
     if(this.usuario.senha != this.confirmarSenha){
      
       Swal.fire({
-        position: 'top-end',
+        position: 'center',
         icon: 'error',
         title: 'As senhas estão incorretas!',
         showConfirmButton: false,
@@ -51,7 +51,7 @@ export class CadastrarComponent implements OnInit {
         this.usuario = resp
         this.router.navigate(['/entrar'])
         Swal.fire({
-          position: 'top-end',
+          position: 'center',
           icon: 'success',
           title: 'Usuário cadastrado com sucesso!',
           showConfirmButton: false,

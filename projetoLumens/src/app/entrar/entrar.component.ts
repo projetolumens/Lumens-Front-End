@@ -41,7 +41,7 @@ export class EntrarComponent implements OnInit {
     }, erro => {
       if(erro.status != 200){
         Swal.fire({
-          position: 'top-end',
+          position: 'center',
           icon: 'error',
           title: 'Usuário ou senha estão incorretos!',
           showConfirmButton: false,

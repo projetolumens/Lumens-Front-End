@@ -49,7 +49,7 @@ export class UserEditComponent implements OnInit {
 
     if (this.usuario.senha != this.confirmarSenha) {
       Swal.fire({
-        position: 'top-end',
+        position: 'center',
         icon: 'info',
         title: 'As senhas estão diferentes.',
         showConfirmButton: false,
@@ -60,7 +60,7 @@ export class UserEditComponent implements OnInit {
         this.usuario = resp
         this.router.navigate(['/anuncios'])
         Swal.fire({
-          position: 'top-end',
+          position: 'center',
           icon: 'info',
           title: 'Usuário atualizado com sucesso! Faça o login novamente.',
           showConfirmButton: false,
