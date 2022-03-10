@@ -17,7 +17,7 @@ import { PostagemService } from '../service/postagem.service';
 export class AnunciosComponent implements OnInit {
   nome = environment.nomeCompleto
   foto = environment.foto
-  id = environment.id
+
   tituloPost: string
   nomeCategoria: string
   postagem: Postagem = new Postagem()
@@ -62,8 +62,9 @@ export class AnunciosComponent implements OnInit {
       this.listaPostagens = resp
     })
   }
+  
   findByIdUsuario() {
-    this.authService.getByIdUser(this.idUser).subscribe((resp: Usuario) => {
+    this.authService.getByIdUser(this.idUser).subscribe((resp: Usuario)=>{
       this.usuario = resp
     })
   }

@@ -30,7 +30,7 @@ export class UserEditComponent implements OnInit {
       this.router.navigate(['/entrar'])
     }
 
-    this.findByIdUsuario = this.route.snapshot.params['id']
+    this.idUser = this.route.snapshot.params['id']
     this.findByIdUsuario(this.idUser)
   }
 
@@ -44,7 +44,7 @@ export class UserEditComponent implements OnInit {
 
   atualizar(){
 
-    //this.usuario.tipo = this.tipoUsuario
+    this.usuario.tipo = this.tipoUsuarios
 
     if (this.usuario.senha != this.confirmarSenha) {
       alert("As senhas estão diferentes.")

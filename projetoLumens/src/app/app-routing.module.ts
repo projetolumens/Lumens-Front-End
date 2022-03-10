@@ -21,7 +21,7 @@ const routes: Routes = [
   {path:'categoria', component:CategoriaComponent},
   {path:'postagem-delete/:id', component: PostagemDeleteComponent},
   {path:'postagem-edit/:id', component: PostagemEditComponent},
-  {path: 'user-edit/:id' , component: UserEditComponent}
+  {path:'user-edit/:id' , component: UserEditComponent}
 ];
 
 @NgModule({
