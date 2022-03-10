@@ -1,13 +1,11 @@
 <!--NAV-BAR-->
 <nav class="navbar navbar-expand-lg" id="inicio">
-  <div class="container">
-    <a class="navbar-brand dd" href="#projetoLumens"><i class="fa fa-graduation-cap fa-lg mr-2 text-dark">PROJETO
-        LUMENS</i></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse"
-      aria-controls="nvbCollapse">
-      <span class="navbar-toggler-icon"></span>
-
-    </button>
+    <div class="container">
+      <a class="navbar-brand dd text-dark" href="#projetoLumens">PROJETO
+        LUMENS</a>
+        <button class="navbar-toggler bg-nav " type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
+          <i class="fa-solid fa-list"></i>
+        </button>
     <div class="collapse navbar-collapse" id="nvbCollapse">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item pl-1">
@@ -68,140 +66,110 @@
 
 
 <!--cards de todos os produtos/anuncios NOVOS DAS EMPRESAS-->
-  <div  id="comprar" class="mt-5">
-    <h1 class="text-center mb-2">Produtos sustentáveis de lojas parceiras
-      <img width="42px" src="https://cdn-icons.flaticon.com/png/512/2707/premium/2707279.png?token=exp=1646923230~hmac=f84f5dea0bef388e9d5e372356227391" alt="">
-    </h1>
-    <h4 class="text-center mb-5">Ganhe desconto aplicando o cashback de seu descarte, feito nos ecopontos parceiros</h4>
+<div id="comprar" class="mt-5">
+  <h1 class="text-center mb-2">Produtos sustentáveis de lojas parceiras
+    <img width="42px"
+      src="https://cdn-icons.flaticon.com/png/512/2707/premium/2707279.png?token=exp=1646923230~hmac=f84f5dea0bef388e9d5e372356227391"
+      alt="">
+  </h1>
+  <h4 class="text-center mb-5">Ganhe desconto aplicando o cashback de seu descarte, feito nos ecopontos parceiros</h4>
 
-    <!--cards pt1 -->
-     <div class="card-deck ml-3 mr-3">
-    <div class="card">
+  <!--cards pt1 -->
+  <div class="card-deck ml-3 mr-3">
+    <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
       <img class="card-img-top" src="../../assets/img/ArquivoExibir (3).jpg" alt="Imagem de capa do card">
       <div class="card-body">
         <h5 class="card-title text-dark mt-3">Microondas</h5>
         <p class="card-text descricao" style=" text-align: justify">Microondas LG Solo 30 Litros Prata MS3095</p>
-
-        
-        <h5 *ngIf="logado()" class="text-center">
-          <button type="button" class="btn btn-info " data-toggle='modal' data-target='#comprar'>Comprar</button>
-        </h5>
-       
-
       </div>
-      <div class="card-footer">
-        <small class="text-muted">Atualizados 3 minutos atrás</small>
+      <div class="card-footer" *ngIf="logado()">
+        <a type="button" class="btn btn-warning" (click)="comprar()">Comprar</a>
       </div>
     </div>
 
-    <div class="card">
+    <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
       <img class="card-img-top mt-1" src="../../assets/img/Lavadora_LAC12_Perspectiva_Frente.jpg"
         alt="Imagem de capa do card">
       <div class="card-body">
         <h5 class="card-title text-dark mt-2">Lavadora</h5>
         <p class="card-text descricao" style=" text-align: justify">Lavadora de Roupas Electrolux Automática LAC13
           13Kg - Branca</p>
-
-        <h5 *ngIf="logado()" class="text-center">
-          <button type="button" class="btn btn-info" data-toggle='modal' data-target='#comprar'>Comprar</button>
-        </h5>
       </div>
-      <div class="card-footer">
-        <small class="text-muted">Atualizados 3 minutos atrás</small>
+      <div class="card-footer" *ngIf="logado()">
+        <a type="button" class="btn btn-warning" (click)="comprar()">Comprar</a>
       </div>
     </div>
 
 
 
-    <div class="card">
+    <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
       <img class="card-img-top" src="../../assets/img/ArquivoExibir (2).jpg" alt="Imagem de capa do card">
       <div class="card-body">
         <h5 class="card-title mt-3 text-dark">Microondas</h5>
         <p class="card-text descricao" style=" text-align: justify">Forno de Micro-ondas Electrolux MEF41 Meus
           Favoritos - 31L</p>
-
-        <h5 *ngIf="logado()" class="text-center">
-          <button type="button" class="btn btn-info" data-toggle='modal' data-target='#comprar'>Comprar</button>
-        </h5>
       </div>
-      <div class="card-footer">
-        <small class="text-muted">Atualizados 3 minutos atrás</small>
+      <div class="card-footer" *ngIf="logado()">
+        <a type="button" class="btn btn-warning" (click)="comprar()">Comprar</a>
       </div>
     </div>
 
-    <div class="card">
+    <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
       <img class="card-img-top mt-2" src="../../assets/img/Lavadora-Brastemp-BWK12AB-Frontal-1_0.jpg"
         alt="Imagem de capa do card">
       <div class="card-body">
         <h5 class="card-title mt-1 text-dark">Lavadora</h5>
         <p class="card-text descricao" style=" text-align: justify">Lavadora Brastemp BWK12AB Branca - 12Kg</p>
-
-        <h5 *ngIf="logado()" class="text-center">
-          <button type="button" class="btn btn-info" data-toggle='modal' data-target='#comprar'>Comprar</button>
-        </h5>
       </div>
-      <div class="card-footer">
-        <small class="text-muted">Atualizados 3 minutos atrás</small>
+      <div class="card-footer" *ngIf="logado()">
+        <a type="button" class="btn btn-warning" (click)="comprar()">Comprar</a>
       </div>
     </div>
 
 
-    <div class="card">
+    <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
       <img class="card-img-top" src="../../assets/img/fogao-agata-esmaltec.jpg" alt="Imagem de capa do card">
       <div class="card-body">
         <h5 class="card-title mt-3 text-dark">Fogão</h5>
         <p class="card-text descricao" style=" text-align: justify">Fogão Esmaltec 4 Bocas Ágata 4062 - Branco</p>
-
-        <h5 *ngIf="logado()" class="text-center">
-          <button type="button" class="btn btn-info" data-toggle='modal' data-target='#comprar'>Comprar</button>
-        </h5>
       </div>
-      <div class="card-footer">
-        <small class="text-muted">Atualizados 3 minutos atrás</small>
+      <div class="card-footer" *ngIf="logado()">
+        <a type="button" class="btn btn-warning" (click)="comprar()">Comprar</a>
       </div>
     </div>
 
 
-    <div class="card">
+    <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
       <img class="card-img-top mt-1" src="../../assets/img/ArquivoExibir (1).jpg" alt="Imagem de capa do card">
       <div class="card-body">
 
         <h5 class="card-title mt-2 text-dark">Geladeira</h5>
         <p class="card-text descricao" style=" text-align: justify">Geladeira Brastemp BRM44HK Frost Free Duplex
           Inox - 375L</p>
-
-
-        <h5 *ngIf="logado()" class="text-center">
-          <button type="button" class="btn btn-info" data-toggle='modal' data-target='#comprar'>Comprar</button>
-        </h5>
       </div>
-      <div class="card-footer">
-        <small class="text-muted">Atualizados 3 minutos atrás</small>
+      <div class="card-footer" *ngIf="logado()">
+        <a type="button" class="btn btn-warning"(click)="comprar()">Comprar</a>
       </div>
     </div>
-     </div>
-    <!--cards pt1 -->
+  </div>
+  <!--cards pt1 -->
 
     <!--cards pt2 -->
-     <div class="card-deck  ml-3 mr-3">
-    <div class="card">
+  <div class="card-deck  ml-3 mr-3">
+    <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
       <img class="card-img-top" src="https://www.extra-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=376024266"
         alt="Imagem de capa do card">
       <div class="card-body">
         <h5 class="card-title text-dark mt-2">Microondas</h5>
         <p class="card-text descricao" style=" text-align: justify">Forno de Micro-ondas Electrolux MTO30 - 20L -
           Branco</p>
-
-        <h5 *ngIf="logado()" class="text-center">
-          <button type="button" class="btn btn-info" data-toggle='modal' data-target='#comprar'>Comprar</button>
-        </h5>
       </div>
-      <div class="card-footer">
-        <small class="text-muted">Atualizados 3 minutos atrás</small>
+      <div class="card-footer" *ngIf="logado()">
+        <a type="button" class="btn btn-warning"(click)="comprar()">Comprar</a>
       </div>
     </div>
 
-    <div class="card">
+    <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
       <img class="card-img-top mt-2"
         src="https://a-static.mlcdn.com.br/1500x1500/tanquinho-suggar-10-kg-lavamax-eco-com-dispenser-para-sabao-le1001-branco/bertolacemoveiseeletro/10990969787/2b55d9a188499a48a71be6969d65dde2.jpg"
         alt="Imagem de capa do card">
@@ -209,19 +177,15 @@
         <h5 class="card-title text-dark">Tanquinho</h5>
         <p class="card-text descricao" style=" text-align: justify">Tanquinho Suggar 10 Kg Lavamax Eco com Dispenser
           para Sabão - Branco</p>
-
-        <h5 *ngIf="logado()" class="text-center">
-          <button type="button" class="btn btn-info" data-toggle='modal' data-target='#comprar'>Comprar</button>
-        </h5>
       </div>
-      <div class="card-footer">
-        <small class="text-muted">Atualizados 3 minutos atrás</small>
+      <div class="card-footer" *ngIf="logado()">
+        <a type="button" class="btn btn-warning"(click)="comprar()">Comprar</a>
       </div>
     </div>
 
 
 
-    <div class="card">
+    <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
       <img class="card-img-top"
         src="https://www.pontofrio-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=1607381331"
         alt="Imagem de capa do card">
@@ -229,17 +193,13 @@
         <h5 class="card-title mt-2 text-dark">Forno Elétrico</h5>
         <p class="card-text descricao" style=" text-align: justify">Forno Elétrico de Embutir Philco Prata 46L
           56102041</p>
-
-        <h5 *ngIf="logado()" class="text-center">
-          <button type="button" class="btn btn-info" data-toggle='modal' data-target='#comprar'>Comprar</button>
-        </h5>
       </div>
-      <div class="card-footer">
-        <small class="text-muted">Atualizados 3 minutos atrás</small>
+      <div class="card-footer" *ngIf="logado()">
+        <a type="button" class="btn btn-warning" (click)="comprar()">Comprar</a>
       </div>
     </div>
 
-    <div class="card">
+    <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
       <img class="card-img-top mt-1"
         src="https://images.kabum.com.br/produtos/fotos/154978/samsung-smart-tv-65-uhd-4k-65au7700-processador-crystal-4k-tela-sem-limites-visual-livre-de-cabos-alexa-built-in-un65au7700gxzd_1617627547_original.jpg"
         alt="Imagem de capa do card">
@@ -247,37 +207,29 @@
         <h5 class="card-title mt-1 text-dark">Smart TV</h5>
         <p class="card-text descricao" style=" text-align: justify">Smart TV 65" UHD 4K Samsung 65AU7700, Processador
           Crystal 4K</p>
-
-        <h5 *ngIf="logado()" class="text-center">
-          <button type="button" class="btn btn-info" data-toggle='modal' data-target='#comprar'>Comprar</button>
-        </h5>
       </div>
-      <div class="card-footer">
-        <small class="text-muted">Atualizados 3 minutos atrás</small>
+      <div class="card-footer" *ngIf="logado()"> 
+        <a type="button" class="btn btn-warning" (click)="comprar()">Comprar</a>
       </div>
     </div>
 
 
-    <div class="card">
-      <img  class="card-img-top mt-2 "
+    <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
+      <img class="card-img-top mt-2 "
         src="https://a-static.mlcdn.com.br/1500x1500/liquidificador-britania-110v-preto-filtro-potente-jarra-grande-sucos-vitaminas/penselarfun/11985506741/1677348242814607c137bce71f56caa9.jpg"
         alt="Imagem de capa do card">
       <div class="card-body">
         <h5 class="card-title  text-dark">Liquidificadores</h5>
         <p class="card-text descricao" style=" text-align: justify">Liquidificador Britânia Diamante 800 Preto 900W
           com 4 Velocidades</p>
-
-        <h5 *ngIf="logado()" class="text-center">
-          <button type="button" class="btn btn-info" data-toggle='modal' data-target='#comprar'>Comprar</button>
-        </h5>
       </div>
-      <div class="card-footer">
-        <small class="text-muted">Atualizados 3 minutos atrás</small>
+      <div class="card-footer" *ngIf="logado()">
+        <a type="button" class="btn btn-warning" (click)="comprar()">Comprar</a>
       </div>
     </div>
 
 
-    <div class="card">
+    <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
       <img class="card-img-top"
         src="https://www.casasbahia-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=1571510898"
         alt="Imagem de capa do card">
@@ -286,19 +238,14 @@
         <h5 class="card-title mt-2 text-dark">Computadores</h5>
         <p class="card-text descricao" style=" text-align: justify">Aio 21.5" Gigapro I3 9Th Geração 4Gb Ssd240 Win 10
           Com Mouse E Teclado Sem Fio</p>
-
-
-        <h5 *ngIf="logado()" class="text-center">
-          <button type="button" class="btn btn-info" data-toggle='modal' data-target='#comprar'>Comprar</button>
-        </h5>
       </div>
-      <div class="card-footer">
-        <small class="text-muted">Atualizados 3 minutos atrás</small>
+      <div class="card-footer" *ngIf="logado()">
+        <a type="button" class="btn btn-warning"(click)="comprar()">Comprar</a>
       </div>
     </div>
-      </div>
-    <!--cards pt2 -->
-  </div>    
+  </div>
+  <!--cards pt2 -->
+</div>
 <!--cards de todos os produtos/anuncios NOVOS DAS EMPRESAS-->
 
 
@@ -501,14 +448,7 @@
       <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel"
         aria-labelledby="nav-todasPostagens-tab">
 
-        <div class="row  d-flex justify-content-center mt-5 mb-5">
-          <div class="col-md-4">
-            <div class="form-group">
-              <input (keyup)='findByTituloPostagem()' type="text" class="form-control" id="titulo"
-                placeholder="Digite um titulo de postagem para pesquisar" [(ngModel)]="tituloPost">
-            </div>
-          </div>
-        </div>
+      
 
         <div class="card-columns">
 
@@ -553,14 +493,7 @@
 
       <div class="tab-pane fade" id="postagemCategoria" role="tabpanel" aria-labelledby="nav-postagemCategoria-tab">
 
-        <div class="row  d-flex justify-content-center mt-5 mb-5">
-          <div class="col-md-4">
-            <div class="form-group">
-              <input (keyup)='findByNomeCategoria()' type="text" class="form-control" id="titulo"
-                placeholder="Digite uma categoria para pesquisar" [(ngModel)]="nomeCategoria">
-            </div>
-          </div>
-        </div>
+       
 
 
         <div class="card-columns" *ngFor='let categoria of listaCategorias'>

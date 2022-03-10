@@ -68,7 +68,7 @@ export class PostagemEditComponent implements OnInit {
     this.postagemService.putPostagem(this.postagem).subscribe((resp: Postagem)=>{
       this.postagem = resp
       Swal.fire({
-        position: 'top-end',
+        position: 'center',
         icon: 'success',
         title: 'Postagem atualizada com sucesso!',
         showConfirmButton: false,
@@ -76,7 +76,7 @@ export class PostagemEditComponent implements OnInit {
       })
       this.router.navigate(['/anuncios'])
     })
-  
+
   }
 
 }

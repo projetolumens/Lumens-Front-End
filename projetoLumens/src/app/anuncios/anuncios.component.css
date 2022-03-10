@@ -7,7 +7,7 @@ a:link {
   color: #fede27;
 }
 a {
-  color          : #000000 !important;
+  color          : #000000!important;
   font-size      : 12pt;
   text-decoration: none;
   font-weight    : bold;
@@ -17,25 +17,8 @@ a:hover {
   color: black !important;
 }
 
-.bg-drop {
-  background-color: #fede27;
-  margin-left     : 230px;
-  border-radius   : 25px;
-}
-
-.txt-drop:hover {
-  color: #fede27 !important;
-}
-
-
-.bg-drop {
-  background-color: #e8eb2785!important;
-  margin-left     : 230px;
-  border-radius   : 25px;
-}
-
-.txt-drop:hover {
-  color: black !important;
+.bg-nav{
+  background-image: url(https://cdn-icons.flaticon.com/png/512/1046/premium/1046516.png?token=exp=1646943380~hmac=a0810e5d98e6fbf43915a3458f70df71)
 }
 
 
@@ -44,10 +27,7 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.452);
 }
 
-.navbar { background-color: #838282; }
-.navbar .navbar-nav .nav-link { color: #fff; }
-.navbar .navbar-nav .nav-link:hover { color: #fbc531; }
-.navbar .navbar-nav .active > .nav-link { color: #fbc531; }
+
 
 .fundo0{
  
@@ -83,6 +63,14 @@ a:hover {
   flex-wrap    : wrap;
 
 }
+.card-footer{
+  background-color: white;
+}
+
+.descricao{
+  font-size: 10pt;
+}
+
 
 .card-text {
   text-align: center;

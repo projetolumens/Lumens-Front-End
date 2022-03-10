@@ -112,7 +112,7 @@ export class AnunciosComponent implements OnInit {
     this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem) => {
       this.postagem = resp
       Swal.fire({
-        position: 'top-end',
+        position: 'center',
         icon: 'success',
         title: 'Postagem anunciada com sucesso!',
         showConfirmButton: false,
@@ -123,5 +123,15 @@ export class AnunciosComponent implements OnInit {
     })
   }
 
-    
-}
+    comprar() {
+      Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Produto adicionado ao carrinho',
+        showConfirmButton: false,
+        timer: 1500
+      })
+    }
+  }
+
+  

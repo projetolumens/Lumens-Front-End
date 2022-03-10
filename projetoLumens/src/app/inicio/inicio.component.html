@@ -1,15 +1,16 @@
-  <nav class="navbar navbar-expand-lg " id="inicio">
+  <nav class="navbar navbar-expand-lg  " id="inicio">
     <div class="container">
-        <a class="navbar-brand dd" href="#projetoLumens"><i class="fa fa-graduation-cap fa-lg mr-2 text-dark">PROJETO LUMENS</i></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
-            <span class="navbar-toggler-icon"></span>
+      <a class="navbar-brand dd text-dark" href="#projetoLumens">PROJETO
+        LUMENS</a>
+        <button class="navbar-toggler bg-nav " type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
+          <i class="fa-solid fa-list"></i>
         </button>
         <div class="collapse navbar-collapse" id="nvbCollapse">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item pl-1">
                     <a class="nav-link" href="#inicio">Home Page</a>
                 </li>
-                <li class="nav-item active pl-1">
+                <li class="nav-item pl-1">
                     <a class="nav-link" href="#sobre">Sobre</a>
                 </li>
                 <li class="nav-item pl-1">
@@ -278,7 +279,7 @@
 
     
    <!-- botao -->
-   <div class="fab" ontouchstart="">
+   <div *ngIf="logado()" class="fab" ontouchstart="">
     <button (click)="subir()" class="main">
     </button>
   </div>

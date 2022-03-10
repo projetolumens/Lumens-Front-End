@@ -45,7 +45,7 @@ export class PostagemDeleteComponent implements OnInit {
     this.postagemService.deletePostagem(this.IdPost).subscribe(()=>{
     
       Swal.fire({
-        position: 'top-end',
+        position: 'center',
         icon: 'success',
         title: 'Postagem apagada com sucesso!',
         showConfirmButton: false,

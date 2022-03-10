@@ -39,7 +39,7 @@ export class CategoriaComponent implements OnInit {
     this.categoriaService.postCategoria(this.categoria).subscribe((resp: Categoria)=>{
       this.categoria = resp
       Swal.fire({
-        position: 'top-end',
+        position: 'center',
         icon: 'success',
         title: 'Categoria cadastrada com sucesso!!',
         showConfirmButton: false,

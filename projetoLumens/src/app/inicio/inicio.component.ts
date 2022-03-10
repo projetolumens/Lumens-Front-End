@@ -25,4 +25,10 @@ window.scroll(0,0)
   subir(){
     document.body.scrollTop = document.documentElement.scrollTop = 0;
 }
+logado(){
+  if(environment.token != ''){
+    return true
+  }
+  return false
+}
 }
