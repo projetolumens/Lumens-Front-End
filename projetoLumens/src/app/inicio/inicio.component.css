@@ -59,7 +59,7 @@ a:hover {
   width     : 180px;
   height    : 40px;
   cursor    : pointer;
-  background: rgba(240, 239, 181, 0.575);
+  background: rgb(250, 247, 93);
   border    : 1px solid #000000;
   outline   : none;
   transition: 1s ease-in-out;
@@ -310,8 +310,8 @@ svg {
 
 .Membro1 {
   position       : relative;
-  width          : 250px;
-  height         : 270px;
+  width          : 210px;
+  height         : 230px;
   background     : url("https://i.imgur.com/KDRBJFh.jpeg");
   background-size: cover;
   cursor         : pointer;
@@ -324,8 +324,8 @@ svg {
 
 .Membro2 {
   position       : relative;
-  width          : 250px;
-  height         : 270px;
+  width          : 210px;
+  height         : 230px;
   background     : url("https://i.imgur.com/3Ui8aNv.png");
   background-size: cover;
   cursor         : pointer;
@@ -336,8 +336,8 @@ svg {
 
 .Membro3 {
   position       : relative;
-  width          : 250px;
-  height         : 270px;
+  width          : 210px;
+  height         : 230px;
   background     : url("https://i.imgur.com/ihE0FHt.png");
   background-size: cover;
   cursor         : pointer;
@@ -348,8 +348,8 @@ svg {
 
 .Membro4 {
   position       : relative;
-  width          : 250px;
-  height         : 270px;
+  width          : 210px;
+  height         : 230px;
   background     : url("https://i.imgur.com/wk1QM5a.jpeg");
   background-size: cover;
   cursor         : pointer;
@@ -360,8 +360,8 @@ svg {
 
 .Membro5 {
   position       : relative;
-  width          : 250px;
-  height         : 270px;
+  width          : 210px;
+  height         : 230px;
   background     : url("https://i.imgur.com/5vIK4Ot.jpeg");
   background-size: cover;
   cursor         : pointer;
@@ -420,8 +420,8 @@ svg {
   transition      : 0.5s;
   background-image: url(../../assets/img/11.png);
   position        : center;
-  width           : 250px;
-  height          : 270px;
+  width          : 210px;
+  height         : 230px;
   background-size : cover;
   border          : 12px;
 }
@@ -431,8 +431,8 @@ svg {
   transition      : 0.5s;
   background-image: url(../../assets/img/11.png);
   position        : center;
-  width           : 250px;
-  height          : 270px;
+  width          : 210px;
+  height         : 230px;
   background-size : cover;
   border          : 12px;
 }
@@ -442,8 +442,8 @@ svg {
   transition      : 0.5s;
   background-image: url(../../assets/img/11.png);
   position        : center;
-  width           : 250px;
-  height          : 270px;
+  width          : 210px;
+  height         : 230px;
   background-size : cover;
   border          : 12px;
 }
@@ -453,8 +453,8 @@ svg {
   transition      : 0.5s;
   background-image: url(../../assets/img/11.png);
   position        : center;
-  width           : 250px;
-  height          : 270px;
+  width          : 210px;
+  height         : 230px;
   background-size : cover;
   border          : 12px;
 }
@@ -464,8 +464,8 @@ svg {
   transition      : 0.5s;
   background-image: url(../../assets/img/11.png);
   position        : center;
-  width           : 250px;
-  height          : 270px;
+  width          : 210px;
+  height         : 230px;
   background-size : cover;
   border          : 12px;
 }

@@ -228,9 +228,10 @@ body, html {
 
 /* titulo equipe */
 .text-equipe {
-  color      : #ffffffc0;
+  color      : #ffffff;
   font-weight: bold;
   font-size: 35pt;
+  text-shadow: 3px 3px black;
 }
 
 input {
