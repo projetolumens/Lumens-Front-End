@@ -1,47 +1,35 @@
-<div class="container mb-5 mt-5">
+<div class="container mb-5 mt-5 bg-black" id="del">
     <div class="row">
         <div class="col-md-12">
             <h1 class="text-center text-white mt-3">Apagar postagem</h1>
         </div>
     </div>
-   
+
    <div class="row">
        <div class="col-md-12">
            <h4 class="text-center text-warning">Você tem certeza que deseja apagar essa postagem?</h4>
        </div>
    </div>
-   
+
    <div class="row d-flex justify-content-center mt-4">
     <div class="col-md-4">
         <div class="card text-center">
-        
+
             <small class="text-dark font-weight-bold mt-3">Região: {{postagem.regiao}}</small>
-            <small class="text-dark  font-weight-bold">Categoria:{{postagem.categoria.descricao}}</small>
-            <p class="card-text mt-3 font-weight-bold">{{postagem.periodo}}</p>
-            <p class="card-text mt-3 font-weight-bold">{{postagem.retirada}}</p>
-            <p class="card-text mt-3 font-weight-bold">{{postagem.foto}}</p>
-        
+            <small class="text-dark  font-weight-bold mt-3"> Categoria:{{postagem.categoria.descricao}}</small>
+            <p class="card-text mt-3 font-weight-bold text-dark">{{postagem.periodo}}</p>
+            <p class="card-text mt-3 font-weight-bold text-dark">{{postagem.retirada}}</p>
+            <p class="card-text mt-3 font-weight-bold text-dark">{{postagem.foto}}</p>
+
        </div>
    </div>
-   
-   
+
+
     <div class="row mt-5">
        <div class="col-md-12 d-flex justify-content-center">
            <button class="btn btn-danger mr-4 mb-4" routerLink="/anuncios">Não</button>
            <button class="btn btn-primary mb-4" (click)="apagar()">Sim</button>
        </div> 
-       
+
     </div>
    </div>
-   
-    <div class="row mt-5">
-       <div class="col-md-12 d-flex justify-content-center">
-           <button class="btn btn-vermelho mr-4" routerLink="/inicio">Não</button>
-           <button class="btn btn-roxo2" (click)="apagar()">Sim</button>
-       </div> 
-       
-    </div>
-   </div>
-   
-   
-   

@@ -56,6 +56,11 @@ export class UserEditComponent implements OnInit {
         timer: 1500
       })
     } else {
+
+      this.usuario.postagem = [];
+
+      console.log(JSON.stringify(this.usuario))
+
       this.authService.atualizar(this.usuario).subscribe((resp: Usuario) => {
         this.usuario = resp
         this.router.navigate(['/anuncios'])
@@ -71,6 +76,8 @@ export class UserEditComponent implements OnInit {
         environment.foto = ''
         environment.tipo = ''
         environment.id = 0
+
+
 
         this.router.navigate(['/entrar'])
       })

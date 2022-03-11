@@ -21,7 +21,9 @@ a:hover {
   background-image: url(https://cdn-icons.flaticon.com/png/512/1046/premium/1046516.png?token=exp=1646943380~hmac=a0810e5d98e6fbf43915a3458f70df71)
 }
 
-
+.dropdown-menu{
+  background-color: #fede27;
+}
 
 .bg-lumens {
   background-color: rgba(0, 0, 0, 0.452);
@@ -38,6 +40,75 @@ a:hover {
   border-radius: 25px;
   border: 2px solid rgb(0, 0, 0);
 }
+
+
+
+
+
+/*decarte e postagens*/
+
+.descartar{
+  background-color: #000000;
+}
+.card2 {
+ 
+  background-size: cover;
+  cursor         : pointer;
+  border         : 12px;
+  border-radius  : 10px;
+  margin-top     : 25px;
+  position       : relative;
+ 
+  background-color:#fede27be;
+
+ 
+}
+.nav {
+  background-color: #FEDE27;
+  border-radius: 25px;
+}
+
+.card.post{
+
+ 
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(8px);
+ 
+  background-size: cover;
+  cursor         : pointer;
+  border         : 12px;
+  border-radius  : 10px;
+  margin-top     : 25px;
+  position       : relative;
+  background-image:url('../../assets/img/background-post.png');
+}
+
+.text-mutedp{
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+.card-text.mt-3{
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+
+#icon{
+  color:#d9534f;
+}
+
+#icon1{
+  color:#0275d8;
+}
+
+
+
+
+
+
+
 
 /*cards dicas PRONTO*/
 
@@ -86,14 +157,16 @@ a:hover {
 .card-group {
   margin-bottom: 42px;
 }
-
 /*cards dicas PRONTO*/
+
+
+
+
+
 
 .minhasPostagens {
   overflow: auto;
 }
-
-
 
 
 /* NOSSO TIME */

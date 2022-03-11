@@ -16,10 +16,9 @@ import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delet
 import { CategoriaComponent } from './categoria/categoria/categoria.component';
 import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
 import { AnunciosComponent } from './anuncios/anuncios.component';
-import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
-import { OrderModule } from 'ngx-order-pipe';
 import { UserEditComponent } from './edit/user-edit/user-edit.component';
 import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
+import { OrderModule } from 'ngx-order-pipe';
 
 
 @NgModule({
@@ -34,7 +33,6 @@ import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
     AnunciosComponent, 
     PostagemDeleteComponent, 
     PostagemEditComponent,
-    CategoriaDeleteComponent,
     UserEditComponent,
     MenuLogadoComponent
    

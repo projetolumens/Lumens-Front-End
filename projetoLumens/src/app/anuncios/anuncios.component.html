@@ -18,7 +18,7 @@
         <li class="nav-item pl-1">
           <a class="nav-link" href="#descarte">Descarte</a>
         </li>
-        <li class="nav-item pl-1">
+        <li class="nav-item pl-1 mr-1">
           <a class="nav-link" href="#dicas">Dicas</a>
         </li>
         <li>
@@ -212,23 +212,24 @@
         <a type="button" class="btn btn-warning" (click)="comprar()">Comprar</a>
       </div>
     </div>
+  
 
 
     <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
-      <img class="card-img-top mt-2 "
+      <img class="card-img-top mt-1"
         src="https://a-static.mlcdn.com.br/1500x1500/liquidificador-britania-110v-preto-filtro-potente-jarra-grande-sucos-vitaminas/penselarfun/11985506741/1677348242814607c137bce71f56caa9.jpg"
         alt="Imagem de capa do card">
       <div class="card-body">
-        <h5 class="card-title  text-dark">Liquidificadores</h5>
+        <h5 class="card-title mt-1 text-dark">Liquidificadores</h5>
         <p class="card-text descricao" style=" text-align: justify">Liquidificador Britânia Diamante 800 Preto 900W
           com 4 Velocidades</p>
       </div>
-      <div class="card-footer" *ngIf="logado()">
+      <div class="card-footer" *ngIf="logado()"> 
         <a type="button" class="btn btn-warning" (click)="comprar()">Comprar</a>
       </div>
     </div>
 
-
+   
     <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
       <img class="card-img-top"
         src="https://www.casasbahia-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=1571510898"
@@ -317,16 +318,18 @@
 
 <!-- postagem de descarte-->
 <div id="descarte" class="row d-flex justify-content-center">
-  <div class="card" style="width: 20rem;">
+  <div class="card2" style="width: 70rem;">
     <div class="card-body">
       <h5 class="card-title text-dark">DESCARTE AQUI SEU LIXO ELETRÔNICO</h5>
       <p class="card-text">fazemos a coleta do seu lixo eletrônico de forma segura, prática, sem quantidade
         mínima e totalmente gratuita.</p>
       <div class="row">
 
+
+
         <h5 *ngIf="logado()" class="text-center">
           Qual produto você quer
-          <button type="button" class="btn btn-warning" data-toggle='modal'
+          <button type="button" class="btn descartar text-light" data-toggle='modal'
             data-target='#novaPostagem'>Descartar</button>
           ?
         </h5>
@@ -424,7 +427,8 @@
   <!-- Modal -->
 
   <!--Todos os anúncios dos usuários-->
-  <div class="container md-5 mt-2 mb-5" id="postagens">
+  <!--Todos os anúncios dos usuários-->
+  <div class="container-fluid md-5 mt-2 mb-5" id="postagens">
     <nav>
       <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
         <a class="nav-item nav-link active text-dark font-weight-bold" id="nav-todasPostagens-tab" data-toggle="tab"
@@ -442,48 +446,57 @@
       </div>
     </nav>
 
-    <div class="tab-content mt-5" id="nav-tabContent">
+    <div class="tab-content mt-2" id="nav-tabContent">
 
 
       <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel"
         aria-labelledby="nav-todasPostagens-tab">
 
+        <div class="row  d-flex justify-content-center mt-5 mb-5">
       
+        </div>
 
         <div class="card-columns">
 
-          <div class="card text-center" *ngFor=' let item of listaPostagens| orderBy: key : reverse'>
+          <div class="card post text-center" *ngFor=' let item of listaPostagens| orderBy: key : reverse'>
             <div class="card-body">
-              <small class="text-muted ">Região: {{item.regiao}}</small>
-              <small class="text-muted ">&emsp;Categoria: {{item.categoria.nome}}</small>
+              <small class="text-mutedp ">Região: {{item.regiao}}</small>
+              <small class="text-mutedp">&emsp;Categoria: {{item.categoria.nome}}</small>
               <p class="card-text mt-3">{{item.retirada}}</p>
               
-              <p class="card-text"><small class="text-muted">by: {{item.usuario.nomeCompleto}}</small></p>
+              <p class="card-text"><small class="text-mutedp">by: {{item.usuario.nomeCompleto}}</small></p>
             </div>
           </div>
         </div>
       </div>
 
 
+
+
+      
       <div class="tab-pane fade minhasPostagens" id="minhasPostagens" role="tabpanel"
         aria-labelledby="nav-minhasPostagens-tab">
 
         <div class="card-columns">
 
-          <div class="card text-center" *ngFor='let item of usuario.postagem | orderBy: key : reverse'>
+          <div class="card post text-center" *ngFor='let item of usuario.postagem | orderBy: key : reverse'>
             <div class="card-body">
-              <small class="text-muted ">Região: {{item.regiao}}</small>
-              <small class="text-muted ">&emsp;Categoria: {{item.categoria.nome}}</small>
+              <small class="text-mutedp">Região: {{item.regiao}}</small>
+              <small class="text-mutedp">&emsp;Categoria: {{item.categoria.nome}}</small>
               <p class="card-text mt-3">{{item.retirada}}</p>
              
 
+
+
+
+
+
               <a [routerLink]="['/postagem-edit', item.id]" class="text-info mr-3" href="">
-                <i class="fas fa-edit"></i>
+                <i id="icon1" class="fas fa-edit"></i>
               </a>
               <a [routerLink]="['/postagem-delete', item.id]" class="text-danger" href="">
-                <i class="fas fa-trash"></i>
+                <i id="icon" class="fas fa-trash"></i>
               </a>
-
 
             </div>
           </div>
@@ -494,126 +507,128 @@
       <div class="tab-pane fade" id="postagemCategoria" role="tabpanel" aria-labelledby="nav-postagemCategoria-tab">
 
        
-
+       
 
         <div class="card-columns" *ngFor='let categoria of listaCategorias'>
 
-          <div class="card text-center" *ngFor=' let item of categoria.postagem'>
+          <div class="card post text-center" *ngFor=' let item of categoria.postagem'>
             <div class="card-body">
-              <small class="text-muted ">Região: {{item.regiao}}</small>
-              <small class="text-muted ">&emsp;Categoria: {{item.categoria.nome}}</small>
+              <small class="text-mutedp">Região: {{item.regiao}}</small>
+              <small class="text-mutedp">&emsp;Categoria: {{categoria.nome}}</small>
               <p class="card-text mt-3">{{item.retirada}}</p>
               
-              <p class="card-text"><small class="text-muted">by: {{item.usuario.nomeCompleto}}</small></p>
+              <p class="card-text"><small class="text-mutedp">by: {{item.usuario.nomeCompleto}}</small></p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  
   <!--Todos os anúncios dos usuários-->
   <!--produtos do usuario / descarte-->
+  
 
 
   <!-- cards dicas-->
+ <!-- cards dicas-->
  <div class="row d-flex justify-content-center" id="dicas">
- <div class="col-md-5 card-deck justify-content-center">
-  <h2 class="mt-5 text-config text-black card-title justify-content-center">Dicas para diminuir seu consumo de energia:</h2>
-
-<div id="carouselExampleDark" class="carousel carousel-dark slide font weight bold" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="12000">
-
-      <div class="card ">
-        <img class="card-img-top mt-3" src="https://cdn-icons-png.flaticon.com/512/780/780551.png"
-          alt="Imagem de capa do card">
-        <div class="card-body">
-          <h5 class="card-title mt-3 text-black txt-dica">Nunca deixe os aparelhos elétricos sem uso plugados na
-            tomada
-          </h5>
-          <p class="card-text text-black txt-dica mb-3" style=" text-align: justify">Pode não parecer, mas o modo stand by
-            é um vilão que passa despercebido quando o assunto é gasto de energia.</p>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="carousel-item" data-bs-interval="2000">
-      <div class="card ">
-        <img class="card-img-top mt-3" src="../../assets/img/solar.png" alt="Imagem de capa do card">
-        <div class="card-body">
-          <h5 class="card-title mt-3 text-black txt-dica">Aproveite a luz do sol e a ventilação natural</h5>
-          <p class="card-text text-black txt-dica">Segundo pesquisas casas com boa
-            entrada
-            natural
-            de sol e ventilação demandam menos consumo da energia elétrica</p>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="carousel-item">
-     <div class="card">
-        <img class="card-img-top" src="../../assets/img/banho.png" alt="Imagem de capa do card">
-        <div class="card-body">
-          <h5 class="card-title mt-3 text-black txt-dica">Evite os banhos demorados</h5>
-          <p class="card-text text-black txt-dica" style=" text-align:justify">Apesar de batida, esta é uma dica muito
-            importante,
-            uma vez que os chuveiros consomem boa parte da energia elétrica da casa.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="carousel-item">
-      <div class="card">
-        <img class="card-img-top" src="../../assets/img/home.png" alt="Imagem de capa do card">
-        <div class="card-body">
-          <h5 class="card-title mt-3 text-black txt-dica">Prefira eletrodomésticos de baixo consumo de energia
-            elétrica
-          </h5>
-          <p class="card-text text-black txt-dica"  style=" text-align:justify">Ao comprar um eletrodoméstico prefira os da classe energética A ++
-            ou A +++,
-            que consomem até 70% menos energia em comparação com os de classe A. </p>
-        </div>
-      </div>
+  <div class="col-md-12 card-deck justify-content-center">
+   <h2 class="mt-5 text-config text-black card-title justify-content-center">Dicas para diminuir seu consumo de energia:</h2>
+ 
+ <div id="carouselExampleDark" class="carousel carousel-dark slide font weight bold" data-bs-ride="carousel">
+   <div class="carousel-indicators">
+     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+   </div>
+   <div class="carousel-inner">
+     <div class="carousel-item active" data-bs-interval="12000">
+ 
+       <div class="card ">
+         <img class="card-img-top mt-3" src="https://cdn-icons-png.flaticon.com/512/780/780551.png"
+           alt="Imagem de capa do card">
+         <div class="card-body">
+           <h5 class="card-title mt-3 text-black txt-dica">Nunca deixe os aparelhos elétricos sem uso plugados na
+             tomada
+           </h5>
+           <p class="card-text text-black txt-dica mb-3" style=" text-align: justify">Pode não parecer, mas o modo stand by
+             é um vilão que passa despercebido quando o assunto é gasto de energia.</p>
+         </div>
+       </div>
      </div>
-
+ 
+ 
+     <div class="carousel-item" data-bs-interval="2000">
+       <div class="card ">
+         <img class="card-img-top mt-3" src="../../assets/img/solar.png" alt="Imagem de capa do card">
+         <div class="card-body">
+           <h5 class="card-title mt-3 text-black txt-dica">Aproveite a luz do sol e a ventilação natural</h5>
+           <p class="card-text text-black txt-dica">Segundo pesquisas casas com boa
+             entrada
+             natural
+             de sol e ventilação demandam menos consumo da energia elétrica</p>
+         </div>
+       </div>
+     </div>
+ 
+ 
      <div class="carousel-item">
       <div class="card">
-        <img class="card-img-top mt-3" src="../../assets/img/lamp.png" alt="Imagem de capa do card">
-        <div class="card-body">
-          <h5 class="card-title mt-3 text-black txt-dica">Substitua as lâmpadas convencionais pelas de baixo consumo
-            de
-            energia
-          </h5>
-          <p class="card-text text-black txt-dica"  style=" text-align:justify">Se na sua casa as lâmpadas ainda são incandescentes está na hora de trocá-las.
-          </p>
-          <p> Prefira as incandescente ou de LED. Pois, podem gerar uma economia de mais de 30% no consumo de energia, além de possuírem maior durabilidade.</p>
-        </div>
-      </div>
+         <img class="card-img-top" src="../../assets/img/banho.png" alt="Imagem de capa do card">
+         <div class="card-body">
+           <h5 class="card-title mt-3 text-black txt-dica">Evite os banhos demorados</h5>
+           <p class="card-text text-black txt-dica" style=" text-align:justify">Apesar de batida, esta é uma dica muito
+             importante,
+             uma vez que os chuveiros consomem boa parte da energia elétrica da casa.</p>
+         </div>
+       </div>
      </div>
-
-
-
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</div>
-  <!-- cards dicas-->
+ 
+     <div class="carousel-item">
+       <div class="card">
+         <img class="card-img-top" src="../../assets/img/home.png" alt="Imagem de capa do card">
+         <div class="card-body">
+           <h5 class="card-title mt-3 text-black txt-dica">Prefira eletrodomésticos de baixo consumo de energia
+             elétrica
+           </h5>
+           <p class="card-text text-black txt-dica"  style=" text-align:justify">Ao comprar um eletrodoméstico prefira os da classe energética A ++
+             ou A +++,
+             que consomem até 70% menos energia em comparação com os de classe A. </p>
+         </div>
+       </div>
+      </div>
+ 
+      <div class="carousel-item">
+       <div class="card">
+         <img class="card-img-top mt-3" src="../../assets/img/lamp.png" alt="Imagem de capa do card">
+         <div class="card-body">
+           <h5 class="card-title mt-3 text-black txt-dica">Substitua as lâmpadas convencionais pelas de baixo consumo
+             de
+             energia
+           </h5>
+           <p class="card-text text-black txt-dica"  style=" text-align:justify">Se na sua casa as lâmpadas ainda são incandescentes está na hora de trocá-las.
+           </p>
+           <p> Prefira as incandescente ou de LED. Pois, podem gerar uma economia de mais de 30% no consumo de energia, além de possuírem maior durabilidade.</p>
+         </div>
+       </div>
+      </div>
+ 
+ 
+ 
+   </div>
+   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Previous</span>
+   </button>
+   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Next</span>
+   </button>
+ </div>
+ </div>
+   <!-- cards dicas-->
 
 
 

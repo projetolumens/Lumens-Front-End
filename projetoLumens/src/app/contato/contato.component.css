@@ -22,8 +22,8 @@ body, html {
 
 .Membro1 {
   position       : relative;
-  width          : 150px;
-  height         : 162px;
+  width          : 210px;
+  height         : 230px;
   background     : url("https://i.imgur.com/KDRBJFh.jpeg");
   background-size: cover;
   cursor         : pointer;
@@ -36,8 +36,8 @@ body, html {
 
 .Membro2 {
   position       : relative;
-  width          : 150px;
-  height         : 162px;
+  width          : 210px;
+  height         : 230px;
   background     : url("https://i.imgur.com/3Ui8aNv.png");
   background-size: cover;
   cursor         : pointer;
@@ -48,8 +48,8 @@ body, html {
 
 .Membro3 {
   position       : relative;
-  width          : 150px;
-  height         : 162px;
+  width          : 210px;
+  height         : 230px;
   background     : url("https://i.imgur.com/ihE0FHt.png");
   background-size: cover;
   cursor         : pointer;
@@ -60,8 +60,8 @@ body, html {
 
 .Membro4 {
   position       : relative;
-  width          : 150px;
-  height         : 162px;
+  width          : 210px;
+  height         : 230px;
   background     : url("https://i.imgur.com/wk1QM5a.jpeg");
   background-size: cover;
   cursor         : pointer;
@@ -72,8 +72,8 @@ body, html {
 
 .Membro5 {
   position       : relative;
-  width          : 150px;
-  height         : 162px;
+  width          : 210px;
+  height         : 230px;
   background     : url("https://i.imgur.com/5vIK4Ot.jpeg");
   background-size: cover;
   cursor         : pointer;
@@ -132,8 +132,8 @@ body, html {
   transition      : 0.5s;
   background-image: url(../../assets/img/11.png);
   position        : center;
-  width          : 150px;
-  height         : 162px;
+  width          : 210px;
+  height         : 230px;
   background-size : cover;
   border          : 12px;
 }
@@ -143,8 +143,8 @@ body, html {
   transition      : 0.5s;
   background-image: url(../../assets/img/11.png);
   position        : center;
-  width          : 150px;
-  height         : 162px;
+  width          : 210px;
+  height         : 230px;
   background-size : cover;
   border          : 12px;
 }
@@ -154,8 +154,8 @@ body, html {
   transition      : 0.5s;
   background-image: url(../../assets/img/11.png);
   position        : center;
-  width          : 150px;
-  height         : 162px;
+  width          : 210px;
+  height         : 230px;
   background-size : cover;
   border          : 12px;
 }
@@ -165,8 +165,8 @@ body, html {
   transition      : 0.5s;
   background-image: url(../../assets/img/11.png);
   position        : center;
-  width          : 150px;
-  height         : 162px;
+  width          : 210px;
+  height         : 230px;
   background-size : cover;
   border          : 12px;
 }
@@ -176,8 +176,8 @@ body, html {
   transition      : 0.5s;
   background-image: url(../../assets/img/11.png);
   position        : center;
-   width          : 150px;
-  height         : 162px;
+  width          : 210px;
+  height         : 230px;
   background-size : cover;
   border          : 12px;
 }

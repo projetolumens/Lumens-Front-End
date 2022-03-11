@@ -7,7 +7,8 @@ import { Usuario } from '../model/Usuario';
 import { AuthService } from '../service/auth.service';
 import { CategoriaService } from '../service/categoria.service';
 import { PostagemService } from '../service/postagem.service';
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
+
 
 @Component({
   selector: 'app-anuncios',
