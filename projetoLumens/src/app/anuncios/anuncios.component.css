@@ -24,7 +24,9 @@ a:hover {
 .dropdown-menu{
   background-color: #fede27;
 }
-
+.dropdown-item:hover{
+  background-color: #d4d4d4;
+}
 
 .bg-lumens {
   background-color: rgba(0, 0, 0, 0.452);
@@ -37,12 +39,21 @@ a:hover {
   background-color: rgb(17, 17, 17);   
 }
 
+.bg-site{
+background-color: #fbf09221;
+}
+
 .linhas-img{
   border-radius: 25px;
   border: 2px solid rgb(0, 0, 0);
+  width: 260px;
 }
 
-
+.titulos{
+  font-size: 32pt;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
 
 
 
@@ -51,18 +62,18 @@ a:hover {
 .descartar{
   background-color: #000000;
 }
+.descartar:hover{
+  background-color: #5c5c5c;
+}
 .card2 {
- 
   background-size: cover;
   cursor         : pointer;
   border         : 12px;
   border-radius  : 10px;
   margin-top     : 25px;
   position       : relative;
- 
   background-color:#fede27be;
-
- 
+  justify-content: center;
 }
 .nav {
   background-color: #FEDE27;
@@ -70,12 +81,9 @@ a:hover {
 }
 
 .card.post{
-
- 
   border-radius: 10px;
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(8px);
- 
   background-size: cover;
   cursor         : pointer;
   border         : 12px;
@@ -85,13 +93,22 @@ a:hover {
   background-image:url('../../assets/img/background-post.png');
 }
 
+.titulo{
+  text-align : center;
+  font-weight: bold;
+  font-size: 18pt;
+}
+.titulo1{
+  text-align : center;
+}
+
 .text-mutedp{
-  color: #ffffff !important;
+  color: #000000 !important;
   font-weight: bold;
 }
 
 .card-text.mt-3{
-  color: #ffffff !important;
+  color: #000000 !important;
   font-weight: bold;
 }
 
@@ -105,64 +122,17 @@ a:hover {
 }
 
 
-
-
-
-
-
-
-/*cards dicas PRONTO*/
-
-.card-title {
-  font-weight: bold;
-  text-align : center;
-  color      : #fff;
-}
-
-.card-img-top {
-  width: 75px !important;
-}
-
-.card {
- 
-
-  margin-right : 5px;
-  box-sizing   : border-box;
-  border-radius: 10px;
-
-  align-items  : center;
-  margin       : 25px 0px;
-  flex-wrap    : wrap;
-
-}
-.card-footer{
-  background-color: white;
-}
-
-.descricao{
-  font-size: 10pt;
-}
-
-
-.card-text {
-  text-align: center;
-  color     : rgb(0, 0, 0);
-}
-
-.text-config {
-  color          : rgb(0, 0, 0);
-  font-weight    : bold;
-  justify-content: center;
-}
-
-.card-group {
-  margin-bottom: 42px;
-}
-/*cards dicas PRONTO*/
-
-
-
 .minhasPostagens {
   overflow: auto;
+}
+
+.img-fluid{
+  display: flex;
+  gap: .5rem;
+}
+
+.card.post{
+ background-image: url(https://cdn.discordapp.com/attachments/945323144703512608/952918536634900560/card.png);
+    box-shadow: 10px 10px 10px 5px rgba(80, 82, 57, 0.404);
 }
 

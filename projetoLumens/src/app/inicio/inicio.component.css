@@ -47,6 +47,10 @@ a:hover {
   color      : rgb(0, 0, 0) !important;
 }
 
+.link{
+  color: #000000!important;
+}
+
 /* botao */
 
 .center {
@@ -293,8 +297,48 @@ svg {
 
 
 
+/*cards dicas PRONTO*/
+
+.card-title {
+  font-weight: bold;
+  text-align : center;
+  color      : #fff;
+}
+
+.card-img-top {
+  width: 75px !important;
+}
+
+.card {
+ 
+
+  margin-right : 5px;
+  box-sizing   : border-box;
+  border-radius: 10px;
+
+  align-items  : center;
+  margin       : 25px 0px;
+  flex-wrap    : wrap;
+
+}
+.card-footer{
+  background-color: white;
+}
+
+.descricao{
+  font-size: 10pt;
+}
 
 
+
+.text-config {
+  color          : rgb(0, 0, 0);
+  font-weight    : bold;
+  justify-content: center;
+}
+
+
+/*cards dicas PRONTO*/
 
 
 
