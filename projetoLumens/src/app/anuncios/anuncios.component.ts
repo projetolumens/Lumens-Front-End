@@ -49,7 +49,12 @@ export class AnunciosComponent implements OnInit {
     this.getAllPostagens()
   
   }
-
+  deslogado(){
+    if(environment.token == ''){
+      return true
+    }
+    return false
+  }
   
   logado(){
     if(environment.token != ''){

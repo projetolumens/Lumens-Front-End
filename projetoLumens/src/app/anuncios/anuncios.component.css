@@ -32,7 +32,9 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.452);
 }
 
-
+.Pesquisar{
+  border-radius: 25px;
+}
 
 .fundo0{
  
@@ -55,6 +57,14 @@ background-color: #fbf09221;
   margin-bottom: 18px;
 }
 
+.btn-entrar{
+  border-radius: 8px;
+  background-color: #fff02048;
+}
+.btn-entrar:hover{
+  border-radius: 8px;
+  background-color: #fff020ed;
+}
 
 
 /*decarte e postagens*/

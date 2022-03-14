@@ -12,8 +12,15 @@
 
     <div class="collapse navbar-collapse" id="nvbCollapse">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item pl-1">
-          <a routerLink="/inicio" class="nav-link" href="#entenda">Entenda o Programa</a>
+        
+          <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-2 Pesquisar" type="search" id="pesquisar" aria-label="Search"
+                  placeholder="Pesquisar" />
+              <a class="fs-16" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          </form>
+     
+        <li class="nav-item pl-1 ml-3">
+          <a routerLink="/inicio" class="nav-link" href="#entenda">Entenda o Cashback</a>
         </li>
 
         <li class="nav-item pl-1">
@@ -72,10 +79,24 @@
   <div id="comprar" class="">
     <h1 class="text-center mb-2 mt-3 titulos">Produtos sustentáveis de lojas parceiras
       <img width="42px"
-        src="https://cdn-icons.flaticon.com/png/512/2707/premium/2707279.png?token=exp=1646923230~hmac=f84f5dea0bef388e9d5e372356227391"
+        src="https://cdn-icons.flaticon.com/png/512/3993/premium/3993656.png?token=exp=1647268329~hmac=5448720e910db099e504d29a6aee7d77"
         alt="">
     </h1>
+
+
     <h4 class="text-center mb-5">Ganhe desconto aplicando o cashback de seu descarte, feito nos ecopontos parceiros</h4>
+
+
+    <div class="text-center justify-content-center" *ngIf="deslogado()">
+      <h6>
+        <img width="25px" class="mr-3" src="https://cdn-icons.flaticon.com/png/512/471/premium/471611.png?token=exp=1647267698~hmac=180708d5b9c70e32579d6a8950c977ad" alt="">Ative seu cashback
+        <button class="btn-entrar">
+          <a class="m-1" routerLink="/entrar" >Entrar</a>
+        </button>
+      </h6>
+    </div>
+
+
 
     <!--cards pt1 -->
     <div class="card-deck ml-3 mr-3">
@@ -85,6 +106,8 @@
           <h5 class="card-title text-dark mt-3">Microondas</h5>
           <p class="card-text descricao" style=" text-align: justify">Microondas LG Solo 30 Litros Prata MS3095</p>
         </div>
+
+
         <div class="card-footer" *ngIf="logado()">
           <a type="button" class="btn btn-warning" (click)="comprar()">Comprar</a>
         </div>
