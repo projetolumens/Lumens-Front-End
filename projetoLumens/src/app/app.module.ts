@@ -21,6 +21,7 @@ import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
 import { OrderModule } from 'ngx-order-pipe';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,8 @@ import { OrderModule } from 'ngx-order-pipe';
     PostagemDeleteComponent, 
     PostagemEditComponent,
     UserEditComponent,
-    MenuLogadoComponent
+    MenuLogadoComponent,
+    
    
   
     
