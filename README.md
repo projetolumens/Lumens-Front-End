@@ -33,7 +33,15 @@ Somos um e-Commerce focado em ajudar e conscientizar uma parte da população vu
 </p>
 
 <hr>
+  
+### Entrar / Cadastro
 
+<p align="center">
+  <img src="https://i.imgur.com/qWhfTxl.png" height="300" width="500">
+  <img src="https://i.imgur.com/75jEd3M.png" height="300" width="500">
+</p>
+
+<hr>
 
 ### Página de anúncio / Produtos lojas parceiras / Postagem de descarte dos usuários 
 <p align="center">
@@ -42,7 +50,9 @@ Somos um e-Commerce focado em ajudar e conscientizar uma parte da população vu
  <img src="https://i.imgur.com/jWDVsr1.png" height="300" width="500">
   <img src="https://i.imgur.com/ybE3ErM.png" height="300" width="500">
 </p>
+  
 <hr>
+  
 ### Contato
 
 <p align="center">
