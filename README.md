@@ -20,7 +20,7 @@ Somos um e-Commerce focado em ajudar e conscientizar uma parte da população vu
 - CSS;
 - Bootstrap.
   
-  
+
 ## Ele já está pronto e rodando neste link: https://lumens.netlify.app/#/inicio
 ## Capturas de Tela do projeto:
 
