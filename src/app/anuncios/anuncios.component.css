@@ -7,7 +7,7 @@ a:link {
   color: #fede27;
 }
 a {
-  color          : #000000!important;
+  color          : #242424!important;
   font-size      : 12pt;
   text-decoration: none;
   font-weight    : bold;
@@ -25,7 +25,7 @@ a:hover {
   background-color: #fede27;
 }
 .dropdown-item:hover{
-  background-color: #d4d4d4;
+  background-color: #ffffff;
 }
 
 .bg-lumens {
@@ -59,11 +59,11 @@ background-color: #fbf09221;
 
 .btn-entrar{
   border-radius: 8px;
-  background-color: #fff02048;
+  background-color: #62626248;
 }
 .btn-entrar:hover{
   border-radius: 8px;
-  background-color: #fff020ed;
+  background-color: #ffffff;
 }
 
 

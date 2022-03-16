@@ -27,7 +27,7 @@ export class CategoriaService {
   }
 
   getByNomeCategoria(nome: string): Observable<Categoria[]>{
-    return this.http.get<Categoria[]>(`https://projetolumens.herokuapp.com/categoria/${nome}`, this.token)
+    return this.http.get<Categoria[]>(`https://projetolumens.herokuapp.com/categoria/nome/${nome}`, this.token)
   }
 
   postCategoria(categoria: Categoria): Observable<Categoria>{
