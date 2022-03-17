@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Open+Sans+Condensed:wght@300&display=swap%27');
+
+
 .bg{
 
     background-image: url(../../assets/img/p07w0fnd.jpg);
-    background-position: center;    
+    background-position: center;
     display: flex;
     align-items: center;
     background-size: cover;
-    background-repeat: no-repeat;    
-    bottom: 0;  
+    background-repeat: no-repeat;
+    bottom: 0;
     left: 0;
     top: 0; 
     right: 0; 
@@ -28,19 +30,18 @@
 }
 .m-20{
     margin-left: 20px;
-    background-color:#f7f7f3;
-    color: rgb(0, 0, 0);
+    background-color:#f7f7f31a;
+    color: rgba(252, 252, 252, 0.808);
     border: none;
-    
-}
 
+}
 .btn:hover{
     background-color: #226f3fbb;
     color: rgb(255, 255, 255);
     border: none;
 }
 .box{
-    
+
     box-sizing: border-box;
     box-shadow: 15px 15px 48px #070707bb;
     border-top: 1px solid rgba(0, 0, 0, 0.158);
@@ -48,8 +49,8 @@
     border-radius: 10px;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(8px);
-   
-    
+
+
 }
 
 input{
@@ -83,13 +84,14 @@ select{
 }
 
 .font-login{
-   color: rgb(255, 255, 255);
+    color: rgba(245, 245, 245, 0.801);
     font-family:'Dosis', sans-serif ;
     font-size: 42pt;
-    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
+
 }
 
 ::placeholder{

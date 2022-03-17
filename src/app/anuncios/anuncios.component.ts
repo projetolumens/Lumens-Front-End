@@ -106,7 +106,7 @@ export class AnunciosComponent implements OnInit {
       })
     }
   }
-
+ 
 
   publicar() {
     this.categoria.id = this.idCategoria
