@@ -28,8 +28,8 @@
 }
 .m-20{
     margin-left: 20px;
-    background-color:#f7f7f31a;
-    color: rgba(252, 252, 252, 0.808);
+    background-color:#f7f7f3;
+    color: rgb(0, 0, 0);
     border: none;
     
 }
@@ -62,20 +62,36 @@ select{
 .font{
     font-family:'Dosis', sans-serif ;
     font-size: 20px;
-    color: rgba(255, 255, 255, 0.801);
+    color: rgb(255, 255, 255);
     
 }
+
+.button-cc{
+    font-size: 16pt;
+    font-weight: bold; 
+    
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
 .button-cc:hover{
-    background-color: #eeff00c2;
+    background-color: #f8f540d5;
+    color: rgb(255, 255, 255);
     border: none;
- 
+    
 }
 
 .font-login{
-   color: rgba(245, 245, 245, 0.801);
+   color: rgb(255, 255, 255);
     font-family:'Dosis', sans-serif ;
     font-size: 42pt;
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+::placeholder{
+    font-weight: bold;
 }
