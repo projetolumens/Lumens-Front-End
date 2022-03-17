@@ -1,0 +1,148 @@
+.navbar { background-color: #fede27!important; }
+.navbar .navbar-nav .nav-link { color: rgb(0, 0, 0)!important; }
+.navbar .navbar-nav .nav-link:hover { color: #afafaf!important; }
+.navbar .navbar-nav .active > .nav-link { color: #000000!important; }
+
+a:link {
+  color: #fede27;
+}
+a {
+  color          : #242424!important;
+  font-size      : 12pt;
+  text-decoration: none;
+  font-weight    : bold;
+}
+
+a:hover {
+  color: black !important;
+}
+
+.bg-nav{
+  background-image: url(https://cdn-icons.flaticon.com/png/512/1046/premium/1046516.png?token=exp=1646943380~hmac=a0810e5d98e6fbf43915a3458f70df71)
+}
+
+.dropdown-menu{
+  background-color: #fede27;
+}
+.dropdown-item:hover{
+  background-color: #ffffff;
+}
+
+.bg-lumens {
+  background-color: rgba(0, 0, 0, 0.452);
+}
+
+.Pesquisar{
+  border-radius: 25px;
+}
+
+.fundo0{
+ 
+  background-color: rgb(17, 17, 17);   
+}
+
+.bg-site{
+background-color: #fbf09221;
+}
+
+.linhas-img{
+  border-radius: 25px;
+  border: 2px solid rgb(0, 0, 0);
+  width: 260px;
+}
+
+.titulos{
+  font-size: 32pt;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.btn-entrar{
+  border-radius: 8px;
+  background-color: #62626248;
+}
+.btn-entrar:hover{
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+
+/*decarte e postagens*/
+
+.descartar{
+  background-color: #000000;
+}
+.descartar:hover{
+  background-color: #5c5c5c;
+}
+.card2 {
+  background-size: cover;
+  cursor         : pointer;
+  border         : 12px;
+  border-radius  : 10px;
+  margin-top     : 25px;
+  position       : relative;
+  background-color:#fede27be;
+  justify-content: center;
+}
+.nav {
+  background-color: #FEDE27;
+  border-radius: 25px;
+}
+
+.card.post{
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(8px);
+  background-size: cover;
+  cursor         : pointer;
+  border         : 12px;
+  border-radius  : 10px;
+  margin-top     : 25px;
+  position       : relative;
+  background-image:url('../../assets/img/background-post.png');
+}
+
+.titulo{
+  text-align : center;
+  font-weight: bold;
+  font-size: 18pt;
+}
+.titulo1{
+  text-align : center;
+}
+
+.text-mutedp{
+  color: #000000 !important;
+  font-weight: bold;
+}
+
+.card-text.mt-3{
+  color: #000000 !important;
+  font-weight: bold;
+}
+
+
+#icon{
+  color:#d9534f;
+}
+
+#icon1{
+  color:#0275d8;
+}
+
+
+.minhasPostagens {
+  overflow: auto;
+}
+
+.img-fluid{
+  display: flex;
+  gap: .5rem;
+}
+
+.card.post{
+ background-image: url(https://cdn.discordapp.com/attachments/945323144703512608/952918536634900560/card.png);
+    box-shadow: 10px 10px 10px 5px rgba(80, 82, 57, 0.404);
+}
+

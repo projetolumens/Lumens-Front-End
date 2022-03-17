@@ -1,0 +1,77 @@
+
+<div class="container mt-5 mb-5">
+  
+        <div class="container mt-5 mb-5" id="bg">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center text-warning font-weight-bold mt-3">Atualizar Postagem</h1>
+                </div>
+            </div>
+        
+            <div class="row mt-2">
+                <div class="col-md-6">
+                    <div class="form-group text-warning font-weight-bold">
+                        <label for="titulo">Data para coleta</label>
+                        <input type="date" class="form-control text-dark font-weight-bold" id="data">
+                      </div>
+                </div>
+        
+                <div class="form-group txt text-warning font-weight-bold">
+                    <label for="regiao">Região</label>
+                    <select [(ngModel)]="postagem.regiao" class="custom-select font-weight-bold text-dark" id="inputGroupSelect01">
+                        <option value="0"></option>
+                        <option value="Acre ">Acre </option>
+                        <option value="Alagoas"> Alagoas </option>
+                        <option value="Amapá"> Amapá</option>
+                        <option value="Amazonas"> Amazonas </option>
+                        <option value="Bahia"> Bahia </option>
+                        <option value="Ceará"> Ceará</option>
+                        <option value="Distrito Federal"> Distrito Federal </option>
+                        <option value="Espírito Santo"> Espírito Santo </option>
+                        <option value="Goiás"> Goiás </option>
+                        <option value="Maranhão"> Maranhão </option>
+                        <option value="Mato Grosso"> Mato Grosso </option>
+                        <option value="Mato Grosso do Sul"> Mato Grosso do Sul </option>
+                        <option value="Minas Gerais"> Minas Gerais </option>
+                        <option value="Paraná"> Paraná </option>
+                        <option value="Paraíba"> Paraíba </option>
+                        <option value="Pará"> Pará </option>
+                        <option value="Pernambuco"> Pernambuco</option>
+                        <option value="Piauí "> Piauí </option>
+                        <option value="Rio Grande do Norte"> Rio Grande do Norte </option>
+                        <option value="Rio Grande do Sul"> Rio Grande do Sul </option>
+                        <option value="Rio de Janeiro"> Rio de Janeiro</option>
+                        <option value="Rondônia"> Rondônia </option>
+                        <option value="Roraima "> Roraima </option>
+                        <option value="Santa Catarina"> Santa Catarina </option>
+                        <option value="Sergipe"> Sergipe </option>
+                        <option value="São Paulo"> São Paulo </option>
+                        <option value="Tocantins"> Tocantins </option>
+                      </select>
+                </div>
+
+                <div class="form-group txt text-warning font-weight-bold">
+                    <label for="retirada">Retirada</label>
+                    <textarea [(ngModel)]='postagem.retirada' name="texto" id="retirada" rows="3"
+                        class="form-control font-weight-bold text-dark" placeholder="Digite os itens a serem retirados" ></textarea>
+                </div>
+        
+        
+                <div class="form-group txt text-warning font-weight-bold">
+                    <label for="texto">Escolha uma categoria <a class="cadastro-postagem font-weight-bold text-white" data-dismiss="modal" routerLink="/categoria"></a>:</label>
+                    <select  name="categoria" id="categoria" class="form-control text-dark font-weight-bold" [(ngModel)]='idCategoria' (change)='findByIdCategorias()'>
+                        <option *ngFor='let item of listaCategorias'  value="{{item.id}}">
+                            {{item.descricao}}
+                        </option>
+                    </select>
+                </div>
+        
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-danger mr-4 mb-3 font-weight-bold" routerLink='/anuncios'>Cancelar</button>
+                    <button class="btn btn-primary mb-3 font-weight-bold" (click)='atualizar()'>Atualizar</button>
+        
+                </div>
+        
+            </div>
+        </div>
+        

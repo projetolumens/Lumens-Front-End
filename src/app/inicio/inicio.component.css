@@ -1,0 +1,656 @@
+.navbar { background-color: #fede27; }
+.navbar .navbar-nav .nav-link { color: rgb(0, 0, 0)!important; }
+.navbar .navbar-nav .nav-link:hover { color: #afafaf!important; }
+.navbar .navbar-nav .active > .nav-link { color: #000000!important; }
+
+a:link {
+  color: #fede27;
+}
+a {
+  color          : #000000!important;
+  font-size      : 12pt;
+  text-decoration: none;
+  font-weight    : bold;
+}
+
+a:hover {
+  color: black !important;
+}
+
+.bg-nav{
+  background-image: url(https://cdn-icons.flaticon.com/png/512/1046/premium/1046516.png?token=exp=1646943380~hmac=a0810e5d98e6fbf43915a3458f70df71)
+}
+
+.dd{
+  color: #000000!important;
+}
+
+.logolumens {
+  width: 175px;
+}
+
+.sobreLumens {
+  color      : #fff !important;
+}
+
+.ods7 {
+  height     : 220px;
+  display    : flex;
+  align-items: center;
+
+}
+
+
+.title {
+  font-size  : 25pt;
+  font-weight: bold;
+  color      : rgb(0, 0, 0) !important;
+}
+
+.link{
+  color: #000000!important;
+}
+
+/* botao */
+
+.center {
+  width   : 180px;
+  height  : 40px;
+  position: absolute;
+}
+
+.btn {
+  width     : 180px;
+  height    : 40px;
+  cursor    : pointer;
+  background: rgb(250, 247, 93);
+  border    : 1px solid #000000;
+  outline   : none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position         : absolute;
+  left             : 0;
+  top              : 0;
+  fill             : none;
+  stroke           : #000000;
+  stroke-dasharray : 150 480;
+  stroke-dashoffset: 150;
+  transition       : 1s ease-in-out;
+}
+
+.btn:hover {
+  transition      : 1s ease-in-out;
+  background-color: rgb(105, 214, 244);
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color      : rgb(0, 0, 0);
+  font-size  : 18px;
+  font-weight: 100;
+  font-weight: bold;
+}
+
+/* botao */
+
+
+/* carousel */
+.img1 {
+  width : 520px !important;
+  height: 350px;
+}
+
+/* carousel */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fundo0 {
+
+  background-color: rgba(0, 0, 0, 0.911);
+}
+
+
+.fundo3 {
+  background-position: center;
+  background-size    : cover;
+  background-repeat  : no-repeat;
+  background-image   : url(../../assets/img/p07w0fnd.jpg);
+}
+
+
+/* ferramentas usadas*/
+.card-title {
+  font-weight: bold;
+  text-align : center;
+  color      : #fff;
+}
+
+.card-img-top {
+  width: 150px !important;
+}
+
+.card {
+  margin-right           : 5px;
+  box-sizing             : border-box;
+  border-radius          : 10px;
+  display                : flex;
+  align-items            : center;
+  margin                 : 25px 0px;
+  flex-wrap              : wrap;
+  margin-right           : 5px;
+  background-color       : rgba(255, 255, 255, 0.301);
+  backdrop-filter        : blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+
+
+
+}
+
+.card-text {
+  text-align: center;
+  color     : #fff;
+}
+
+.text-config {
+  color      : rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.card-group {
+  margin-bottom: 42px;
+}
+
+
+/* botao inicio */
+.fab {
+  position: fixed;
+  bottom  : 10px;
+  right   : 10px;
+}
+
+.fab button {
+  cursor          : pointer;
+  width           : 48px;
+  height          : 48px;
+  border-radius   : 30px;
+  background-color: #adab3996;
+  border          : none;
+  box-shadow      : 0 1px 5px rgba(0, 0, 0, .4);
+  font-size       : 24px;
+  color           : white;
+
+  -webkit-transition: .2s ease-out;
+  -moz-transition   : .2s ease-out;
+  transition        : .2s ease-out;
+}
+
+.fab button.main {
+  position        : absolute;
+  width           : 60px;
+  height          : 60px;
+  border-radius   : 30px;
+  background-color: #272727;
+  right           : 0;
+  bottom          : 0;
+  z-index         : 20;
+}
+
+.fab button.main:before {
+  content: '↑';
+}
+
+.fab ul {
+  position     : absolute;
+  bottom       : 0;
+  right        : 0;
+  padding      : 0;
+  padding-right: 5px;
+  margin       : 0;
+  list-style   : none;
+  z-index      : 10;
+
+  -webkit-transition: .2s ease-out;
+  -moz-transition   : .2s ease-out;
+  transition        : .2s ease-out;
+}
+
+.fab ul li {
+  display        : flex;
+  justify-content: flex-start;
+  position       : relative;
+  margin-bottom  : -10%;
+  opacity        : 0;
+
+  -webkit-transition: .3s ease-out;
+  -moz-transition   : .3s ease-out;
+  transition        : .3s ease-out;
+}
+
+.fab ul li label {
+  margin-right: 10px;
+
+  display         : block;
+  margin-top      : 10px;
+  padding         : 5px 8px;
+  background-color: white;
+  box-shadow      : 0 2px 3px rgba(0, 0, 0, .2);
+  border-radius   : 3px;
+  height          : 18px;
+  font-size       : 16px;
+  pointer-events  : none;
+  opacity         : 0;
+
+  -webkit-transition: .2s ease-out;
+  -moz-transition   : .2s ease-out;
+  transition        : .2s ease-out;
+}
+
+.fab button.main:active,
+.fab button.main:focus {
+  outline         : none;
+  background-color: #e8ff16;
+  box-shadow      : 0 3px 8px rgba(0, 0, 0, .5);
+}
+
+.fab button.main:active:before,
+.fab button.main:focus:before {
+  content: '↑';
+}
+
+.fab button.main:active+ul,
+.fab button.main:focus+ul {
+  bottom: 70px;
+}
+
+.fab button.main:active+ul li,
+.fab button.main:focus+ul li {
+  margin-bottom: 10px;
+  opacity      : 1;
+}
+
+.fab button.main:active+ul li:hover label,
+.fab button.main:focus+ul li:hover label {
+  opacity: 1;
+}
+
+
+
+/*cards dicas PRONTO*/
+
+.card-title {
+  font-weight: bold;
+  text-align : center;
+  color      : #fff;
+}
+
+.card-img-top {
+  width: 75px !important;
+}
+
+.card {
+ 
+
+  margin-right : 5px;
+  box-sizing   : border-box;
+  border-radius: 10px;
+
+  align-items  : center;
+  margin       : 25px 0px;
+  flex-wrap    : wrap;
+
+}
+.card-footer{
+  background-color: white;
+}
+
+.descricao{
+  font-size: 10pt;
+}
+
+
+
+.text-config {
+  color          : rgb(0, 0, 0);
+  font-weight    : bold;
+  justify-content: center;
+}
+
+
+/*cards dicas PRONTO*/
+
+
+
+
+
+
+/* NOSSO TIME */
+
+/* responsividade */
+.wrap {
+  flex-wrap: wrap;
+}
+
+.Membro1 {
+  position       : relative;
+  width          : 210px;
+  height         : 230px;
+  background     : url("https://i.imgur.com/KDRBJFh.jpeg");
+  background-size: cover;
+  cursor         : pointer;
+  border         : 12px;
+  border-radius  : 10px;
+  margin-top     : 25px;
+  position       : relative;
+
+}
+
+.Membro2 {
+  position       : relative;
+  width          : 210px;
+  height         : 230px;
+  background     : url("https://i.imgur.com/3Ui8aNv.png");
+  background-size: cover;
+  cursor         : pointer;
+  border         : 12px;
+  border-radius  : 10px;
+  margin-top     : 25px;
+}
+
+.Membro3 {
+  position       : relative;
+  width          : 210px;
+  height         : 230px;
+  background     : url("https://i.imgur.com/ihE0FHt.png");
+  background-size: cover;
+  cursor         : pointer;
+  border         : 12px;
+  border-radius  : 10px;
+  margin-top     : 25px;
+}
+
+.Membro4 {
+  position       : relative;
+  width          : 210px;
+  height         : 230px;
+  background     : url("https://i.imgur.com/wk1QM5a.jpeg");
+  background-size: cover;
+  cursor         : pointer;
+  border         : 12px;
+  border-radius  : 10px;
+  margin-top     : 25px;
+}
+
+.Membro5 {
+  position       : relative;
+  width          : 210px;
+  height         : 230px;
+  background     : url("https://i.imgur.com/5vIK4Ot.jpeg");
+  background-size: cover;
+  cursor         : pointer;
+  border         : 12px;
+  border-radius  : 10px;
+  margin-top     : 25px;
+
+}
+
+/* escurece o card  */
+.overlay {
+  width        : 100%;
+  height       : 100%;
+  background   : rgba(0, 0, 0, 0.8);
+  border-radius: 12px;
+  cursor       : pointer;
+  opacity      : 0;
+  transition   : all 1s;
+  border-radius: 10px;
+
+}
+
+.Membro1:hover {
+  opacity   : 1;
+  transform : translateY(12px);
+  transition: 0.5s;
+}
+
+.Membro2:hover {
+  opacity   : 1;
+  transform : translateY(12px);
+  transition: 0.5s;
+}
+
+.Membro3:hover {
+  opacity   : 1;
+  transform : translateY(12px);
+  transition: 0.5s;
+}
+
+.Membro4:hover {
+  opacity   : 1;
+  transform : translateY(12px);
+  transition: 0.5s;
+}
+
+.Membro5:hover {
+  opacity   : 1;
+  transform : translateY(12px);
+  transition: 0.5s;
+}
+
+/* opacidade do escurecer de cada card */
+.Membro1:hover .overlay {
+  opacity         : 1;
+  transition      : 0.5s;
+  background-image: url(../../assets/img/11.png);
+  position        : center;
+  width          : 210px;
+  height         : 230px;
+  background-size : cover;
+  border          : 12px;
+}
+
+.Membro2:hover .overlay {
+  opacity         : 1;
+  transition      : 0.5s;
+  background-image: url(../../assets/img/11.png);
+  position        : center;
+  width          : 210px;
+  height         : 230px;
+  background-size : cover;
+  border          : 12px;
+}
+
+.Membro3:hover .overlay {
+  opacity         : 1;
+  transition      : 0.5s;
+  background-image: url(../../assets/img/11.png);
+  position        : center;
+  width          : 210px;
+  height         : 230px;
+  background-size : cover;
+  border          : 12px;
+}
+
+.Membro4:hover .overlay {
+  opacity         : 1;
+  transition      : 0.5s;
+  background-image: url(../../assets/img/11.png);
+  position        : center;
+  width          : 210px;
+  height         : 230px;
+  background-size : cover;
+  border          : 12px;
+}
+
+.Membro5:hover .overlay {
+  opacity         : 1;
+  transition      : 0.5s;
+  background-image: url(../../assets/img/11.png);
+  position        : center;
+  width          : 210px;
+  height         : 230px;
+  background-size : cover;
+  border          : 12px;
+}
+
+
+/* icones dentro do card */
+.tm-social li a {
+  width          : 25px;
+  height         : 25px;
+  border         : 1px solid #fffffffa;
+  padding        : 20px;
+  margin-right   : 10px;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  color          : #fff;
+  border-radius  : 5px;
+  transition     : all 1s;
+}
+
+
+
+
+/* icones posição dentro do card */
+.tm-social {
+  display        : flex;
+  list-style     : none;
+  bottom         : 10px;
+  position       : absolute;
+  text-align     : center;
+  justify-content: center;
+  left           : 44px;
+
+}
+
+/* titulo nome do card */
+.overlay .about {
+  position       : relative;
+  justify-content: center;
+  align-items    : center;
+  display        : flex;
+  top            : 40%;
+  color          : #ffffff;
+  flex           : column;
+  font-weight    : bold;
+  text-shadow    : 3px 3px rgb(0, 0, 0);
+}
+
+/* titulo equipe */
+.text-equipe {
+  color      : #000000c0;
+  font-weight: bold;
+}
+
+/* bg da equipe */
+#name-equipe {
+  background-image: url(../../assets/img/linha-horizontal1.png);
+
+  margin-bottom: 15px;
+}
+
+a:link {
+  color: #fede27;
+}
+
+body {
+  background     : url("../../assets/img/p07w0fnd.jpg") center / cover no-repeat;
+  height         : auto;
+  margin         : 0;
+  display        : flex;
+  justify-content: center;
+}
+
+.menu-bar {
+  border-radius          : 25px;
+  height                 : -webkit-fit-content;
+  height                 : -moz-fit-content;
+  height                 : fit-content;
+  display                : inline-flex;
+  background-color       : rgba(0, 0, 5, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter        : blur(10px);
+  align-items            : center;
+  padding                : 0 5px;
+  margin                 : 0;
+
+}
+
+
+
+.menu-bar li {
+  list-style : none;
+  color      : black;
+  padding    : 6px 8px;
+  margin     : 0 4px;
+  position   : relative;
+  cursor     : pointer;
+  white-space: nowrap;
+
+}
+
+.menu-bar li::before {
+  content      : " ";
+  position     : absolute;
+  top          : 0;
+  left         : 0;
+  height       : 100%;
+  width        : 100%;
+  z-index      : -1;
+  transition   : 0.2s;
+  border-radius: 25px;
+}
+
+.menu-bar li:hover {
+  color: black;
+}
+
+.menu-bar li:hover::before {
+  background: linear-gradient(to bottom, #e8eb27c4, #b8b214);
+  box-shadow: 0px 3px 20px 0px black;
+  transform : scale(1.2);
+}
+
+
+a {
+  color          : rgba(240, 248, 255, 0.925) !important;
+  font-size      : 12pt;
+  text-decoration: none;
+  font-weight    : bold;
+}
+
+a:hover {
+  color: black !important;
+}
+
+.bg-drop {
+  background-color: #e8eb27cb;
+  margin-left     : 230px;
+  border-radius   : 25px;
+}
+
+.txt-drop:hover {
+  color: black !important;
+}

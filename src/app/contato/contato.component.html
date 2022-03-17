@@ -1,0 +1,168 @@
+<div class="bg-contact3">
+    <!--CARDS EQUIPE-->
+    <div class="col-md-5">
+      <li class="nav-item pl-1">
+        <a routerLink="/anuncios" class="nav-link voltar text-light" >
+            <img width="45px" src="https://cdn-icons-png.flaticon.com/512/189/189256.png" alt="">
+            Voltar</a>
+    </li>
+    </div>
+
+
+
+    <div class="container-contact3">
+        <div class="wrap-contact3">
+            <form [formGroup]="formContato" class="contact3-form validate-form"> 
+                <span class="contact3-form-title font-weight-bold">
+                    Entre em contato:
+                </span>
+                <div class="wrap-input3 form-group font" data-validate="Name is required">
+                    <input class="form-control input3" type="text" formControlName="name" placeholder="Seu nome">
+                    <span class="focus-input3"></span>
+                    <small *ngIf="name!.invalid && name!.touched" class="text-danger">O nome é obrigatório</small> 
+                </div>
+                <div class="wrap-input3 form-group" data-validate="Valid email is required: ex@abc.xyz">
+                    <input class="form-control input3" type="text" formControlName="email" placeholder="Seu email">
+                    <span class="focus-input3"></span>
+                    <small *ngIf="email!.invalid && email!.touched" class="text-danger">Email inválido</small>
+                </div>
+
+                <div class="wrap-input3 form-group" data-validate="Message is required">
+                    <textarea class="form-control input3" formControlName="message" placeholder="Mensagem"></textarea>
+                    <span class="focus-input3"></span>
+                    <small *ngIf="message!.invalid && message!.touched" class="text-danger"> A mensagem é obrigatória (mínimo de 10 caracteres)</small>
+                </div>
+                <div class="form-group">
+                    <button (click)="clicksub()" [disabled]="formContato.invalid" type="button" class="contact3-form-btn">
+                        Enviar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="name-equipe" class="row card-group align-items-center justify-content-center ">
+        <div class="col-md-12 mb-3">
+          <div class="row" id="card">
+            <h3 class="text-center mb-4 mt-3 text-equipe">
+              <a class="text-light" name="name-equipe"></a>Nossa Equipe:
+            </h3>
+          </div>
+          <div class="col-md-12 d-flex justify-content-center wrap">
+  
+            <div class="Membro3 mx-3">
+              <div class="overlay">
+                <div class="about d-flex flex-column">
+                  <h4>Jessica Sousa</h4>
+                  <h6>Scrum Master</h6>
+  
+  
+                </div>
+                <ul class="tm-social">
+                  <li>
+                    <a href="" target="_blank">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" target="_blank">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="Membro4 mx-3">
+              <div class="overlay">
+                <div class="about d-flex flex-column">
+                  <h4>Yago Coelho</h4>
+                  <h6>Product Owner</h6>
+                </div>
+                <ul class="tm-social">
+                  <li>
+                    <a href="https://github.com/Yagocoelho" target="_blank">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/yagoscoelho/" target="_blank">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="Membro2 mx-3">
+              <div class="overlay">
+                <div class="about d-flex flex-column">
+                  <h4>Giuliana Tamie</h4>
+                  <h6>Dev Team</h6>
+                </div>
+                <ul class="tm-social">
+                  <li>
+                    <a href="https://github.com/gtamie" target="_blank">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/giuliana-tamie-sumida-50bb11215/" target="_blank">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="Membro1 mx-3">
+              <div class="overlay ">
+                <div class="about d-flex flex-column">
+                  <h4>Erika Yamamoto</h4>
+                  <h6>Dev Team</h6>
+  
+                </div>
+                <ul class="tm-social">
+                  <li>
+                    <a href="https://github.com/esyamamoto" target="_blank">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/erikasyamamoto/" target="_blank">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+  
+  
+  
+  
+            <div class="Membro5 mx-3">
+              <div class="overlay">
+                <div class="about m-0">
+                  <h4>JoãoLucas</h4>
+                  <h6>Dev Team</h6>
+                </div>
+                <ul class="tm-social">
+                  <li>
+                    <a href="https://github.com/LuukasOo" target="_blank">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/joãolucass/" target="_blank">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--CARDS EQUIPE-->
+</div>
+

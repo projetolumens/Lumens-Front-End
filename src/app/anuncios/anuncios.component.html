@@ -1,0 +1,541 @@
+<!--NAV-BAR-->
+<nav class="navbar navbar-expand-lg" id="inicio">
+  <div class="container">
+    <a class="navbar-brand dd text-dark" href="#projetoLumens">PROJETO
+      LUMENS</a>
+    <button class="navbar-toggler bg-nav " type="button" data-toggle="collapse" data-target="#nvbCollapse"
+      aria-controls="nvbCollapse">
+      <i class="fa-solid fa-list"></i>
+    </button>
+
+
+
+    <div class="collapse navbar-collapse" id="nvbCollapse">
+      <ul class="navbar-nav ml-auto">
+        
+          <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-2 Pesquisar" type="search" id="pesquisar" aria-label="Search"
+                  placeholder="Pesquisar" />
+              <a class="fs-16" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          </form>
+     
+        <li class="nav-item pl-1">
+          <a routerLink="/inicio" class="nav-link" href="#entenda">Entenda o Cashback</a>
+        </li>
+
+        <li class="nav-item pl-1">
+          <a class="nav-link" href="#comprar">Comprar</a>
+        </li>
+        <li class="nav-item pl-1">
+          <a class="nav-link" href="#descarte">Descarte</a>
+        </li>
+       
+        <li>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fa-solid fa-user"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a routerLink="/entrar" class="dropdown-item " href="#">Entrar</a>
+              <a routerLink="/cadastrar" class="dropdown-item" href="#">Cadastrar</a>
+            </div>
+          </div>
+        </li>
+
+
+        <li class="nav-item pl-1">
+          <a routerLink="/contato" class="nav-link" href="#">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--NAV-BAR-->
+
+
+<!-- OLÁ SOMOS LUMENS-->
+<div class="container-fluid fundo0 d-flex justify-content-center align-items-center ">
+  <div class="row d-flex justify-content-center col-md-10">
+    <div class="row d-flex align-items-center">
+
+      <div class="col-md-7 mt-3 mb-5 mr-5 text-white sobreLumens">
+        <h4 class="display-5 mt-3 sobreLumens"> Olá, nós somos Lumens!</h4>
+
+        <p style=" text-align: justify">o e-commerce que visa o desenvolvimento sustentável
+          <br>
+        </p>
+
+      </div>
+      <div class="col-md-4 d-flex justify-content-center "> <img width="350px" src="../../assets/img/b1.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- OLÁ SOMOS LUMENS-->
+
+<div class="bg-site">
+  <!--cards de todos os produtos/anuncios NOVOS DAS EMPRESAS-->
+  <div id="comprar" class="">
+    <h1 class="text-center mb-2 mt-3 titulos">Produtos sustentáveis de lojas parceiras
+      <img width="42px"
+        src="../../assets/img/earth.png"
+        alt="">
+    </h1>
+
+
+    <h4 class="text-center mb-5">Ganhe desconto aplicando o cashback de seu descarte, feito nos ecopontos parceiros</h4>
+
+
+    <div class="text-center justify-content-center" *ngIf="deslogado()">
+      <h6>
+        <img width="25px" class="mr-3 " src="../../assets/img/info.png" alt="">Ative seu cashback
+        <button class="btn-entrar">
+          <a class="m-1" routerLink="/entrar" >Entrar</a>
+        </button>
+      </h6>
+    </div>
+
+
+
+    <!--cards pt1 -->
+    <div class="card-deck ml-3 mr-3">
+      <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
+        <img class="card-img-top" src="../../assets/img/ArquivoExibir (3).jpg" alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title text-dark mt-3">Microondas</h5>
+          <p class="card-text descricao" style=" text-align: justify">Microondas LG Solo 30 Litros Prata MS3095</p>
+        </div>
+
+
+        <div class="card-footer d-flex justify-content-center" *ngIf="logado()">
+          <a type="button" class="btn btn-warning " (click)="comprar()">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
+        <img class="card-img-top mt-1" src="../../assets/img/Lavadora_LAC12_Perspectiva_Frente.jpg"
+          alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title text-dark mt-2">Lavadora</h5>
+          <p class="card-text descricao" style=" text-align: justify">Lavadora de Roupas Electrolux Automática LAC13
+            13Kg - Branca</p>
+        </div>
+        <div class="card-footer d-flex justify-content-center" *ngIf="logado()">
+          <a type="button" class="btn btn-warning " (click)="comprar()">Comprar</a>
+        </div>
+      </div>
+
+
+
+      <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
+        <img class="card-img-top" src="../../assets/img/ArquivoExibir (2).jpg" alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title mt-3 text-dark">Microondas</h5>
+          <p class="card-text descricao" style=" text-align: justify">Forno de Micro-ondas Electrolux MEF41 Meus
+            Favoritos - 31L</p>
+        </div>
+        <div class="card-footer d-flex justify-content-center" *ngIf="logado()">
+          <a type="button" class="btn btn-warning" (click)="comprar()">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
+        <img class="card-img-top mt-2" src="../../assets/img/Lavadora-Brastemp-BWK12AB-Frontal-1_0.jpg"
+          alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title mt-1 text-dark">Lavadora</h5>
+          <p class="card-text descricao" style=" text-align: justify">Lavadora Brastemp BWK12AB Branca - 12Kg</p>
+        </div>
+        <div class="card-footer d-flex justify-content-center" *ngIf="logado()">
+          <a type="button" class="btn btn-warning" (click)="comprar()">Comprar</a>
+        </div>
+      </div>
+
+
+      <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
+        <img class="card-img-top" src="../../assets/img/fogao-agata-esmaltec.jpg" alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title mt-3 text-dark">Fogão</h5>
+          <p class="card-text descricao" style=" text-align: justify">Fogão Esmaltec 4 Bocas Ágata 4062 - Branco</p>
+        </div>
+        <div class="card-footer d-flex justify-content-center" *ngIf="logado()">
+          <a type="button" class="btn btn-warning" (click)="comprar()">Comprar</a>
+        </div>
+      </div>
+
+
+      <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
+        <img class="card-img-top mt-1" src="../../assets/img/ArquivoExibir (1).jpg" alt="Imagem de capa do card">
+        <div class="card-body">
+
+          <h5 class="card-title mt-2 text-dark">Geladeira</h5>
+          <p class="card-text descricao" style=" text-align: justify">Geladeira Brastemp BRM44HK Frost Free Duplex
+            Inox - 375L</p>
+        </div>
+        <div class="card-footer d-flex justify-content-center" *ngIf="logado()">
+          <a type="button" class="btn btn-warning" (click)="comprar()">Comprar</a>
+        </div>
+      </div>
+    </div>
+    <!--cards pt1 -->
+
+    <!--cards pt2 -->
+    <div class="card-deck  ml-3 mr-3">
+      <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
+        <img class="card-img-top" src="https://www.extra-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=376024266"
+          alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title text-dark mt-2">Microondas</h5>
+          <p class="card-text descricao" style=" text-align: justify">Forno de Micro-ondas Electrolux MTO30 - 20L -
+            Branco</p>
+        </div>
+        <div class="card-footer d-flex justify-content-center" *ngIf="logado()">
+          <a type="button" class="btn btn-warning" (click)="comprar()">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
+        <img class="card-img-top mt-2"
+          src="https://a-static.mlcdn.com.br/1500x1500/tanquinho-suggar-10-kg-lavamax-eco-com-dispenser-para-sabao-le1001-branco/bertolacemoveiseeletro/10990969787/2b55d9a188499a48a71be6969d65dde2.jpg"
+          alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title text-dark">Tanquinho</h5>
+          <p class="card-text descricao" style=" text-align: justify">Tanquinho Suggar 10 Kg Lavamax Eco com Dispenser
+            para Sabão - Branco</p>
+        </div>
+        <div class="card-footer d-flex justify-content-center" *ngIf="logado()">
+          <a type="button" class="btn btn-warning" (click)="comprar()">Comprar</a>
+        </div>
+      </div>
+
+
+
+      <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
+        <img class="card-img-top"
+          src="https://www.pontofrio-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=1607381331"
+          alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title mt-2 text-dark">Forno Elétrico</h5>
+          <p class="card-text descricao" style=" text-align: justify">Forno Elétrico de Embutir Philco Prata 46L
+            56102041</p>
+        </div>
+        <div class="card-footer d-flex justify-content-center" *ngIf="logado()">
+          <a type="button" class="btn btn-warning" (click)="comprar()">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
+        <img class="card-img-top mt-1"
+          src="https://images.kabum.com.br/produtos/fotos/154978/samsung-smart-tv-65-uhd-4k-65au7700-processador-crystal-4k-tela-sem-limites-visual-livre-de-cabos-alexa-built-in-un65au7700gxzd_1617627547_original.jpg"
+          alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title mt-1 text-dark">Smart TV</h5>
+          <p class="card-text descricao" style=" text-align: justify">Smart TV 65" UHD 4K Samsung 65AU7700, Processador
+            Crystal 4K</p>
+        </div>
+        <div class="card-footer d-flex justify-content-center" *ngIf="logado()">
+          <a type="button" class="btn btn-warning" (click)="comprar()">Comprar</a>
+        </div>
+      </div>
+
+
+
+      <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
+        <img class="card-img-top mt-1"
+          src="https://a-static.mlcdn.com.br/1500x1500/liquidificador-britania-110v-preto-filtro-potente-jarra-grande-sucos-vitaminas/penselarfun/11985506741/1677348242814607c137bce71f56caa9.jpg"
+          alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title mt-1 text-dark">Liquidificadores</h5>
+          <p class="card-text descricao" style=" text-align: justify">Liquidificador Britânia Diamante 800 Preto 900W
+            com 4 Velocidades</p>
+        </div>
+        <div class="card-footer d-flex justify-content-center" *ngIf="logado()">
+          <a type="button" class="btn btn-warning" (click)="comprar()">Comprar</a>
+        </div>
+      </div>
+
+
+      <div class="card mx-2 shadow p-3 mb-5 bg-white rounded">
+        <img class="card-img-top"
+          src="https://www.casasbahia-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=1571510898"
+          alt="Imagem de capa do card">
+        <div class="card-body">
+
+          <h5 class="card-title mt-2 text-dark">Computadores</h5>
+          <p class="card-text descricao" style=" text-align: justify">Aio 21.5" Gigapro I3 9Th Geração 4Gb Ssd240 Win 10
+            Com Mouse E Teclado Sem Fio</p>
+        </div>
+        <div class="card-footer d-flex justify-content-center" *ngIf="logado()">
+          <a type="button" class="btn btn-warning" (click)="comprar()">Comprar</a>
+        </div>
+      </div>
+    </div>
+    <!--cards pt2 -->
+  </div>
+  <!--cards de todos os produtos/anuncios NOVOS DAS EMPRESAS-->
+
+
+  <!-- carousel-->
+  <div class="my-5 text-center container">
+    <div class="row d-flex align-items-center">
+      <h2 class="titulos">Tipos de lixo eletrônico</h2>
+      <div class="col-12">
+    
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-12 col-md d-flex align-items-center justify-content-center">
+                  <img class="linhas-img" src="../../assets/img/branca.png" alt="">
+                </div>
+                <div class="col-12 col-md d-flex align-items-center justify-content-center">
+                  <img class="linhas-img" src="../../../assets/img/azul.png" alt="">
+                </div>
+                <div class="col-12 col-md d-flex align-items-center justify-content-center">
+                  <img class="linhas-img" src="../../assets/img/verde.png" alt="">
+                </div>
+
+                <div class="col-12 col-md d-flex align-items-center justify-content-center">
+                  <img class="linhas-img" src="../../assets/img/marrom.png" alt="">
+                </div>
+
+              </div>
+            </div>
+
+        <!--End carousel-->
+      </div>
+    </div>
+  </div>
+  
+  <!-- carousel-->
+
+
+
+  <!-- postagem de descarte-->
+  <div id="descarte" class="row d-flex justify-content-center">
+    <div class="card2" style="width: 70rem;">
+      <div class="card-body">
+        <h5 class="titulo text-dark ">DESCARTE AQUI SEU LIXO ELETRÔNICO</h5>
+        <p class="card-text titulo1">fazemos a coleta do seu lixo eletrônico de forma segura, prática, sem quantidade
+          mínima e totalmente gratuita.</p>
+        <div class="row">
+
+          
+    <div class="text-center justify-content-center" *ngIf="deslogado()">
+      <h6>
+        <img width="25px" class="mr-3" src="../../assets/img/info.png" alt="">Para descartar:
+        <button class="btn-entrar">
+          <a class="m-1" routerLink="/entrar" >Entrar</a>
+        </button>
+      </h6>
+    </div>
+
+          <h5 *ngIf="logado()" class="text-center">
+            Qual produto você quer
+            <button type="button" class="btn descartar text-light" data-toggle='modal'
+              data-target='#novaPostagem'>Descartar</button>
+            ?
+          </h5>
+          <h4></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- postagem de descarte-->
+
+  <div class="container">
+
+    <!-- Modal -->
+    <div class="row d-flex justify-content-center ">
+      <div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="TituloModalCentralizado">Nova Postagem</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+            <div class="modal-body">
+
+              <div class="form-group">
+                <label for="titulo">Data para coleta</label>
+                <input type="date" class="form-control" id="data">
+              </div>
+
+
+
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text btn-info" for="inputGroupSelect01">Região:</label>
+                </div>
+                <select [(ngModel)]="postagem.regiao" class="custom-select" id="inputGroupSelect01">
+                  <option value="0"></option>
+                  <option value="Acre">Acre </option>
+                  <option value="Alagoas"> Alagoas </option>
+                  <option value="Amapá"> Amapá</option>
+                  <option value="Amazonas"> Amazonas </option>
+                  <option value="Bahia"> Bahia </option>
+                  <option value="Ceará"> Ceará</option>
+                  <option value="Distrito Federal"> Distrito Federal </option>
+                  <option value="Espírito Santo"> Espírito Santo </option>
+                  <option value="Goiás"> Goiás </option>
+                  <option value="Maranhão"> Maranhão </option>
+                  <option value="Mato Grosso"> Mato Grosso </option>
+                  <option value="Mato Grosso do Sul"> Mato Grosso do Sul </option>
+                  <option value="Minas Gerais"> Minas Gerais </option>
+                  <option value="Paraná"> Paraná </option>
+                  <option value="Paraíba"> Paraíba </option>
+                  <option value="Pará"> Pará </option>
+                  <option value="Pernambuco"> Pernambuco</option>
+                  <option value="Piauí"> Piauí </option>
+                  <option value="Rio Grande do Norte"> Rio Grande do Norte </option>
+                  <option value="Rio Grande do Sul"> Rio Grande do Sul </option>
+                  <option value="Rio de Janeiro"> Rio de Janeiro</option>
+                  <option value="Rondônia"> Rondônia </option>
+                  <option value="Roraima"> Roraima </option>
+                  <option value="Santa Catarina"> Santa Catarina </option>
+                  <option value="Sergipe"> Sergipe </option>
+                  <option value="São Paulo"> São Paulo </option>
+                  <option value="Tocantins"> Tocantins </option>
+                </select>
+              </div>
+
+
+
+
+              <div class="form-group">
+                <label for="endereco">Itens para serem retirados</label>
+                <input [(ngModel)]="postagem.retirada" type="text-area" class="form-control" id="descricao">
+                <label for="texto">Escolha uma categoria<a class="cadastro-categoria" data-dismiss="modal"></a>:</label>
+                <select [(ngModel)]="idCategoria" (change)="findByIdCategoria()" class="custom-select"
+                  id="inputGroupSelect01">
+                  <option *ngFor="let item of listaCategorias" value="{{item.id}}">{{item.descricao}}</option>
+                </select>
+              </div>
+
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-success" (click)='publicar()' data-dismiss="modal">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- postagem de descarte-->
+    </div>
+    <!-- Modal -->
+
+    <!--Todos os anúncios dos usuários-->
+    <div class="container-fluid md-5 mt-2 mb-5" id="postagens">
+      <nav>
+        <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active text-dark font-weight-bold" id="nav-todasPostagens-tab" data-toggle="tab"
+            href="#todasPostagens" role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Todas as
+            Postagens</a>
+  
+          <a (click)='findByIdUsuario()' class="nav-item nav-link text-dark font-weight-bold" id="nav-minhasPostagens-tab"
+            data-toggle="tab" href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens"
+            aria-selected="false">Minhas Postagens</a>
+  
+  
+          <a class="nav-item nav-link text-dark font-weight-bold" id="nav-postagemCategoria-tab" data-toggle="tab"
+            href="#postagemCategoria" role="tab" aria-controls="nav-postagemCategoria" aria-selected="false">Postagens
+            por Categoria</a>
+        </div>
+      </nav>
+  
+      <div class="tab-content mt-2" id="nav-tabContent">
+  
+  
+        <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel"
+          aria-labelledby="nav-todasPostagens-tab">
+  
+          <div class="row  d-flex justify-content-center mt-5 mb-5">
+        
+          </div>
+  
+          <div class="card-columns">
+  
+            <div class="card post text-center" *ngFor=' let item of listaPostagens | orderBy: key : reverse'>
+              <div class="card-body">
+                <small class="text-mutedp ">Região: {{item.regiao}}</small>
+                <small class="text-mutedp">&emsp;Categoria: {{item.categoria.nome}}</small>
+                <p class="card-text mt-3">{{item.retirada}}</p>
+                
+                <ul class="navbar-nav mr-auto d-flex ">
+                  <li class="nav-item active">
+                      <img src="{{item.usuario.foto}}" alt="avatar do user" width="60px" height="60px"
+                          class="img-fluid rounded-circle"> <!-- interpola a foto -->
+                  </li>
+                <!--<li class="postagem mt-5">
+                    <img src="{{postagem.foto}}" alt="imagem do produto do usuario" width="50px" height="50px"
+                        class="img-fluid1 align-items-top"> </li>   -->
+                
+                
+                <li class="card-text"><small class="text-mutedp">by: {{item.usuario.nomeCompleto}}</small></li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+  
+        <div class="tab-pane fade minhasPostagens" id="minhasPostagens" role="tabpanel"
+          aria-labelledby="nav-minhasPostagens-tab">
+  
+          <div class="card-columns">
+  
+            <div class="card post text-center" *ngFor='let item of usuario.postagem | orderBy: key : reverse'>
+              <div class="card-body">
+                <small class="text-mutedp">Região: {{item.regiao}}</small>
+                <small class="text-mutedp">&emsp;Categoria: {{item.categoria.nome}}</small>
+                <p class="card-text mt-3">{{item.retirada}}</p>
+                
+               
+
+                <a [routerLink]="['/postagem-edit', item.id]" class="text-info mr-3" href="">
+                  <i class="fas fa-edit"></i>
+                </a>
+                <a [routerLink]="['/postagem-delete', item.id]" class="text-danger" href="">
+                  <i class="fas fa-trash"></i>
+                </a>
+  
+  
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="postagemCategoria" role="tabpanel" aria-labelledby="nav-postagemCategoria-tab">
+
+          <div class="card-columns" 
+          *ngFor='let categoria of listaCategorias | orderBy : key : reverse'>
+
+            <div class="card post text-center" *ngFor=' let item of categoria.postagem'>
+              <div class="card-body">
+                <small class="text-mutedp">Região: {{item.regiao}}</small>
+                <small class="text-mutedp">&emsp;Categoria: {{categoria.nome}}</small>
+                <p class="card-text mt-3">{{item.retirada}}</p>
+
+                <ul class="navbar-nav mr-auto d-flex ">
+                  <li class="nav-item active">
+                      <img src="{{item.usuario.foto}}" alt="avatar do user" width="60px" height="60px"
+                          class="img-fluid rounded-circle"> <!-- interpola a foto -->
+                  </li>
+  
+                </ul>
+  
+                <p class="card-text"><small class="text-mutedp">by: {{item.usuario.nomeCompleto}}</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    <!--Todos os anúncios dos usuários-->
+
+    </div>
