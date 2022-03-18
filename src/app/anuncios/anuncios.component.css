@@ -147,4 +147,15 @@ background-color: #fbf09221;
 }
 
 
-
+/*BOTÃO SUBIR*/
+#subir{
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  border-radius: 30px;
+  background-color: #ffe81d3b;
+  right: 5px;
+  bottom: 2px;
+  z-index: 1000;
+  content: url("../../assets/img/seta.png") ;
+}

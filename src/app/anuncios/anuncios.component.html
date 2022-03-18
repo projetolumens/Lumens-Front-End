@@ -428,9 +428,22 @@
     </div>
     <!-- Modal -->
 
- 
 
+<!--BOTÃO SUBIR-->
+    <div id="voltarTopo">
+      <a href="#" id="subir">   </a>
+    </div>
+   <script>// JAVASCRIPT
+    $(document).ready(function() {
+      $('#subir').click(function(){
+        $('html, body').animate({scrollTop:0}, 'slow');
+        return false;
+      });
+    });</script>
+<!--BOTÃO SUBIR-->
     
+
+
     <!--Todos os anúncios dos usuários-->
     <div class="container-fluid md-5 mt-2 mb-5" id="postagens">
       <nav>
