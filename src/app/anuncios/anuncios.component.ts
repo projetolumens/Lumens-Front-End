@@ -63,6 +63,10 @@ export class AnunciosComponent implements OnInit {
     return false
   }
 
+  subir(){
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+}
+
   getAllPostagens() {
     this.postagemService.getAllPostagens().subscribe((resp: Postagem[]) => {
       this.listaPostagens = resp

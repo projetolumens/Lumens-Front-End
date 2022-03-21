@@ -107,25 +107,6 @@ svg {
 
 /* carousel */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .fundo0 {
 
   background-color: rgba(0, 0, 0, 0.911);
@@ -270,7 +251,7 @@ svg {
 .fab button.main:active,
 .fab button.main:focus {
   outline         : none;
-  background-color: #e8ff16;
+  background-color: #f3dd7aa4;
   box-shadow      : 0 3px 8px rgba(0, 0, 0, .5);
 }
 
